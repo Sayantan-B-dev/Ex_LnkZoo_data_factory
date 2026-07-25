@@ -101,7 +101,7 @@ export default function Home() {
     const seen = new Set();
     const urls = [];
     for (const u of raw) {
-      const cleaned = u.replace(/[.,;:!?)]+$/, '').split('?')[0];
+      const cleaned = u.replace(/[.,;:!?)]+$/, '');
       if (cleaned.length > 10 && !seen.has(cleaned)) { seen.add(cleaned); urls.push(cleaned); }
     }
     if (!urls.length) { showToast('No URLs found in text', 'error'); return; }

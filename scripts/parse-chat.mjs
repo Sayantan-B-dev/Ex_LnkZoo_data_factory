@@ -10,7 +10,7 @@ const raw = text.match(urlRegex) || [];
 const seen = new Set();
 const urls = [];
 for (const u of raw) {
-  const cleaned = u.replace(/[.,;:!?)]+$/, '').split('?')[0];
+  const cleaned = u.replace(/[.,;:!?)]+$/, '');
   if (cleaned.length > 10 && !seen.has(cleaned)) {
     seen.add(cleaned);
     urls.push(cleaned);
