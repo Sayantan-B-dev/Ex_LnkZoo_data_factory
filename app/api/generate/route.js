@@ -36,8 +36,8 @@ ${content.slice(0, 4000)}`;
         headers: {
           'Authorization': `Bearer ${key}`,
           'Content-Type': 'application/json',
-          'HTTP-Referer': 'https://lnkzoo.app',
-          'X-Title': 'LnkZoo',
+          'HTTP-Referer': 'https://data-factory.app',
+          'X-Title': 'LnkZooDataFactory',
         },
         body: JSON.stringify({
           model: 'openai/gpt-4o-mini',

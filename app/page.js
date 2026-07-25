@@ -55,7 +55,7 @@ export default function Home() {
     try {
       for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if (key.startsWith('lnkzoo_')) continue;
+        if (key.startsWith('df_')) continue;
         try {
           const v = JSON.parse(localStorage.getItem(key));
           if (v && typeof v === 'object' && v.savedAt) all[key] = v;
@@ -79,7 +79,7 @@ export default function Home() {
     const blob = new Blob([JSON.stringify(saved, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'lnkzoo-saved-' + new Date().toISOString().slice(0, 10) + '.json';
+      a.download = 'datafactory-saved-' + new Date().toISOString().slice(0, 10) + '.json';
     a.click();
     URL.revokeObjectURL(a.href);
     showToast('Downloaded!', 'success');
@@ -158,7 +158,7 @@ export default function Home() {
       <div id="sidebar-overlay" className={sidebarOpen ? 'visible' : ''} onClick={() => setSidebarOpen(false)}></div>
       <aside id="sidebar" className={sidebarOpen ? 'open' : ''}>
          <div className="brand" onClick={() => { setCurrentCategory(CAT_ORDER[0]); setCurrentUrl(null); setShowAnalyticsPage(false); }}>
-          LnkZoo <span>v1</span><span className="badge">{totalLinks}</span>
+          LnkZoo Data Factory <span>v1</span><span className="badge">{totalLinks}</span>
         </div>
         <div className="search-wrap">
           <input type="text" placeholder="search categories..." spellCheck="false"
@@ -196,7 +196,7 @@ export default function Home() {
               ? <>Analytics <span className="sub">({savedCount} saved)</span></>
               : currentUrl
                 ? <>Link <span className="sub">{currentUrl.length > 50 ? currentUrl.slice(0, 47) + '...' : currentUrl}</span></>
-                : <>{currentCategory || 'LnkZoo'} <span className="sub">({currentCategory ? CAT_COUNTS[currentCategory] : ''})</span></>
+                : <>{currentCategory || 'LnkZoo Data Factory'} <span className="sub">({currentCategory ? CAT_COUNTS[currentCategory] : ''})</span></>
             }
           </div>
           <div className="spacer"></div>

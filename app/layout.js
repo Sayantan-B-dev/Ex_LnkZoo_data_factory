@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'LnkZoo',
-  description: 'Categorized link manager with AI-powered topic generation',
+  title: 'LnkZoo Data Factory',
+  description: 'Link data preparation & AI enrichment pipeline for LnkZoo',
 };
 
 export const viewport = 'width=device-width, initial-scale=1';
