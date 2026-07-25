@@ -73,6 +73,12 @@ npm run build
 npm start
 ```
 
+## Screenshots
+
+| Home | Link Detail | After Generate | Analytics | Settings |
+|---|---|---|---|---|
+| ![home](screenshots/screenshot-home.png) | ![before](screenshots/screenshot-linkpage-before.png) | ![after](screenshots/screenshot-linkpage-after.png) | ![analytics](screenshots/screenshot-analytics.png) | ![settings](screenshots/screenshot-settings.png) |
+
 ## Usage
 
 1. Open the app — sidebar lists all 28 categories sorted by link count
