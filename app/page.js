@@ -44,6 +44,7 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [genResult, setGenResult] = useState(null);
   const [genLoading, setGenLoading] = useState(false);
+  const [fetchLoading, setFetchLoading] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [showAnalyticsPage, setShowAnalyticsPage] = useState(false);
   const [toast, setToast] = useState(null);
@@ -181,6 +182,38 @@ export default function Home() {
       setGenLoading(false);
     }
   }, [pasteContent, currentUrl, showToast, saveToDb]);
+
+  const handleOpenFetch = useCallback(async () => {
+    if (!currentUrl) return;
+    window.open(currentUrl, '_blank');
+    setFetchLoading(true);
+    showToast('Fetching page content...', 'info');
+    try {
+      const res = await fetch('/api/fetch-content?url=' + encodeURIComponent(currentUrl));
+      const data = await res.json();
+      if (data.success && data.text) {
+        setPasteContent(data.text);
+        const genRes = await fetch('/api/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ url: currentUrl, content: data.text }),
+        });
+        const genData = await genRes.json();
+        if (genData.error) { showToast(genData.error, 'error'); return; }
+        setGenResult({ topic: genData.topic, description: genData.description, tags: genData.tags });
+        const saveData = { topic: genData.topic, description: genData.description, tags: genData.tags, savedAt: new Date().toISOString() };
+        saveToDb(currentUrl, saveData);
+        setSavedMeta(prev => ({ ...prev, [currentUrl]: saveData }));
+        showToast('Fetched, generated & saved!', 'success');
+      } else {
+        showToast(data.error || 'Could not fetch — paste manually', 'error');
+      }
+    } catch {
+      showToast('Fetch failed — paste manually', 'error');
+    } finally {
+      setFetchLoading(false);
+    }
+  }, [currentUrl, showToast, saveToDb]);
 
   const savedCount = Object.keys(savedMeta).length;
   const totalLinks = CAT_ORDER.reduce((s, c) => s + CAT_COUNTS[c], 0);
@@ -359,6 +392,11 @@ export default function Home() {
                 </div>
                 <div className="detail-actions">
                   <a className="open-link" href={currentUrl} target="_blank" rel="noopener"><Svg name="external" /> Open Original</a>
+                  <button className="gen-btn" onClick={handleOpenFetch} disabled={fetchLoading || genLoading}
+                    style={{ background: 'var(--bg3)', borderColor: 'var(--border)', color: 'var(--text)' }}>
+                    {fetchLoading ? <span className="spin" style={{ width: 12, height: 12, display: 'inline-block' }}></span> : <Svg name="external" />}
+                    {fetchLoading ? ' Fetching...' : ' Open & Fetch'}
+                  </button>
                   <button className={'save-btn' + (savedMeta[currentUrl] ? ' saved' : '')}
                     onClick={handleSave} disabled={genLoading}>
                     <Svg name={savedMeta[currentUrl] ? 'refresh' : 'save'} />
