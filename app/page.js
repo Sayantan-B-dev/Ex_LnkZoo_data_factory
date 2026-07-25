@@ -31,6 +31,7 @@ function Svg({ name, size = 14 }) {
     info: '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>',
     analytics: '<path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/>',
     clock: '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+    next: '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
   };
   return <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="2" style={{ verticalAlign: 'middle' }} dangerouslySetInnerHTML={{ __html: paths[name] || '' }} />;
 }
@@ -188,9 +189,22 @@ export default function Home() {
       <main id="main">
         <div className="toolbar">
           {(currentUrl || showAnalyticsPage) && (
-            <button className="back-btn" onClick={() => { setCurrentUrl(null); setShowAnalyticsPage(false); setGenResult(null); setPasteContent(''); }}>
-              <Svg name="back" size={14} /> back
-            </button>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+              <button className="back-btn" onClick={() => { setCurrentUrl(null); setShowAnalyticsPage(false); setGenResult(null); setPasteContent(''); }}>
+                <Svg name="back" size={14} />
+              </button>
+              {currentUrl && (() => {
+                const idx = currentLinks.findIndex(l => l.url === currentUrl);
+                const goTo = (url) => { setCurrentUrl(url); setGenResult(savedMeta[url] || null); setPasteContent(''); };
+                return (
+                  <>
+                    <button className="back-btn" disabled={idx <= 0} onClick={() => goTo(currentLinks[idx - 1].url)}><Svg name="back" size={12} /></button>
+                    <span style={{ fontSize: 10, color: 'var(--muted)', minWidth: 36, textAlign: 'center' }}>{idx + 1}/{currentLinks.length}</span>
+                    <button className="back-btn" disabled={idx < 0 || idx >= currentLinks.length - 1} onClick={() => goTo(currentLinks[idx + 1].url)}><Svg name="next" size={12} /></button>
+                  </>
+                );
+              })()}
+            </div>
           )}
           <div className="title">
             {showAnalyticsPage

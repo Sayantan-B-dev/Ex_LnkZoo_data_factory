@@ -58,6 +58,8 @@ body{display:flex}
 #main .toolbar{display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid var(--border);background:var(--bg2);flex-shrink:0}
 #main .toolbar .back-btn{background:none;border:none;color:var(--muted);font-family:var(--font);font-size:13px;cursor:pointer;padding:4px 8px;border-radius:4px;display:flex;align-items:center;gap:4px}
 #main .toolbar .back-btn:hover{color:var(--text);background:var(--bg3)}
+#main .toolbar .back-btn:disabled{opacity:.3;cursor:default}
+#main .toolbar .back-btn:disabled:hover{background:none;color:var(--muted)}
 #main .toolbar .title{font-size:13px;color:var(--text)}
 #main .toolbar .title .sub{color:var(--muted)}
 #main .toolbar .spacer{flex:1}
