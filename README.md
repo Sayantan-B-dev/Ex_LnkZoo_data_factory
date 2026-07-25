@@ -1,13 +1,13 @@
 # LnkZoo Data Factory
 
-Data preparation and AI enrichment pipeline for [LnkZoo](https://github.com/Sayantan-B-dev/Ex_LnkZoo_data_factory). Processes 1107+ categorized links with AI-generated topics, descriptions, and tags via OpenRouter.
+Data preparation and AI enrichment pipeline for [LnkZoo](https://github.com/Sayantan-B-dev/Ex_LnkZoo_data_factory). Processes 1107+ categorized links with AI-generated topics, descriptions, and tags via OpenRouter. All saved data synced to Supabase — accessible from any device.
 
 ## Features
 
 - **1107 links** across 73 domains and 28 categories
 - **AI enrichment** — paste content about a link, generate topic/description/tags via GPT-4o-mini
 - **3-key rotation** — rotates through OpenRouter API keys with 429 backoff
-- **Persistent saves** — all saved data stored in browser localStorage (survives restarts)
+- **Multi-device sync** — all data stored in Supabase, consistent across browsers and machines
 - **Analytics dashboard** — total saved, storage size, per-category bars, tag cloud, recent saves
 - **Search & filter** — search categories in sidebar, green dots show categories with saved entries
 - **Export** — download all saved data as JSON
@@ -17,6 +17,7 @@ Data preparation and AI enrichment pipeline for [LnkZoo](https://github.com/Saya
 
 - Node.js 18+
 - OpenRouter API key(s) — get at [openrouter.ai/keys](https://openrouter.ai/keys)
+- Supabase project — create at [supabase.com](https://supabase.com)
 
 ## Setup
 
@@ -25,15 +26,37 @@ cd _data
 npm install
 ```
 
-Create `.env` in `_data/` (or use the existing one):
+Create `.env` in `_data/` (copy from `.env.example`):
 
 ```env
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_...
+SUPABASE_SERVICE_KEY=sb_secret_...
+
+# OpenRouter
 OPENROUTER_API_KEY_1=sk-or-v1-...
 OPENROUTER_API_KEY_2=sk-or-v1-...
 OPENROUTER_API_KEY_3=sk-or-v1-...
 ```
 
-At least one key is required. Keys are used server-side only — never exposed to the browser.
+At least one OpenRouter key is required. Keys are used server-side only — never exposed to the browser.
+
+### Database setup
+
+In your [Supabase dashboard](https://supabase.com/dashboard) → **SQL Editor**, run:
+
+```sql
+create table saved_links (
+  id uuid primary key default gen_random_uuid(),
+  url text unique not null,
+  topic text default '',
+  description text default '',
+  tags jsonb default '[]',
+  saved_at timestamptz not null,
+  created_at timestamptz default now()
+);
+```
 
 ## Development
 
@@ -57,31 +80,36 @@ npm start
 3. Click a card to open the detail view
 4. Paste content about the link in the textarea
 5. Click **Generate** — AI returns topic, description, and tags
-6. Result auto-saves to browser localStorage
+6. Result auto-saves to Supabase and syncs across all devices instantly
 7. Click **Analytics** in sidebar or the saved count badge for stats
 8. Use **Settings** (gear icon) to export data
 
 ### Saved data
 
-- Each saved entry stores `{ topic, description, tags[], savedAt }`
-- Keyed by URL in localStorage
+- Each entry stores `{ topic, description, tags[], savedAt }` keyed by URL
+- Stored in Supabase `saved_links` table
 - Exported as JSON via Settings or Analytics page
+- Available from any device with the same Supabase project
 
 ## Project Structure
 
 ```
 _data/
 ├── app/
-│   ├── api/generate/route.js   — OpenRouter proxy (server-side keys)
-│   ├── layout.js                — Root layout & metadata
-│   ├── page.js                  — Main UI (React client component)
-│   ├── globals.css              — Cyber/terminal theme
-│   ├── not-found.js             — Custom 404 page
-│   ├── error.js                 — Client error boundary
-│   └── global-error.js          — Root error boundary
-├── links-categorized.json       — 1107 links, 73 domains, 28 categories
-├── .env                         — OpenRouter API keys (gitignored)
-├── next.config.mjs              — Next.js config
+│   ├── api/generate/route.js     — OpenRouter proxy (server-side keys)
+│   ├── api/saved/route.js        — Supabase CRUD proxy
+│   ├── layout.js                 — Root layout & metadata
+│   ├── page.js                   — Main UI (React client component)
+│   ├── globals.css               — Cyber/terminal theme
+│   ├── not-found.js              — Custom 404 page
+│   ├── error.js                  — Client error boundary
+│   └── global-error.js           — Root error boundary
+├── lib/
+│   └── supabase.js               — Supabase server client
+├── links-categorized.json        — 1107 links, 73 domains, 28 categories
+├── .env                          — API keys & secrets (gitignored)
+├── .env.example                  — Environment variable template
+├── next.config.mjs               — Next.js config
 └── package.json
 ```
 
@@ -89,5 +117,5 @@ _data/
 
 - **Next.js 14** (App Router)
 - **React 18**
+- **Supabase** — PostgreSQL backend with auto-sync across devices
 - **OpenRouter** — GPT-4o-mini for AI enrichment
-- **localStorage** — client-side persistence
