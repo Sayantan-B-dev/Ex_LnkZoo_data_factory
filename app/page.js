@@ -32,6 +32,7 @@ function Svg({ name, size = 14 }) {
     analytics: '<path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/>',
     clock: '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
     next: '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
+    upload: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>',
   };
   return <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="2" style={{ verticalAlign: 'middle' }} dangerouslySetInnerHTML={{ __html: paths[name] || '' }} />;
 }
@@ -49,6 +50,8 @@ export default function Home() {
   const [pasteContent, setPasteContent] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [confirm, setConfirm] = useState(null);
+  const [importText, setImportText] = useState('');
+  const [importResult, setImportResult] = useState(null);
   const toastTimer = useRef(null);
 
   useEffect(() => {
@@ -89,6 +92,38 @@ export default function Home() {
       },
     });
   }, [savedMeta, showToast]);
+
+  const handleImport = useCallback(() => {
+    const text = importText.trim();
+    if (!text) { showToast('Paste WhatsApp chat text first', 'error'); return; }
+    const urlRegex = /https?:\/\/[^\s<>"']+/g;
+    const raw = text.match(urlRegex) || [];
+    const seen = new Set();
+    const urls = [];
+    for (const u of raw) {
+      const cleaned = u.replace(/[.,;:!?)]+$/, '').split('?')[0];
+      if (cleaned.length > 10 && !seen.has(cleaned)) { seen.add(cleaned); urls.push(cleaned); }
+    }
+    if (!urls.length) { showToast('No URLs found in text', 'error'); return; }
+    const categories = {};
+    for (const url of urls) {
+      try {
+        const domain = new URL(url).hostname.replace(/^www\./, '');
+        if (!categories[domain]) categories[domain] = { links: [] };
+        categories[domain].links.push(url);
+      } catch { /* skip invalid */ }
+    }
+    const catKeys = Object.keys(categories).sort((a, b) => categories[b].links.length - categories[a].links.length);
+    const total = Object.values(categories).reduce((s, c) => s + c.links.length, 0);
+    setImportResult({
+      total, domains: catKeys.length, categories,
+      json: JSON.stringify({
+        meta: { total_links: total, generated_at: new Date().toISOString(), unique_domains: catKeys.length, source_file: 'imported chat' },
+        categories,
+      }, null, 2),
+    });
+    showToast(`Parsed ${total} links across ${catKeys.length} domains`, 'success');
+  }, [importText, showToast]);
 
   const saveToDb = useCallback(async (url, data) => {
     try {
@@ -377,12 +412,12 @@ export default function Home() {
                 const idx = currentLinks.findIndex(l => l.url === currentUrl);
                 const goTo = (url) => { setCurrentUrl(url); setGenResult(savedMeta[url] || null); setPasteContent(''); };
                 return (
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 20, paddingTop: 16, borderTop: '1px solid var(--border)' }}>
-                    <button className="back-btn" disabled={idx <= 0} onClick={() => goTo(currentLinks[idx - 1].url)}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginTop: 20, paddingTop: 16, borderTop: '1px solid var(--border)' }}>
+                    <button className="nav-btn" disabled={idx <= 0} onClick={() => goTo(currentLinks[idx - 1].url)}>
                       <Svg name="back" size={12} /> Prev
                     </button>
-                    <span style={{ fontSize: 10, color: 'var(--muted)' }}>{idx + 1} / {currentLinks.length}</span>
-                    <button className="back-btn" disabled={idx < 0 || idx >= currentLinks.length - 1} onClick={() => goTo(currentLinks[idx + 1].url)}>
+                    <span className="nav-counter">{idx + 1} / {currentLinks.length}</span>
+                    <button className="nav-btn" disabled={idx < 0 || idx >= currentLinks.length - 1} onClick={() => goTo(currentLinks[idx + 1].url)}>
                       Next <Svg name="next" size={12} />
                     </button>
                   </div>
@@ -406,6 +441,26 @@ export default function Home() {
             <button onClick={() => { clearAllSaved(); setShowSettings(false); }} style={{ padding: '8px 16px', background: 'rgba(255,45,85,.1)', border: '1px solid var(--red)', color: 'var(--red)', fontFamily: 'var(--font)', fontSize: '11px', borderRadius: '6px', cursor: 'pointer' }}>
               <Svg name="close" size={12} /> Clear All Saved
             </button>
+          </div>
+          <div className="section">
+            <h3 style={{ fontSize: 12, color: 'var(--text)', marginBottom: 8 }}><Svg name="upload" size={12} /> Import WhatsApp Chat</h3>
+            <textarea value={importText} onChange={e => { setImportText(e.target.value); setImportResult(null); }}
+              placeholder="Paste WhatsApp chat export text here..." rows={4}
+              style={{ width: '100%', padding: 8, background: 'var(--bg)', border: '1px solid var(--border)', color: 'var(--text)', fontFamily: 'var(--font)', fontSize: 11, borderRadius: 6, resize: 'vertical', outline: 'none', lineHeight: 1.5 }}></textarea>
+            <div style={{ marginTop: 8, display: 'flex', gap: 6, alignItems: 'center' }}>
+              <button onClick={handleImport} style={{ padding: '6px 14px', background: 'var(--bg3)', border: '1px solid var(--border)', color: 'var(--text)', fontFamily: 'var(--font)', fontSize: 11, borderRadius: 6, cursor: 'pointer' }}>
+                <Svg name="upload" size={11} /> Parse URLs
+              </button>
+              {importResult && (
+                <span style={{ fontSize: 10, color: 'var(--muted)' }}>
+                  {importResult.total} links, {importResult.domains} domains
+                  <button onClick={() => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([importResult.json], {type:'application/json'})); a.download = 'links-categorized.json'; a.click(); URL.revokeObjectURL(a.href); }}
+                    style={{ marginLeft: 6, padding: '3px 8px', background: 'var(--green)', border: 'none', color: 'var(--bg)', fontFamily: 'var(--font)', fontSize: 10, borderRadius: 4, cursor: 'pointer' }}>
+                    Download JSON
+                  </button>
+                </span>
+              )}
+            </div>
           </div>
           <div className="modal-actions">
             <button className="secondary" onClick={() => setShowSettings(false)}>Close</button>

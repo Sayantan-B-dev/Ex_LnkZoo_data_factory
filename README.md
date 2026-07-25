@@ -88,7 +88,17 @@ npm start
 5. Click **Generate** — AI returns topic, description, and tags
 6. Result auto-saves to Supabase and syncs across all devices instantly
 7. Click **Analytics** in sidebar or the saved count badge for stats
-8. Use **Settings** (gear icon) to export data
+8. Use **Settings** (gear icon) — export saved data, import WhatsApp chat to generate links JSON
+
+### WhatsApp Import
+
+Paste a WhatsApp chat export into **Settings → Import WhatsApp Chat**, click **Parse URLs**, then download the generated `links-categorized.json`. You can also use the CLI:
+
+```bash
+node scripts/parse-chat.mjs "WhatsApp Chat with AllLinksMain.txt"
+```
+
+Both methods extract all URLs, group by domain, and output the same JSON structure.
 
 ### Saved data
 
@@ -112,6 +122,8 @@ _data/
 │   └── global-error.js           — Root error boundary
 ├── lib/
 │   └── supabase.js               — Supabase server client
+├── scripts/
+│   └── parse-chat.mjs            — CLI tool to parse WhatsApp export → links JSON
 ├── links-categorized.json        — 1107 links, 73 domains, 28 categories
 ├── .env                          — API keys & secrets (gitignored)
 ├── .env.example                  — Environment variable template
