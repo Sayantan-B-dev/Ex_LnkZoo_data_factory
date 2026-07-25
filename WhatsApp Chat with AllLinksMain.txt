@@ -1,0 +1,1525 @@
+01/01/25, 23:21 - Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them. *Learn more*
+01/01/25, 23:21 - You created this group
+01/01/25, 23:21 - Sayantan Bharati: <Media omitted>
+01/01/25, 23:21 - Sayantan Bharati: You deleted this message
+01/01/25, 23:21 - Sayantan Bharati: <Media omitted>
+01/01/25, 23:38 - Sayantan: Here's an extensive list of project ideas and names that you can build using JavaScript, along with some popular frameworks and libraries:
+
+Web Applications
+1. _Todo List App_ (Vanilla JavaScript, HTML, CSS)
+2. _Weather App_ (React, OpenWeatherMap API)
+3. _E-commerce Website_ (Angular, Node.js, Express)
+4. _Blog Platform_ (Vue.js, WordPress REST API)
+5. _Social Media Platform_ (React, Node.js, GraphQL)
+6. _Online Forum_ (Angular, Node.js, MongoDB)
+7. _Project Management Tool_ (Vue.js, Node.js, Firebase)
+8. _Personal Portfolio_ (Vanilla JavaScript, HTML, CSS)
+9. _Web Scraper_ (Node.js, Cheerio, Puppeteer)
+10. _RESTful API_ (Node.js, Express, MongoDB)
+
+Mobile Applications
+1. _Mobile Game_ (React Native, Expo)
+2. _Mobile App for E-commerce_ (Angular, Ionic)
+3. _Mobile Social Media App_ (React Native, Firebase)
+4. _Mobile Productivity App_ (Vue.js, NativeScript)
+5. _Mobile Weather App_ (React Native, OpenWeatherMap API)
+
+Desktop Applications
+1. _Desktop Game_ (Electron, Phaser)
+2. _Desktop Productivity App_ (Electron, Vue.js)
+3. _Desktop Media Player_ (Electron, React)
+4. _Desktop Chat App_ (Electron, Node.js, (link unavailable))
+5. _Desktop Screen Recorder_ (Electron, Node.js, FFmpeg)
+
+Machine Learning and AI
+1. _Image Classification Model_ (TensorFlow.js, Node.js)
+2. _Natural Language Processing Bot_ (Node.js, NLTK, spaCy)
+3. _Speech Recognition System_ (Node.js, Web Speech API)
+4. _Predictive Modeling_ (Node.js, TensorFlow.js, scikit-learn)
+5. _Computer Vision_ (Node.js, OpenCV.js)
+
+IoT and Robotics
+1. _Home Automation System_ (Node.js, Raspberry Pi, IoT)
+2. _Robotics Control System_ (Node.js, Arduino, IoT)
+3. _Smart Energy Monitoring_ (Node.js, IoT, Energy Monitoring)
+4. _Environmental Monitoring_ (Node.js, IoT, Environmental Sensors)
+5. _Industrial Automation_ (Node.js, IoT, Industrial Automation)
+
+Games
+1. _2D Platformer_ (Phaser, JavaScript)
+2. _3D First-Person Shooter_ (Three.js, JavaScript)
+3. _Puzzle Game_ (React, JavaScript)
+4. _Strategy Game_ (Angular, JavaScript)
+5. _Multiplayer Game_ ((link unavailable), Node.js, JavaScript)
+
+Other Projects
+1. _Web Extension_ (Vanilla JavaScript, HTML, CSS)
+2. _Desktop Widget_ (Electron, Vue.js)
+3. _Mobile Widget_ (React Native, Expo)
+4. _Chatbot_ (Node.js, Dialogflow)
+5. _Virtual Assistant_ (Node.js, Alexa SDK)
+Here are 10 more project ideas for each category:
+
+Web Applications
+1. _E-learning Platform_ (React, Node.js, MongoDB)
+2. _Job Board Website_ (Angular, Node.js, Express)
+3. _Real Estate Website_ (Vue.js, Node.js, Firebase)
+4. _Social Media Analytics Tool_ (React, Node.js, GraphQL)
+5. _Web-Based Email Client_ (Angular, Node.js, IMAP)
+6. _Online Food Ordering System_ (Vue.js, Node.js, Stripe)
+7. _Project Management Tool_ (React, Node.js, Firebase)
+8. _Web-Based CRM_ (Angular, Node.js, MongoDB)
+9. _E-commerce Website with AR_ (Vue.js, Node.js, AR.js)
+10. _Web-Based IDE_ (React, Node.js, Monaco Editor)
+
+Mobile Applications
+1. _Mobile Wallet App_ (React Native, Expo, Stripe)
+2. _Social Media App for Pets_ (Angular, Ionic, Firebase)
+3. _Mobile Game with AR_ (React Native, AR.js, Expo)
+4. _Mobile App for Mental Health_ (Vue.js, NativeScript, Firebase)
+5. _Mobile E-commerce App_ (React Native, Expo, Shopify)
+6. _Mobile Weather App with Wearable Integration_ (Angular, Ionic, Wearable API)
+7. _Mobile Productivity App with AI_ (Vue.js, NativeScript, TensorFlow.js)
+8. _Mobile App for Tracking Expenses_ (React Native, Expo, Firebase)
+9. _Mobile Social Media App for Events_ (Angular, Ionic, Eventbrite API)
+10. _Mobile Game with Multiplayer_ (React Native, Expo, (link unavailable))
+
+Desktop Applications
+1. _Desktop Email Client with Encryption_ (Electron, Vue.js, PGP)
+2. _Desktop App for Video Editing_ (Electron, React, FFmpeg)
+3. _Desktop Game with Multiplayer_ (Electron, Phaser, (link unavailable))
+4. _Desktop App for Project Management_ (Electron, Angular, Trello API)
+5. _Desktop E-commerce App_ (Electron, Vue.js, Shopify API)
+6. _Desktop Social Media App_ (Electron, React, Facebook API)
+7. _Desktop App for Code Snippets_ (Electron, Vue.js, CodeMirror)
+8. _Desktop Game with VR Support_ (Electron, A-Frame, VR API)
+9. _Desktop App for Mind Mapping_ (Electron, React, MindMap API)
+10. _Desktop App for Chatbot Development_ (Electron, Vue.js, Dialogflow API)
+
+Machine Learning and AI
+1. _Image Classification Model with TensorFlow.js_ (Node.js, TensorFlow.js)
+2. _Natural Language Processing Bot with spaCy_ (Node.js, spaCy)
+3. _Speech Recognition System with Web Speech API_ (Node.js, Web Speech API)
+4. _Predictive Modeling with scikit-learn_ (Node.js, scikit-learn)
+5. _Computer Vision with OpenCV.js_ (Node.js, OpenCV.js)
+6. _Chatbot with Dialogflow and Node.js_ (Node.js, Dialogflow)
+7. _Sentiment Analysis with NLTK and Node.js_ (Node.js, NLTK)
+8. _Recommendation System with TensorFlow.js and Node.js_ (Node.js, TensorFlow.js)
+9. _Time Series Forecasting with ARIMA and Node.js_ (Node.js, ARIMA)
+10. _Clustering Algorithm with K-Means and Node.js_ (Node.js, K-Means)
+
+IoT and Robotics
+1. _Home Automation System with Raspberry Pi and Node.js_ (Node.js, Raspberry Pi)
+2. _Robotics Control System with Arduino and Node.js_ (Node.js, Arduino)
+3. _Smart Energy Monitoring System with IoT and Node.js_ (Node.js, IoT)
+4. _Environmental Monitoring System with IoT and Node.js_ (Node.js, IoT)
+5. _Industrial Automation System with IoT and Node.js_ (Node.js, IoT)
+6. _Smart Agriculture System with IoT and Node.js_ (Node.js, IoT)
+7. _Smart Transportation System with IoT and Node.js_ (Node.js, IoT)
+8. _Smart City System with IoT and Node.js_ (Node.js, IoT)
+9. _Robotics Arm Control System with IoT and Node.js_ (Node.js, IoT)
+10. _Autonomous Vehicle System with IoT and Node.js_ (Node.js, IoT)
+
+Games
+1. _2D Platformer Game with Phaser and JavaScript_ (Phaser, JavaScript)
+2. _3D First-Person Shooter Game with Three.js and JavaScript_ (Three.js, JavaScript)
+3. _Puzzle Game with React and JavaScript_ (React, JavaScript)
+4. _Strategy Game with Angular and JavaScript_ (Angular, JavaScript)
+5. _Multiplayer Online Battle Arena Game with Node.js and JavaScript_ (Node.js, JavaScript)
+2. _Virtual Reality Game with A-Frame and JavaScript_ (A-Frame, JavaScript)
+3. _Augmented Reality Game with AR.js and JavaScript_ (AR.js, JavaScript)
+4. _2D Racing Game with Pixi.js and JavaScript_ (Pixi.js, JavaScript)
+5. _Text-Based Adventure Game with Node.js and JavaScript_ (Node.js, JavaScript)
+
+Machine Learning and AI
+1. _Image Generation Model with TensorFlow.js and Node.js_ (TensorFlow.js, Node.js)
+2. _Natural Language Processing Chatbot with Dialogflow and Node.js_ (Dialogflow, Node.js)
+3. _Speech Recognition System with Web Speech API and Node.js_ (Web Speech API, Node.js)
+4. _Predictive Modeling with scikit-learn and Node.js_ (scikit-learn, Node.js)
+5. _Computer Vision with OpenCV.js and Node.js_ (OpenCV.js, Node.js)
+
+IoT and Robotics
+1. _Smart Home Automation System with Raspberry Pi and Node.js_ (Raspberry Pi, Node.js)
+2. _Robotics Arm Control System with Arduino and Node.js_ (Arduino, Node.js)
+3. _Environmental Monitoring System with IoT and Node.js_ (IoT, Node.js)
+4. _Industrial Automation System with IoT and Node.js_ (IoT, Node.js)
+5. _Autonomous Vehicle System with IoT and Node.js_ (IoT, Node.js)
+
+Web Applications
+1. _E-commerce Website with React and Node.js_ (React, Node.js)
+2. _Social Media Platform with Angular and Node.js_ (Angular, Node.js)
+3. _Project Management Tool with Vue.js and Node.js_ (Vue.js, Node.js)
+4. _Web-Based Email Client with React and Node.js_ (React, Node.js)
+5. _Online Learning Platform with Angular and Node.js_ (Angular, Node.js)
+
+Mobile Applications
+1. _Mobile Game with React Native and Expo_ (React Native, Expo)
+2. _Mobile App for E-commerce with Angular and Ionic_ (Angular, Ionic)
+3. _Mobile Social Media App with React Native and Firebase_ (React Native, Firebase)
+4. _Mobile Productivity App with Vue.js and NativeScript_ (Vue.js, NativeScript)
+5. _Mobile Weather App with React Native and OpenWeatherMap API_ (React Native, OpenWeatherMap API)
+
+Desktop Applications
+1. _Desktop Email Client with Electron and Vue.js_ (Electron, Vue.js)
+2. _Desktop App for Video Editing with Electron and React_ (Electron, React)
+3. _Desktop Game with Electron and Phaser_ (Electron, Phaser)
+4. _Desktop App for Project Management with Electron and Angular_ (Electron, Angular)
+5. _Desktop E-commerce App with Electron and Vue.js_ (Electron, Vue.js)
+
+I hope these project ideas help you get started with your JavaScript development journey!
+03/01/25, 04:18 - Sayantan Bharati: https://docs.google.com/document/d/1n0_hpRY-KFk6ZNeLjxqQFuSWDmvir_ULClcmLGdVOM8/mobilebasic?fbclid=PAY2xjawHj9wRleHRuA2FlbQIxMAABprqOLSHVde7uBtmYJLciuAryBXL8cY_FnjhN6dAomRocbj9bIvjVtZLGug_aem_ILKLwdDBNECzQiMpws7TyA
+03/01/25, 04:18 - Sayantan Bharati: https://youtube.com/@specsycoder?si=ubyeh9tRGC1LNniA
+03/01/25, 13:49 - Sayantan Bharati: https://developers.google.com/speed/libraries#jquery
+03/01/25, 14:04 - Sayantan Bharati: https://www.dropbox.com/scl/fi/xg225xl41a36yw62rbdfe/Jquery_Cheat_Sheet.jpg?rlkey=xsjxl51emxfupowi1rgkrta6r&e=1
+03/01/25, 14:05 - Sayantan Bharati: https://htmlcheatsheet.com/jquery/
+03/01/25, 14:07 - Sayantan Bharati: https://www.minifier.org/
+03/01/25, 14:54 - Sayantan Bharati: https://www.w3schools.com/jquery/jquery_ref_effects.asp
+04/01/25, 17:33 - Sayantan Bharati: https://www.learnenough.com/command-line-tutorial
+04/01/25, 20:14 - Sayantan Bharati: You deleted this message
+04/01/25, 20:20 - Sayantan Bharati: https://www.youtube.com/watch?v=zqN0bx5QoL4 check his description
+04/01/25, 20:48 - Sayantan Bharati: https://nodejs.org/docs/latest-v18.x/api/index.html
+04/01/25, 21:12 - Sayantan Bharati: https://www.npmjs.com/
+05/01/25, 12:11 - Sayantan Bharati: https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36
+05/01/25, 13:00 - Sayantan Bharati: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+05/01/25, 22:48 - Sayantan Bharati: https://learnersbucket.com/tutorials/es6/es6-intro/
+06/01/25, 05:34 - Sayantan Bharati: https://app.eraser.io/workspace/O5dN6UVcuyuQFltgunUi
+07/01/25, 04:46 - Sayantan Bharati: https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/lesson/1/introduction
+07/01/25, 04:49 - Sayantan Bharati: https://huggingface.co/learn/nlp-course/chapter1/2?fw=pt
+07/01/25, 15:08 - Sayantan Bharati: https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+07/01/25, 17:10 - Sayantan Bharati: https://www.instagram.com/reel/DEaPbB_OERY/?igsh=MWdxOXQ0ZTI5ZWdvdg==
+08/01/25, 02:13 - Sayantan Bharati: https://devdocs.io/express/
+08/01/25, 02:13 - Sayantan Bharati: https://expressjs.com/en/starter/examples.html
+09/01/25, 16:12 - Sayantan Bharati: https://github.com/Colt/TheWebDeveloperBootcampSolutions
+09/01/25, 17:02 - Sayantan Bharati: https://docs.google.com/spreadsheets/u/0/d/1hXserPuxVoWMG9Hs7y8wVdRCJTcj3xMBAEYUOXQ5Xag/htmlview
+09/01/25, 17:02 - Sayantan Bharati: https://docs.google.com/document/u/0/d/1eYZZFKfCTE5kJcmGIYybHaDdpqWgYwRZlwwUOmHz4Kg/mobilebasic
+09/01/25, 17:03 - Sayantan Bharati: https://earthshakira.github.io/a2oj-clientside/server/Ladders.html
+09/01/25, 19:48 - Sayantan Bharati: https://html.spec.whatwg.org/
+10/01/25, 16:02 - Sayantan Bharati: https://www.coltsteele.com/tutorials/mastering-css-grid/css-grid-basics/enabling-css-grid
+10/01/25, 20:56 - Sayantan Bharati: https://www.cssfontstack.com/
+10/01/25, 21:59 - Sayantan Bharati: https://specificity.keegan.st/
+11/01/25, 02:42 - Sayantan Bharati: https://easings.net/
+11/01/25, 18:19 - Sayantan Bharati: <Media omitted>
+11/01/25, 19:41 - Sayantan Bharati: <Media omitted>
+11/01/25, 19:41 - Sayantan Bharati: <Media omitted>
+12/01/25, 05:00 - Sayantan Bharati: https://www.youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_
+12/01/25, 05:01 - Sayantan Bharati: https://www.youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y
+12/01/25, 05:01 - Sayantan Bharati: https://www.youtube.com/playlist?list=PLqleLpAMfxGCbdaJ6SoExDfHrTfRDeWeG
+12/01/25, 05:02 - Sayantan Bharati: You deleted this message
+12/01/25, 05:03 - Sayantan Bharati: https://www.youtube.com/playlist?list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2
+12/01/25, 05:03 - Sayantan Bharati: https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p&si=lnWcPZtqJcdH3w1r
+13/01/25, 22:40 - Sayantan Bharati: https://www.linkedin.com/posts/parikh-jain-79568798_you-name-any-tech-skill-and-this-will-give-activity-7272837271848935425-6jsA?utm_source=share&utm_medium=member_android
+15/01/25, 06:45 - Sayantan Bharati: https://excalidraw.com/
+15/01/25, 19:26 - Sayantan Bharati: https://jsdev.space/inheritance-js?ref=dailydev
+16/01/25, 22:12 - Sayantan Bharati: https://x.com/swapnakpanda/status/1879574365542785115?t=9ci2VIQIo398Ses2HUTM-w&s=19
+18/01/25, 01:23 - Sayantan: https://x.com/swapnakpanda/status/1880307090985742553?t=WLtJrir-iB69jo_oG1CgwQ&s=08
+19/01/25, 18:05 - Sayantan Bharati: https://www.json.org/json-en.html
+19/01/25, 18:05 - Sayantan Bharati: https://jsonformatter.curiousconcept.com/
+19/01/25, 18:32 - Sayantan Bharati: https://www.tvmaze.com/api
+19/01/25, 20:27 - Sayantan Bharati: https://github.com/axios/axios#installing
+20/01/25, 02:28 - Sayantan Bharati: https://youtube.com/playlist?list=PLrL_PSQ6q062cD0vPMGYW_AIpNg6T0_Fq&si=DwfLK10CrBaAj1cy
+21/01/25, 12:50 - Sayantan Bharati: https://x.com/ChShersh/status/1881074346220978642?t=RuDwZxsbLHcCK8PAxMwh3w&s=19
+21/01/25, 14:29 - Sayantan Bharati: https://www.youtube.com/watch?v=iGutIN5t9Mo
+24/01/25, 14:47 - Sayantan Bharati: https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+26/01/25, 17:34 - Sayantan Bharati: https://mongoosejs.com/docs/api/model.html
+28/01/25, 16:02 - Sayantan Bharati: https://www.threads.net/@janm_ux/post/DFSt7V4vKZN?xmt=AQGze2Kj8Biw5W5xEOtVC94C_cTlcTbct6hunqXwM1HClw
+29/01/25, 13:37 - Sayantan Bharati: https://expressjs.com/en/guide/writing-middleware.html
+30/01/25, 02:03 - Sayantan Bharati: https://x.com/swapnakpanda/status/1884219625245925547?t=tMZBzBHSPxEgH0zFzksOiA&s=19
+01/02/25, 02:01 - Sayantan Bharati: https://www.kaggle.com/learn
+01/02/25, 02:02 - Sayantan Bharati: https://leetcode.com/problem-list/xi4ci4ig/
+01/02/25, 02:02 - Sayantan Bharati: https://neetcode.io/roadmap
+01/02/25, 20:26 - Sayantan Bharati: https://regexr.com/
+02/02/25, 20:47 - Sayantan Bharati: npx kill-port 3000
+02/02/25, 22:42 - Sayantan Bharati: https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2
+03/02/25, 16:04 - Sayantan Bharati: https://www.scaler.com/topics/courses/
+03/02/25, 22:30 - Sayantan Bharati: https://visualgo.net/en
+05/02/25, 03:15 - Sayantan Bharati: https://m.youtube.com/@marcelodesignx2324/videos?fbclid=PAY2xjawIPabBleHRuA2FlbQIxMAABphhoc0CQArMtYSOoDGbFYt7nTz4YYx7q7_NO-EOrA8vUFS_707ik6YXsaw_aem_cCc1bk2c-ghGnznvIuFyaw
+05/02/25, 17:38 - Sayantan Bharati: https://www.codeguage.com/courses/
+10/02/25, 23:45 - Sayantan Bharati: https://www.instagram.com/reel/DF2xGK-zFZl/?igsh=a2R5eDBlajc0ZmZy
+10/02/25, 23:53 - Sayantan Bharati: https://hw.glich.co/
+11/02/25, 07:08 - Sayantan Bharati: https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p&si=GouPz7QripEWP1HQ
+https://youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y&si=uWNif4mH6Uw8hJN2
+https://youtube.com/playlist?list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2&si=zW5KZbX2NyUARRNt
+https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&si=Lth9-C-F-7yzQE0D
+https://youtube.com/playlist?list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5&si=M1rrj30RsZ7Y9ggt
+12/02/25, 17:01 - Sayantan Bharati: https://www.linkedin.com/posts/manish-kumar-shah_100-sql-commands-activity-7295394032757673985-Cu6Z?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=copy_link
+14/02/25, 17:09 - Sayantan Bharati: https://github.com/papers-we-love/papers-we-love/tree/main
+15/02/25, 09:00 - Sayantan Bharati: https://www.linkedin.com/posts/manish-kumar-shah_sql-tutorial-ugcPost-7296101685339316225-b8YE?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+15/02/25, 11:10 - Sayantan Bharati: https://www.linkedin.com/feed/update/urn:li:activity:7296396782874300416?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+20/02/25, 22:39 - Sayantan Bharati: <Media omitted>
+21/02/25, 06:17 - Sayantan Bharati: https://x.com/swapnakpanda/status/1892191661859430527?t=wwSwogx3KhFCaAA9Ag1LDQ&s=19
+23/02/25, 17:46 - Sayantan Bharati: https://courses.wesbos.com/account
+27/02/25, 08:20 - Sayantan Bharati: https://x.com/swapnakpanda/status/1890389139914203164?t=s03ayQrksgwPEAMY6_H-AA&s=19
+01/03/25, 03:13 - Sayantan Bharati: <Media omitted>
+01/03/25, 04:31 - Sayantan Bharati: https://www.sanfoundry.com/#google_vignette
+02/03/25, 18:21 - Sayantan Bharati: You deleted this message
+02/03/25, 18:22 - Sayantan Bharati: You deleted this message
+02/03/25, 18:24 - Sayantan Bharati: https://nptel.ac.in/courses/106105191 java
+02/03/25, 18:25 - Sayantan Bharati: https://nptel.ac.in/courses/106105225 more java
+02/03/25, 18:33 - Sayantan Bharati: You deleted this message
+02/03/25, 18:33 - Sayantan Bharati: You deleted this message
+02/03/25, 18:33 - Sayantan Bharati: https://nptel.ac.in/courses/106108101 os
+02/03/25, 18:33 - Sayantan Bharati: https://nptel.ac.in/courses/106105080 cn
+04/03/25, 10:46 - Sayantan Bharati: https://x.com/swapnakpanda/status/1896193546044022822?t=-pEyfgSXclt8e5xbzctt2A&s=09
+05/03/25, 08:42 - Sayantan Bharati: https://www.cse.iitk.ac.in/users/dheeraj/cs425/
+05/03/25, 10:56 - Sayantan Bharati: You deleted this message
+05/03/25, 14:25 - Sayantan Bharati: https://x.com/swapnakpanda/status/1896564543750389931?t=N34-c34xo4XOaZKsH9sd_g&s=09
+06/03/25, 12:14 - Sayantan Bharati: https://www.linkedin.com/posts/yash-gulhane-280513223_javacore-ugcPost-7301481146456948736-cyI1?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=share_via
+08/03/25, 01:51 - Sayantan Bharati: https://x.com/e_opore/status/1897711089611411923?t=TDvED3C7aAdjqsbdZ4f8Aw&s=09
+10/03/25, 20:08 - Sayantan Bharati: https://x.com/csaba_kissi/status/1898993740074623134?t=3JUxPUp2TL03UKz2Sa359g&s=09
+12/03/25, 07:57 - Sayantan Bharati: my-website/
+├── backend/
+│   ├── config/
+│   │   ├── db.js                  // Database configuration
+│   │   ├── env.js                 // Environment variables setup
+│   ├── controllers/
+│   │   ├── authController.js       // Controller for authentication
+│   │   ├── topicController.js      // Controller for handling topics (HTML, CSS, etc.)
+│   │   ├── userController.js       // Controller for user profile & progress
+│   ├── models/
+│   │   ├── User.js                 // User model (Auth, Progress)
+│   │   ├── Topic.js                // Topic model (Web Dev, DSA, etc.)
+│   │   ├── Bookmark.js             // Model for user bookmarks
+│   ├── routes/
+│   │   ├── api/
+│   │   │   ├── webdevRoutes.js     // Routes for Web Development topics
+│   │   │   ├── dsaRoutes.js        // Routes for DSA topics
+│   │   │   ├── cpRoutes.js         // Routes for Competitive Programming
+│   │   │   ├── userRoutes.js       // Routes for user-related actions
+│   ├── middleware/
+│   │   ├── authMiddleware.js       // Authentication middleware
+│   │   ├── errorMiddleware.js      // Global error handling
+│   ├── utils/
+│   │   ├── errorHandler.js         // Utility for error handling
+│   │   ├── responseHandler.js      // Standard API response handler
+│   ├── server.js                   // Main server file
+│   ├── package.json                // Backend dependencies
+│   ├── .env                        // Environment variables
+│   ├── .gitignore                   // Ignore node_modules, env files
+│   └── README.md                    // Backend documentation
+├── frontend/
+│   ├── public/
+│   │   ├── index.html              // HTML template
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── styles/             // Folder for global styles
+│   │   │   ├── images/             // Folder for images
+│   │   ├── components/
+│   │   │   ├── Layout/
+│   │   │   │   ├── Navbar.js       // Navigation bar component
+│   │   │   │   ├── Sidebar.js      // Sidebar component
+│   │   │   │   ├── Footer.js       // Footer component
+│   │   │   ├── UI/
+│   │   │   │   ├── SearchBar.js    // Search bar component
+│   │   │   │   ├── Card.js         // Card component for displaying topics
+│   │   ├── pages/
+│   │   │   ├── Home.js             // Home page
+│   │   │   ├── WebDevelopment/
+│   │   │   │   ├── WebDevelopment.js  // Main Web Dev page
+│   │   │   │   ├── HtmlBasics.js      // Component for HTML basics
+│   │   │   │   ├── CssFundamentals.js // Component for CSS fundamentals
+│   │   │   │   ├── JsFundamentals.js  // Component for JavaScript
+│   │   │   ├── DSA/
+│   │   │   │   ├── DSA.js           // Main DSA page
+│   │   │   │   ├── Sorting.js       // Sorting algorithms page
+│   │   │   │   ├── Graphs.js        // Graph algorithms page
+│   │   │   │   ├── DP.js            // Dynamic Programming page
+│   │   │   ├── Competitive/
+│   │   │   │   ├── Competitive.js   // Main CP page
+│   │   │   │   ├── Codeforces.js    // Codeforces solutions
+│   │   │   │   ├── LeetCode.js      // LeetCode solutions
+│   │   │   ├── User/
+│   │   │   │   ├── Profile.js       // User profile page
+│   │   │   │   ├── Bookmarks.js     // User bookmarked topics
+│   │   │   │   ├── Settings.js      // User settings page
+│   │   ├── services/
+│   │   │   ├── api.js               // API service for making HTTP requests
+│   │   │   ├── authService.js        // Handles authentication requests
+│   │   ├── App.js                    // Main app component
+│   │   ├── index.js                  // Entry point of the app
+│   ├── package.json                  // Frontend dependencies
+│   ├── .env                          // Environment variables
+│   ├── .gitignore                     // Ignore unnecessary files
+│   └── README.md                      // Frontend documentation
+└── README.md                           // Project documentation
+
+
+---
+
+🔥 What’s Improved?
+
+✅ More Organized Backend
+
+routes/api/ → Clear separation of API routes
+
+controllers/ → Each feature has its own controller
+
+models/ → Added models for User and Bookmarks
+
+
+✅ Frontend is More Modular
+
+components/Layout/ → All reusable layout components (Navbar, Sidebar)
+
+components/UI/ → Reusable UI elements like Card, SearchBar
+
+pages/WebDevelopment/ → Each Web Dev topic has its own page
+
+pages/DSA/ → Sorting, Graphs, DP, etc. have separate components
+
+pages/User/ → Profile, Bookmarks, and Settings are separate
+
+
+✅ Scalability & Future-Proofing
+
+If you expand the project (e.g., adding a Live Code Editor, Discussion Forum, Leaderboard), the structure supports it easily
+
+
+
+---
+
+📢 Next Steps:
+
+1️⃣ Set up the repository & folder structure
+2️⃣ Build a simple Express API with MongoDB
+3️⃣ Design the UI in React using Tailwind
+4️⃣ Connect the frontend with the backend (REST API calls)
+5️⃣ Implement authentication & user features
+12/03/25, 07:59 - Sayantan Bharati: my-website/  
+├── backend/  
+│   ├── config/  
+│   │   ├── db.js  
+│   │   ├── env.js  
+│   ├── controllers/  
+│   │   ├── authController.js  
+│   │   ├── topicController.js  
+│   │   ├── userController.js  
+│   ├── models/  
+│   │   ├── User.js  
+│   │   ├── Topic.js  
+│   │   ├── Bookmark.js  
+│   ├── routes/  
+│   │   ├── api/  
+│   │   │   ├── webdevRoutes.js  
+│   │   │   ├── dsaRoutes.js  
+│   │   │   ├── cpRoutes.js  
+│   │   │   ├── userRoutes.js  
+│   ├── middleware/  
+│   │   ├── authMiddleware.js  
+│   │   ├── errorMiddleware.js  
+│   ├── utils/  
+│   │   ├── errorHandler.js  
+│   │   ├── responseHandler.js  
+│   ├── server.js  
+│   ├── package.json  
+│   ├── .env  
+│   ├── .gitignore  
+│   └── README.md  
+├── frontend/  
+│   ├── public/  
+│   │   ├── index.html  
+│   ├── src/  
+│   │   ├── assets/  
+│   │   │   ├── styles/  
+│   │   │   ├── images/  
+│   │   ├── components/  
+│   │   │   ├── Layout/  
+│   │   │   │   ├── Navbar.js  
+│   │   │   │   ├── Sidebar.js  
+│   │   │   │   ├── Footer.js  
+│   │   │   ├── UI/  
+│   │   │   │   ├── SearchBar.js  
+│   │   │   │   ├── Card.js  
+│   │   ├── pages/  
+│   │   │   ├── Home.js  
+│   │   │   ├── WebDevelopment/  
+│   │   │   │   ├── WebDevelopment.js  
+│   │   │   │   ├── HtmlBasics.js  
+│   │   │   │   ├── CssFundamentals.js  
+│   │   │   │   ├── JsFundamentals.js  
+│   │   │   ├── DSA/  
+│   │   │   │   ├── DSA.js  
+│   │   │   │   ├── Sorting.js  
+│   │   │   │   ├── Graphs.js  
+│   │   │   │   ├── DP.js  
+│   │   │   ├── Competitive/  
+│   │   │   │   ├── Competitive.js  
+│   │   │   │   ├── Codeforces.js  
+│   │   │   │   ├── LeetCode.js  
+│   │   │   ├── User/  
+│   │   │   │   ├── Profile.js  
+│   │   │   │   ├── Bookmarks.js  
+│   │   │   │   ├── Settings.js  
+│   │   ├── services/  
+│   │   │   ├── api.js  
+│   │   │   ├── authService.js  
+│   │   ├── App.js  
+│   │   ├── index.js  
+│   ├── package.json  
+│   ├── .env  
+│   ├── .gitignore  
+│   └── README.md  
+└── README.md
+13/03/25, 19:24 - Sayantan Bharati: https://www.threads.net/@luokai/post/DHISIVOoMWD?xmt=AQGzK4xInTqG3KlXrgIsM7BT_LutcF3CTXtXjal2uE5G2w
+13/03/25, 19:28 - Sayantan Bharati: https://joi.dev/api/?v=17.13.3
+14/03/25, 19:42 - Sayantan Bharati: https://www.linkedin.com/posts/therjrajesh_sql-notes-for-jobseekers-ugcPost-7305990631397453826-KV-r?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+15/03/25, 02:52 - Sayantan Bharati: https://x.com/hamptonism/status/1900581824977358958?t=vXLRvhufdVml8Dvwlgkr3A&s=09
+15/03/25, 05:21 - Sayantan Bharati: https://youtube.com/shorts/6cusDrx9vAc?si=tn3YzB9V_3WbE6q3
+15/03/25, 05:21 - Sayantan Bharati: https://youtube.com/shorts/S-IDq8wk4vk?si=UrlVpS2t4qlrA7cc
+16/03/25, 00:39 - Sayantan Bharati: https://www.linkedin.com/posts/ashishps1_12-must-know-data-structures-for-coding-interviews-activity-7302556504841232384-XA5Y?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+16/03/25, 00:41 - Sayantan Bharati: https://youtube.com/shorts/JD2yxv_yBsM?si=gRM6S3Qpdk_vOuzz
+16/03/25, 03:42 - Sayantan Bharati: https://youtube.com/shorts/b64AudsCOQg?si=XK1kM5_WA88PYHTs
+16/03/25, 04:01 - Sayantan Bharati: https://youtube.com/shorts/TuQgRKJHneM?si=yAHtSaU2rIQjgD5v
+18/03/25, 02:45 - Sayantan Bharati: https://www.linkedin.com/posts/princeku954_reactjs-handwritten-notes-activity-7306185755125551104-oJYg?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+18/03/25, 06:13 - Sayantan Bharati: https://youtube.com/shorts/phOdY4b1eSo?si=gtEtlVk1BXnOvfZG
+19/03/25, 00:06 - Sayantan Bharati: https://www.linkedin.com/posts/mohammadfaisalkhan_100-sql-commands-ugcPost-7274244011643531264-93Fr?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+19/03/25, 00:07 - Sayantan Bharati: https://www.linkedin.com/posts/ashishps1_7-cache-eviction-strategies-you-should-know-activity-7307621269728899072-_a2F?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+19/03/25, 00:09 - Sayantan Bharati: https://www.linkedin.com/posts/shubhamkamble89_what-is-expressjs-ugcPost-7307663217420394497-w-vi?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+19/03/25, 00:12 - Sayantan Bharati: https://www.linkedin.com/posts/muhammad-rafaqat-ali_javscript-regex-ugcPost-7307649085052772353-FmFT?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+19/03/25, 16:38 - Sayantan Bharati: https://www.linkedin.com/posts/adithyan-eranhikkal-1a9315310_javascript-ugcPost-7307654164749213696-kw8n?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+20/03/25, 02:55 - Sayantan Bharati: https://www.freeformatter.com/hmac-generator.html#before-output
+20/03/25, 17:00 - Sayantan Bharati: https://www.linkedin.com/posts/manish-kumar-shah_140-basic-python-programs-activity-7308313853136637952-rYn8?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+21/03/25, 06:18 - Sayantan Bharati: https://www.instagram.com/reel/DHYvl_xJv06/?igsh=MWkyeTBvbjQ1em45ag==
+21/03/25, 09:47 - Sayantan Bharati: https://www.linkedin.com/posts/alinexon_full-stack-ugcPost-7308347004219183104-FE46?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+21/03/25, 09:47 - Sayantan Bharati: https://www.linkedin.com/posts/sagarkumar9525_nodejs-notes-ugcPost-7308686903581491200-Pi82?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+21/03/25, 09:48 - Sayantan Bharati: https://www.linkedin.com/posts/zohaib-asghar-0199b6291_modern-javascript-concepts-ugcPost-7308359699379146752-rMxF?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+21/03/25, 13:28 - Sayantan Bharati: https://www.linkedin.com/posts/shahidkhan23_javascript-interview-questions-with-answers-activity-7307688881397628928-TTfF?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+22/03/25, 06:34 - Sayantan Bharati: https://www.linkedin.com/posts/theabdul-rehman345_java-questions-with-answers-ugcPost-7308465471035482112-DyKH?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+22/03/25, 06:34 - Sayantan Bharati: https://www.linkedin.com/posts/adityaporwal14_striver-sde-sheet-complete-handwritten-notes-activity-7308812717513945089-2zc3?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+25/03/25, 06:07 - Sayantan Bharati: https://www.linkedin.com/posts/sweta-soni-45114526b_connections-interview-linkedin-activity-7309547295811739648-dntj?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+25/03/25, 06:08 - Sayantan Bharati: https://www.linkedin.com/posts/ashishps1_top-5-caching-strategies-explained-1-%F0%9D%90%91%F0%9D%90%9E%F0%9D%90%9A%F0%9D%90%9D-activity-7309431214296178688-S6Av?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+25/03/25, 06:09 - Sayantan Bharati: https://www.linkedin.com/posts/aman-khan001_javascript-array-activity-7309053714747580416-ewW7?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+25/03/25, 06:09 - Sayantan Bharati: https://www.linkedin.com/posts/tauseeffayyaz_important-backend-interview-concepts-ugcPost-7309996201091719168-owGq?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+25/03/25, 07:36 - Sayantan Bharati: https://www.linkedin.com/posts/shahidkhan23_full-stack-development-interview-questions-ugcPost-7309854034130042882-fPbT?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+26/03/25, 06:44 - Sayantan Bharati: https://www.linkedin.com/posts/asifaliquraishy_activity-7309959686651318272-hTgm?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+26/03/25, 09:39 - Sayantan Bharati: https://www.linkedin.com/posts/alpnap_javascript-ugcPost-7310509777267154944-xKy1?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+26/03/25, 10:16 - Sayantan Bharati: https://www.linkedin.com/posts/deepasajjanshetty_sql-join-vs-union-ugcPost-7310318107988766722-Mn56?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+27/03/25, 07:00 - Sayantan Bharati: https://www.linkedin.com/posts/chand-mohammed-379a2124b_javascript-form-validation-ugcPost-7310621167722065921-q4V6?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+27/03/25, 07:00 - Sayantan Bharati: https://www.linkedin.com/posts/tauseeffayyaz_api-terminology-guide-ugcPost-7310176705157980161-DS1Q?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+27/03/25, 18:37 - Sayantan Bharati: https://www.linkedin.com/posts/dimple-kumari_100-react-interview-questionspdf-activity-7309793634898350080-KWvd?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+29/03/25, 03:05 - Sayantan Bharati: https://www.linkedin.com/posts/danish-shabbir-4a1ab6357_learn-complete-nodejs-ugcPost-7311160034762047489-5_pH?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+30/03/25, 06:37 - Sayantan Bharati: https://www.linkedin.com/posts/shubhamkamble89_what-is-expressjs-ugcPost-7311276691107045378-0QNA?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+30/03/25, 09:19 - Sayantan Bharati: You deleted this message
+30/03/25, 10:06 - Sayantan Bharati: https://www.linkedin.com/posts/ashishps1_system-design-was-hard-until-i-learned-these-activity-7311962488818802688--DbG?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+30/03/25, 11:52 - Sayantan Bharati: https://www.linkedin.com/posts/sahilraj-developer_data-activity-7309820290153295873-sx5E?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+31/03/25, 01:19 - Sayantan Bharati: https://www.linkedin.com/posts/noumann1_ugcPost-7308348157447319552-WYw3?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+31/03/25, 08:53 - Sayantan: https://www.threads.net/@arif.codes/post/DH1C-LcS6zU?xmt=AQGzowJJzVpdbvFpjXWKJnfCvbYXfTBnum_suizQPHL6IA
+31/03/25, 11:09 - Sayantan Bharati: https://www.linkedin.com/posts/noumann1_ugcPost-7309795354269356033-ZJDR?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+31/03/25, 15:49 - Sayantan Bharati: https://www.linkedin.com/posts/h-giri-0717a5336_100-backend-interview-questions-activity-7310276791506481152-tyyO?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+31/03/25, 15:50 - Sayantan Bharati: https://www.linkedin.com/posts/akash-keshri-158977199_softwareengineering-lld-hld-activity-7312351202216656896-8Idr?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+01/04/25, 07:50 - Sayantan Bharati: https://www.linkedin.com/posts/zouari-omar-143239283_mastering-exception-handling-in-java-ugcPost-7311255910243287040-eNpk?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+02/04/25, 05:41 - Sayantan Bharati: https://www.linkedin.com/posts/wilfred-gonsalves-169821270_jobseekers-hiring-freshersjobs-activity-7312907411156086784-5UWm?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+03/04/25, 13:15 - Sayantan Bharati: https://www.linkedin.com/posts/shahidkhan23_5-super-useful-js-cheatsheet-ugcPost-7313070446034259968-gBYv?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+04/04/25, 15:48 - Sayantan Bharati: https://www.linkedin.com/posts/alinexon_react-with-vite-ugcPost-7313421123411488768-yiNk?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+05/04/25, 18:56 - Sayantan Bharati: https://www.linkedin.com/posts/surajdubey-codes_javascript-data-structures-algorithms-ugcPost-7313923541383495681-u5sl?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+08/04/25, 01:49 - Sayantan Bharati: https://x.com/swapnakpanda/status/1908905963886698768?t=tOdUqwiXNT-Nn9mnUYPFcQ&s=09
+09/04/25, 09:19 - Sayantan Bharati: https://www.linkedin.com/posts/deepasajjanshetty_react-interview-questions-and-answers-ugcPost-7315360570835185665-Imr5?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+09/04/25, 09:21 - Sayantan Bharati: https://www.linkedin.com/posts/shivendra-dwivedi_master-javascript-promises-and-asyncawait-activity-7315339961111625728-00_B?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+09/04/25, 12:22 - Sayantan Bharati: https://www.linkedin.com/posts/shahidkhan23_javascript-ugcPost-7315621056726102017-8Neq?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+12/04/25, 15:13 - Sayantan Bharati: https://prepinsta.com/top-100-codes/
+12/04/25, 15:13 - Sayantan Bharati: https://www.hackerrank.com/
+14/04/25, 21:48 - Sayantan Bharati: https://www.linkedin.com/posts/deepasajjanshetty_react-roadmap-ugcPost-7317396786271150080-wkuq?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+15/04/25, 07:43 - Sayantan Bharati: https://www.linkedin.com/posts/surajdevx_sql-functions-ugcPost-7317401336298332160-GgEy?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+15/04/25, 09:03 - Sayantan Bharati: https://www.linkedin.com/posts/surajdevx_api-architecture-styles-ugcPost-7317569797892755456-lOHS?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+15/04/25, 14:32 - Sayantan Bharati: https://www.linkedin.com/posts/ankit7rma_javascript-roadmap-javascript-activity-7316837530799083520-dAig?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+15/04/25, 15:48 - Sayantan Bharati: https://www.linkedin.com/posts/mohammed-surguli_backenddevelopment-softwareengineering-restapi-activity-7316309163662340096-UtNN?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+15/04/25, 17:09 - Sayantan Bharati: https://www.linkedin.com/posts/rahul-choudhary-py_java-complete-notes-ugcPost-7317425432390176768-5hww?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+16/04/25, 08:08 - Sayantan Bharati: https://www.linkedin.com/posts/surajdevx_insane-websites-for-frontend-developers-ugcPost-7317495859753955329-1-Q4?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+16/04/25, 09:30 - Sayantan Bharati: https://www.linkedin.com/posts/manish-kumar-shah_python-interview-questions-ugcPost-7317648260859379712-Q7VB?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+16/04/25, 09:51 - Sayantan Bharati: https://www.linkedin.com/posts/karan-saxena-466b07190_during-my-4th-year-of-college-my-resume-activity-7316458185144369153-zjif?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+16/04/25, 09:57 - Sayantan Bharati: https://www.linkedin.com/posts/manish-kumar-shah_react-js-handwritten-notes-activity-7315561605503631360-RQOf?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+16/04/25, 13:28 - Sayantan Bharati: https://www.linkedin.com/posts/shapuramharshitha2001_java-technical-interview-questions-activity-7317162148789374976-XApG?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+16/04/25, 13:31 - Sayantan Bharati: https://www.linkedin.com/posts/asifaliquraishy_top-websites-for-developers-activity-7317811421575008257-zR3h?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+17/04/25, 05:42 - Sayantan Bharati: https://www.linkedin.com/posts/thecreatorsir_most-asked-javascript-questions-with-answers-activity-7317038353428684802-5Tbw?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+17/04/25, 05:43 - Sayantan Bharati: https://www.linkedin.com/posts/rajatjain01_python-activity-7317388147854655489-T5CO?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+17/04/25, 05:44 - Sayantan Bharati: https://www.linkedin.com/posts/amol-navalagire-4044a4354_javascript-interview-questions-activity-7315998518215684097-uvoQ?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+19/04/25, 09:38 - Sayantan Bharati: https://www.linkedin.com/posts/shubham-soni-374a86175_connections-softwareengineer-linkedin-activity-7318964713164263424-D51f?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+19/04/25, 23:52 - Sayantan Bharati: https://www.linkedin.com/posts/guptah-harshit_100-must-leetcode-problems-activity-7317764863965949953-OePQ?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+21/04/25, 03:36 - Sayantan Bharati: https://www.linkedin.com/posts/naveen-sreerag-k-v_nodejs-nodejsdeveloper-backenddeveloper-activity-7319530350378905601-jhPE?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+23/04/25, 10:38 - Sayantan Bharati: https://www.linkedin.com/posts/scribbler-live_memory-leaks-in-javascript-ugcPost-7320121505781075968-5dgB?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+23/04/25, 22:20 - Sayantan Bharati: https://www.linkedin.com/posts/shahidkhan23_11-core-react-hooks-ugcPost-7319967741698891776-J_3i?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+23/04/25, 22:21 - Sayantan Bharati: https://www.linkedin.com/feed/update/urn:li:activity:7320791532905684993?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+26/04/25, 11:47 - Sayantan Bharati: https://www.linkedin.com/posts/anurragshukla_mastering-java-collections-ugcPost-7317416884319019008-WV6J?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+26/04/25, 12:10 - Sayantan Bharati: <Media omitted>
+26/04/25, 14:47 - Sayantan Bharati: https://www.linkedin.com/posts/tauseeffayyaz_softwareengineering-coding-systemdesign-activity-7320109026350977024-3SL4?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+26/04/25, 23:31 - Sayantan Bharati: https://www.linkedin.com/posts/sasikumar-s-314300203_your-complete-mern-stack-roadmap-from-zero-activity-7320710530929672193-ofpQ?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+01/05/25, 01:32 - Sayantan Bharati: https://www.youtube.com/watch?v=SSKVgrwhzus
+01/05/25, 19:56 - Sayantan Bharati: https://www.linkedin.com/posts/alexandre-zajac_softwarengineering-systemdesign-programming-activity-7322507445904285696-_sLN?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+07/05/25, 21:38 - Sayantan Bharati: https://www.linkedin.com/posts/algomaster-io_what-all-topics-you-must-study-to-learn-dsa-activity-7325158445332996096-HBFr?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+07/05/25, 21:39 - Sayantan Bharati: https://www.linkedin.com/posts/surajdevx_javascript-dom-cheatsheet-ugcPost-7325374009255059458-q5Ah?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+15/05/25, 17:48 - Sayantan Bharati: https://www.threads.com/@arif.codes/post/DJqSWU_SLam?xmt=AQF0VmsjM8jpkUCnHI0pwj_AaPdRp1w7RN2d586i3zNtKg
+31/05/25, 16:36 - Your security code with Sayantan changed. Tap to learn more.
+31/05/25, 16:49 - Your security code with Sayantan changed. Tap to learn more.
+04/06/25, 03:11 - Sayantan Bharati: https://www.facebook.com/share/v/18z8C5gT2v/
+04/06/25, 13:17 - Sayantan Bharati: https://www.facebook.com/share/r/1AQ1TahYBm/
+04/06/25, 17:00 - Sayantan Bharati: https://www.facebook.com/share/v/1CnWBNdovm/
+05/06/25, 14:42 - Sayantan Bharati: https://www.facebook.com/share/v/1R8c1dWTqK/
+05/06/25, 14:52 - Sayantan Bharati: https://www.facebook.com/reel/969661395339915?mibextid=6AJuK9
+05/06/25, 16:13 - Sayantan Bharati: https://www.facebook.com/share/v/15DAViBYbj/
+05/06/25, 20:52 - Sayantan Bharati: https://www.facebook.com/share/v/16mLLK4DvQ/
+05/06/25, 21:43 - Sayantan Bharati: https://www.facebook.com/share/r/1C1LcwDYwX/
+05/06/25, 23:09 - Sayantan Bharati: https://www.facebook.com/share/r/1FZWsgo1qZ/
+06/06/25, 01:53 - Sayantan Bharati: https://www.facebook.com/share/v/1AUM1NLzrJ/
+06/06/25, 10:11 - Sayantan: https://www.facebook.com/share/16iVHPDR34/
+07/06/25, 15:17 - Sayantan: https://www.facebook.com/share/v/1YYSYyDb8f/
+07/06/25, 18:24 - Sayantan: https://www.facebook.com/share/v/1FJ7YyZRT5/
+08/06/25, 01:42 - Sayantan Bharati: https://www.facebook.com/share/v/16GH6HDPEM/
+08/06/25, 23:47 - Sayantan Bharati: https://www.facebook.com/reel/1887430258536635?mibextid=6AJuK9
+09/06/25, 14:06 - Sayantan: https://www.facebook.com/share/v/1Etf7HkzMw/
+10/06/25, 05:33 - Sayantan Bharati: https://www.facebook.com/share/r/1M5JUscwZc/
+10/06/25, 12:24 - Sayantan Bharati: https://www.facebook.com/share/r/1B28SW78ES/
+10/06/25, 16:33 - Sayantan: https://www.facebook.com/share/r/14zSmz4T5Q/
+10/06/25, 17:34 - Sayantan Bharati: https://www.facebook.com/share/p/1Ez4Nd9CSb/
+10/06/25, 18:22 - Sayantan Bharati: https://www.facebook.com/share/r/19Bv9K17pH/
+10/06/25, 23:37 - Sayantan Bharati: https://www.facebook.com/share/v/15wzYNNq9y/
+11/06/25, 15:24 - Sayantan Bharati: https://www.facebook.com/share/r/1FtT2Y2inV/
+11/06/25, 21:21 - Sayantan Bharati: https://www.facebook.com/share/1NRvRopzSq/
+12/06/25, 02:28 - Sayantan Bharati: https://www.facebook.com/share/p/16b84DRzi8/
+12/06/25, 14:33 - Sayantan Bharati: https://www.facebook.com/share/r/19cShbXV73/
+14/06/25, 03:12 - Sayantan: https://www.facebook.com/share/r/1JHBY3tGzo/
+16/06/25, 02:14 - Sayantan Bharati: https://www.instagram.com/reel/DJKAzb4Ar7y/?igsh=MWplZnhjMDdxeXlmYQ==
+16/06/25, 22:30 - Sayantan Bharati: https://www.facebook.com/share/r/1MAxU6LiaK/
+20/06/25, 00:23 - Sayantan: https://www.facebook.com/share/r/12MJnVbTJro/
+22/06/25, 04:54 - Sayantan Bharati: https://www.facebook.com/share/r/1BYEVd7wJa/
+22/06/25, 05:11 - Sayantan Bharati: https://www.facebook.com/share/r/1WMr2mN23s/
+26/06/25, 15:21 - Sayantan Bharati: https://www.facebook.com/share/r/1GNof3sR8S/
+01/07/25, 05:05 - Sayantan Bharati: https://www.facebook.com/share/r/1CLj3SLhS2/
+02/07/25, 23:47 - Sayantan Bharati: https://www.threads.com/@codewithnikhill/post/DLm0QYFhUT_?xmt=AQF05x6rru2X9tGOBER01iC1PXl_KSZ4pDFPJYzgeirw9w
+03/07/25, 20:38 - Sayantan Bharati: https://www.facebook.com/share/r/15WkpguMya/
+11/07/25, 22:35 - Sayantan Bharati: https://www.youtube.com/watch?v=kh-QOXuwywg
+12/07/25, 06:49 - Sayantan Bharati: https://www.facebook.com/share/v/19WDczJJFB/
+13/07/25, 19:40 - Sayantan Bharati: https://www.facebook.com/share/r/1CErw1SYt8/
+13/07/25, 22:15 - Sayantan Bharati: Here are some of the hottest topics in tech right now ¹ ²:
+- *Artificial Intelligence (AI)*: AI is transforming industries with its ability to analyze and process large amounts of data, automate tasks, and provide insights. Generative AI, Agentic AI, and AGI (Artificial General Intelligence) are some of the emerging trends in AI.
+    - *Generative AI*: creates new content, designs, and solutions, and is being used in marketing, healthcare, automotive, and entertainment.
+    - *Agentic AI*: acts as independent digital agents that can make decisions, set goals, and complete complex tasks with minimal human intervention.
+- *5G Networks and Edge Computing*: 5G networks enable ultra-fast, low-latency connectivity, while edge computing reduces latency and bandwidth usage by processing data closer to the source.
+- *Metaverse*: a virtual world where people can interact, collaborate, and conduct transactions, with potential applications in industries like retail, education, and healthcare.
+- *Quantum Computing*: has the potential to solve complex problems exponentially faster than classical computers, with applications in fields like cryptography, drug discovery, and climate modeling.
+- *Cybersecurity*: with the increasing number of cyber threats, cybersecurity is becoming a vital concern for organizations, with trends like threat intelligence, malware analysis, and ethical hacking.
+- *Blockchain and DeFi*: blockchain technology is being used for secure, transparent, and tamper-proof transactions, with potential applications in industries like finance, supply chain, and identity verification.
+- *Internet of Behaviors (IOB)*: uses data to change behaviors, with potential applications in industries like marketing, healthcare, and finance.
+- *Human Augmentation*: technologies that enhance human abilities, such as brain-computer interfaces, wearables, and implants.
+- *Sustainable Tech*: innovations that reduce environmental impact, such as green energy, sustainable agriculture, and waste management.
+
+These are just a few examples of the many exciting developments in the tech world. The field is constantly evolving, so it's essential to stay up-to-date with the latest trends and advancements.
+16/07/25, 17:22 - Sayantan Bharati: https://www.facebook.com/share/18Lek3qV5V/
+17/07/25, 09:52 - Sayantan Bharati: https://github.com/TalalAlrawajfeh/mathematics-roadmap
+17/07/25, 09:55 - Sayantan Bharati: https://github.com/TalalAlrawajfeh/mathematics-roadmap/blob/master/mathematics-roadmap-topics.md
+19/07/25, 00:44 - Sayantan: https://www.facebook.com/share/r/1DsfMtWxHS/
+20/07/25, 14:03 - Sayantan Bharati: https://www.facebook.com/share/r/1F9td9pFjq/
+21/07/25, 00:10 - Sayantan Bharati: https://www.facebook.com/share/182YqcVBKg/
+21/07/25, 00:30 - Sayantan Bharati: https://www.facebook.com/share/v/19UqtdQERq/
+24/07/25, 12:07 - Sayantan Bharati: https://www.linkedin.com/posts/naveen-sreerag-k-v_git-github-developertools-activity-7351231784237326337-cTk4?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+24/07/25, 12:09 - Sayantan Bharati: https://www.linkedin.com/posts/ashishps1_leetcode-was-hard-until-i-learned-these-15-activity-7350377255891582977-0jXu?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+25/07/25, 15:53 - Sayantan Bharati: https://www.facebook.com/share/p/1FCuJcGGZk/
+26/07/25, 14:09 - Sayantan Bharati: https://www.facebook.com/share/r/19m5BfPRHZ/
+26/07/25, 14:16 - Sayantan Bharati: https://www.facebook.com/share/v/1F4LYHgSkf/
+26/07/25, 17:55 - Sayantan Bharati: https://www.facebook.com/share/r/1BRBkWWcds/
+27/07/25, 08:59 - Sayantan Bharati: https://www.facebook.com/share/r/19nckPjLLd/
+27/07/25, 09:41 - Sayantan Bharati: https://www.facebook.com/share/r/1Fw2AjEcjb/
+27/07/25, 23:52 - Sayantan Bharati: https://www.facebook.com/share/r/1CeqJ5Aehm/
+27/07/25, 23:59 - Sayantan Bharati: https://www.facebook.com/share/r/1EQxy2CHpM/
+28/07/25, 02:43 - Sayantan Bharati: https://www.facebook.com/share/v/15f4pKGqVL/
+28/07/25, 21:42 - Sayantan Bharati: https://www.facebook.com/share/p/16TcKjVMyJ/
+29/07/25, 07:55 - Sayantan Bharati: https://www.facebook.com/share/r/16eeFrYABE/
+29/07/25, 08:40 - Sayantan Bharati: https://www.facebook.com/share/r/19KwdnVhgB/
+31/07/25, 18:19 - Sayantan Bharati: https://www.facebook.com/share/16rU7cFoiA/
+31/07/25, 19:07 - Sayantan Bharati: https://www.facebook.com/share/r/1FUMqAQ2tD/
+01/08/25, 08:01 - Sayantan Bharati: https://www.facebook.com/share/p/1C1R6tLuSv/
+01/08/25, 23:59 - Sayantan Bharati: https://youtu.be/cgOPg5cCr2g?si=jgZYzzVvkIA_2iUB
+02/08/25, 14:57 - Sayantan Bharati: https://www.instagram.com/reel/DFuopCpTEe-/?igsh=YWEzMXFyamluMnVx
+02/08/25, 20:26 - Sayantan Bharati: https://www.instagram.com/reel/DIWVSoftMRW/?igsh=NXF2OW84OTM2N2Nw
+02/08/25, 20:27 - Sayantan Bharati: https://www.instagram.com/reel/DLjtV96tp47/?igsh=MTMybzJ2M3pxOGcyNg==
+03/08/25, 01:56 - Sayantan Bharati: https://www.instagram.com/reel/DKcXe8qAekW/?igsh=MWhidXR2ZmYzazd6dQ==
+03/08/25, 01:58 - Sayantan Bharati: https://www.instagram.com/reel/DHDxnFPPquH/?igsh=MnVlbWxhNzVtMDNk
+03/08/25, 13:44 - Sayantan Bharati: https://www.facebook.com/share/r/1DY3NdXQ3p/
+04/08/25, 01:20 - Sayantan Bharati: https://www.linkedin.com/posts/shubham-soni-374a86175_connections-softwareengineer-linkedin-activity-7357715465642655744-CNzZ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+04/08/25, 11:41 - Sayantan: https://www.facebook.com/share/r/1CC3ytXpgP/
+04/08/25, 21:42 - Sayantan: https://www.facebook.com/share/r/1AvjgojAKY/
+05/08/25, 01:24 - Sayantan: https://www.facebook.com/share/r/16sp3L6Tke/
+05/08/25, 01:29 - Sayantan: https://www.facebook.com/share/r/1DK27k7tAn/
+05/08/25, 01:34 - Sayantan Bharati: https://www.facebook.com/share/r/1CXSHGgzWa/
+05/08/25, 01:34 - Sayantan Bharati: https://www.facebook.com/share/r/15mHQzSDxY/
+05/08/25, 07:28 - Sayantan Bharati: https://www.threads.com/@code__with__francis/post/DM8lYbdiT_W?xmt=AQF03nEX5Q8v6Tq8QcmxTS_TIuG9scfHKyjq8c3XxoPtgQ
+05/08/25, 08:04 - Sayantan Bharati: https://www.facebook.com/share/r/1BvzFTzZGE/
+05/08/25, 09:51 - Sayantan Bharati: https://www.facebook.com/share/1MrVfBH3nw/
+05/08/25, 09:55 - Sayantan Bharati: https://www.facebook.com/share/p/17DcB8BbPw/
+05/08/25, 16:17 - Sayantan Bharati: https://www.linkedin.com/posts/hyder-abbas-081820150_spring-boot-interview-q-with-short-and-simplified-ugcPost-7355455103669030912-NaBF?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+06/08/25, 08:22 - Sayantan Bharati: https://www.facebook.com/share/r/171ytgF2Qn/
+06/08/25, 09:39 - Sayantan Bharati: https://www.facebook.com/share/19sst1eXJV/
+06/08/25, 13:34 - Sayantan Bharati: https://www.instagram.com/p/DMx5KsnPpQN/?igsh=MTlvdzA0aWY4dDNreg==
+06/08/25, 18:30 - Sayantan Bharati: https://www.threads.com/@rammcodes_/post/DM-mTBqSfmq?xmt=AQF0C6j2ZiYdwRlNHmpAGd5gFLFT53LMM86c39F3ThcjSw
+06/08/25, 18:31 - Sayantan Bharati: https://www.facebook.com/share/v/16Q2CUmb2n/
+07/08/25, 00:04 - Sayantan Bharati: https://www.facebook.com/share/1EivJGHCkq/
+07/08/25, 00:23 - Sayantan Bharati: https://www.facebook.com/share/1Gdg2minEB/
+07/08/25, 00:27 - Sayantan Bharati: https://www.facebook.com/share/p/1C5f9d9x1Q/
+07/08/25, 00:28 - Sayantan Bharati: https://www.facebook.com/share/19WZUsojva/
+07/08/25, 00:46 - Sayantan Bharati: https://www.instagram.com/p/DMPfe_XObTP/?img_index=1&igsh=MWcwcHFmOWQ1OHYxag==
+07/08/25, 17:05 - Sayantan Bharati: https://www.facebook.com/share/165kPm7FTJ/
+07/08/25, 18:03 - Sayantan Bharati: https://www.freecodecamp.org/news/math-online-courses-from-worlds-top-universities/
+07/08/25, 19:08 - Sayantan Bharati: https://www.facebook.com/share/1JfCr4WBtv/
+07/08/25, 23:36 - Sayantan Bharati: https://www.instagram.com/p/DM5JZRUS9_5/?igsh=Nmg5cW84NG1xZ3Vj
+08/08/25, 17:04 - Sayantan Bharati: https://m.facebook.com/story.php?story_fbid=122268457676019877&id=61550596317862&sfnsn=wiwspwa&ref=share&mibextid=VhDh1V
+09/08/25, 09:54 - Sayantan Bharati: https://www.facebook.com/share/r/19pdKvoqQL/
+09/08/25, 10:46 - Sayantan Bharati: https://www.facebook.com/share/17NhAi4WGB/
+13/08/25, 00:51 - Sayantan Bharati: https://www.facebook.com/share/v/16gF55JDci/
+13/08/25, 10:22 - Sayantan Bharati: https://www.instagram.com/p/DNQLtgQB1S3/?igsh=MnIwNGkyaWx2aTl1
+14/08/25, 23:48 - Sayantan Bharati: https://www.instagram.com/reel/DLYJ7xgTuri/?igsh=d2lvdWY4a25xb2Ni
+14/08/25, 23:57 - Sayantan Bharati: https://www.instagram.com/reel/DLPJVqgMytw/?igsh=dDR2amdrbzlkNDQx
+15/08/25, 03:14 - Sayantan Bharati: https://www.facebook.com/share/r/1B6G5qnCnK/
+15/08/25, 13:04 - Sayantan Bharati: https://www.facebook.com/share/r/1EtqzaiV3N/
+16/08/25, 12:52 - Sayantan Bharati: https://www.facebook.com/share/v/1C2ta8Qnrc/
+16/08/25, 17:20 - Sayantan: https://www.instagram.com/reel/DNYNRQmPPXX/?igsh=MWtib2ZrYnVrejVuMg==
+16/08/25, 19:53 - Sayantan Bharati: https://www.instagram.com/p/DNY9u5iBtiB/?img_index=1&igsh=MXBsc3ljM21zaWx2aw==
+17/08/25, 01:14 - Sayantan: https://www.instagram.com/reel/DNWUEHJTADP/?igsh=bnZ6M29uMHQxd2Zp
+17/08/25, 01:15 - Sayantan: https://www.instagram.com/p/DNM_vb5R-9o/?igsh=MWhrcHlwcWdjYWR1cw==
+17/08/25, 01:18 - Sayantan: https://www.instagram.com/reel/DNNuli7zdzN/?igsh=MTBsaTU2Z3F5NjFwZw==
+18/08/25, 11:37 - Sayantan Bharati: https://www.instagram.com/reel/DMppDCwy65X/?igsh=eDR6MHRmbHN3aHA0
+18/08/25, 14:52 - Sayantan: https://www.instagram.com/reel/DHD58T7zQFV/?igsh=MXZndzA3N2Z5a3pjMw==
+18/08/25, 14:53 - Sayantan: https://www.instagram.com/reel/DKj6XcQzvxl/?igsh=OWx2OTM2d2h0bWVh
+18/08/25, 15:04 - Sayantan: https://fcsnew.net/?utm_source=sp_auto_dm&utm_referrer=sp_auto_dm&fbclid=PAVERDUAMP0iRleHRuA2FlbQIxMAABp86p9COcgsgNhEVFDn-fLzWzgloHnOmzHEdALTGj3Sj3eaxuZL_g5mmYgWex_aem_zgGUhm9k-GwZBOgm0StuwQ
+18/08/25, 22:53 - Sayantan Bharati: https://www.facebook.com/share/r/1AoLtJ2qr7/
+19/08/25, 00:33 - Sayantan Bharati: https://www.instagram.com/reel/DNUxDeIgxo-/?igsh=a210cGtqc2lia3Ri
+19/08/25, 23:26 - Sayantan Bharati: https://www.linkedin.com/posts/shubham-soni-374a86175_connections-softwareengineer-linkedin-activity-7359444411870597120-WA8o?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+21/08/25, 00:22 - Sayantan Bharati: https://www.linkedin.com/posts/ayushi-sharma-8a285a185_interviewexperience-dsa-systemdesign-activity-7363423676152631297-Q4or?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+21/08/25, 05:56 - Sayantan Bharati: https://www.facebook.com/share/r/15qJqPndpt/
+21/08/25, 05:59 - Sayantan Bharati: https://www.facebook.com/share/r/1LDz9YPYvf/
+22/08/25, 15:39 - Sayantan: https://www.instagram.com/reel/DM5mhW4zZ43/?igsh=anllM2l6Y2M0dmw2
+22/08/25, 23:17 - Sayantan Bharati: https://www.instagram.com/p/DMzEQhFteZk/?img_index=5&igsh=MWhua3Y3bXhjNWJiNg==
+23/08/25, 14:13 - Sayantan Bharati: https://www.instagram.com/reel/DNIpKK8Jtbb/?igsh=MXcwemNwbGtkYjUyZg==
+23/08/25, 18:48 - Sayantan Bharati: https://www.facebook.com/share/p/1Az1eXYtK2/
+23/08/25, 21:30 - Sayantan Bharati: https://www.instagram.com/reel/DLBZznlgocO/?igsh=N2hoYjZ6bDhybzV6
+23/08/25, 21:33 - Sayantan Bharati: https://www.instagram.com/reel/DMc-E19iuAZ/?igsh=OGd4ZnB6eTBvOWdy
+23/08/25, 21:42 - Sayantan Bharati: https://www.instagram.com/reel/DJwkwG-Ktrr/?igsh=MXVsaDh5N2h5MDVreg==
+24/08/25, 00:57 - Sayantan Bharati: https://www.threads.com/@mrtechinside/post/DNszny2wlp7?xmt=AQF0kpBonHI4vQkJhRVHznrKsY8O3M4HYWpA1K-evYBr7Q&slof=1
+24/08/25, 01:55 - Sayantan Bharati: https://www.instagram.com/reel/DNWlgcaSZBX/?igsh=c2JzbWNzZzR6aXI4
+24/08/25, 01:55 - Sayantan Bharati: https://www.instagram.com/reel/DNsztJb3qY9/?igsh=Z3ExZWk0NnM3cXV6
+24/08/25, 10:26 - Sayantan Bharati: https://www.instagram.com/reel/DNiNirEzYcy/?igsh=aWs1M2lvemNqMHh3
+25/08/25, 02:07 - Sayantan Bharati: https://www.instagram.com/p/DMuTH4aJ6bm/?img_index=1&igsh=MWlqODFmdDVvODU5Yw==
+25/08/25, 02:09 - Sayantan Bharati: https://www.instagram.com/p/DNqMZVuz3Jb/?img_index=6&igsh=Y25sZWV4bWJjNjNt
+25/08/25, 02:10 - Sayantan Bharati: https://www.instagram.com/reel/DK37RzkRoCc/?igsh=MXIxejc2bnVjZW9kZQ==
+25/08/25, 02:16 - Sayantan Bharati: https://www.instagram.com/reel/DKwrE8fyp1r/?igsh=dmhtOWV1YjUxNG1h
+25/08/25, 02:17 - Sayantan Bharati: https://www.instagram.com/reel/DMqA_pqImIV/?igsh=MWpmazJnNml5b3RieQ==
+28/08/25, 07:59 - Sayantan: https://www.instagram.com/reel/DN28jDP0Dmh/?igsh=Ynp2eGw4bXZqaDJx
+29/08/25, 18:06 - Sayantan Bharati: https://www.instagram.com/reel/DN79ylaAZs8/?igsh=dmk5MmR2YzFrb2lh
+30/08/25, 22:23 - Sayantan Bharati: https://www.facebook.com/share/r/16zSbWiqeb/
+01/09/25, 11:18 - Sayantan Bharati: https://www.facebook.com/share/r/1A5xYoz9f7/
+01/09/25, 11:36 - Sayantan Bharati: https://www.facebook.com/share/r/19GGRqvbyw/
+01/09/25, 21:52 - Sayantan Bharati: https://www.facebook.com/share/r/1CAS8SctSc/
+01/09/25, 22:02 - Sayantan Bharati: https://www.facebook.com/share/r/16wFsmE9E3/
+02/09/25, 04:57 - Sayantan Bharati: https://www.instagram.com/p/DOAqqXoEuSg/?img_index=2&igsh=MXFxeGtsanF6aGNweg==
+02/09/25, 04:58 - Sayantan Bharati: https://www.instagram.com/p/DNj7XiCzRd9/?img_index=1&igsh=OHc2ZWh0b213OWg3
+02/09/25, 06:28 - Sayantan Bharati: https://github.com/denysdovhan/wtfjs?tab=readme-ov-file#-is-equal-
+02/09/25, 17:57 - Sayantan Bharati: https://www.facebook.com/share/r/19s2CFEuuY/
+02/09/25, 23:11 - Sayantan Bharati: https://www.facebook.com/share/r/1AoNAEoSfc/
+04/09/25, 18:31 - Sayantan Bharati: https://www.facebook.com/share/r/19mgyycCfA/
+04/09/25, 18:35 - Sayantan Bharati: https://www.instagram.com/p/DOATsfpkvjC/?img_index=1&igsh=MTU1cnBjdXY2OThyMA==
+04/09/25, 18:40 - Sayantan Bharati: https://www.instagram.com/p/DNz1K-EYlg8/?img_index=2&igsh=MWRpdmFpY2IyN3BuMQ==
+04/09/25, 21:21 - Sayantan Bharati: https://www.facebook.com/share/r/1GdofYWutx/
+04/09/25, 21:53 - Sayantan Bharati: https://www.facebook.com/share/r/1BGZFAixbh/
+05/09/25, 00:32 - Sayantan Bharati: https://www.facebook.com/share/r/1BreUN1s4F/
+05/09/25, 00:38 - Sayantan Bharati: https://www.facebook.com/share/r/18weiEePXR/
+05/09/25, 01:35 - Sayantan: https://www.instagram.com/reel/DLpTjJgyEBm/?igsh=MXNoaG51aG05MnY0ZQ==
+05/09/25, 14:19 - Sayantan: https://www.facebook.com/share/r/1G8SsRBLTg/
+07/09/25, 16:28 - Sayantan Bharati: https://www.facebook.com/share/r/1E1quiwQS1/
+07/09/25, 22:19 - Sayantan Bharati: https://www.instagram.com/reel/DKXzL7PMdCg/?igsh=MW9mZGx1NHlhbm1heA==
+07/09/25, 22:25 - Sayantan Bharati: https://www.instagram.com/p/DOLR5PrkiI-/?img_index=1&igsh=MTVjMHRsYmE0dDV4cQ==
+07/09/25, 22:29 - Sayantan Bharati: https://www.instagram.com/reel/DJgoRYXzSJk/?igsh=MWEweHRscDR5cWxpdg==
+07/09/25, 22:45 - Sayantan Bharati: https://www.facebook.com/share/r/19QwEc1svq/
+08/09/25, 10:04 - Sayantan: https://www.instagram.com/reel/DHlT-gaK31Z/?igsh=MXdtdzNsYmY1b2FhcA==
+10/09/25, 07:52 - Sayantan Bharati: https://www.instagram.com/p/DOLg4p_DDpR/?img_index=2&igsh=YXlpbHpuNWhrMGVn
+10/09/25, 08:03 - Sayantan Bharati: https://www.instagram.com/reel/DNEaueXOXv7/?igsh=MWhoN2QxOXdkajI1bw==
+10/09/25, 08:06 - Sayantan Bharati: https://www.instagram.com/reel/DOSgZJBifqt/?igsh=MWp3dmZ2aDAwb2J4eQ==
+11/09/25, 05:01 - Sayantan Bharati: https://www.instagram.com/p/DOS9-nID3tX/?igsh=MXNuam91dm5sZjV3bA==
+13/09/25, 22:50 - Sayantan Bharati: https://www.facebook.com/share/r/1BfPXLp2T5/
+14/09/25, 11:09 - Sayantan Bharati: https://www.instagram.com/reel/DLfDQzYSxuM/?igsh=bG0wZTVuZWF0dGFj
+14/09/25, 13:11 - Sayantan Bharati: https://www.facebook.com/share/r/1ZxV6T7Sc1/
+14/09/25, 22:18 - Sayantan Bharati: https://www.linkedin.com/feed/update/urn:li:activity:7371356614299394049?utm_source=share&utm_medium=member_desktop&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+15/09/25, 04:24 - Sayantan Bharati: https://www.linkedin.com/posts/kesari007_trees-400-problems-just-6-patterns-heaps-ugcPost-7371589038945914880--_r1?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+15/09/25, 05:08 - Sayantan Bharati: https://www.facebook.com/share/r/1GFRsSBX3v/
+15/09/25, 14:48 - Sayantan Bharati: https://www.facebook.com/share/r/1Cmyuq6yRB/
+15/09/25, 18:53 - Sayantan Bharati: https://www.instagram.com/reel/DMp_iBcgNhJ/?igsh=b2VmYWdhOGM5bXBz
+16/09/25, 00:12 - Sayantan Bharati: https://www.instagram.com/p/DOlS34Hkkzt/?img_index=1&igsh=MXZ2cmcxem11Z2pkZw==
+16/09/25, 00:13 - Sayantan Bharati: https://www.instagram.com/reel/DM1yQ2coG-M/?igsh=dTc2cHRtbHBra3Ft
+16/09/25, 00:16 - Sayantan Bharati: https://www.instagram.com/reel/DLOvhh3Ng0t/?igsh=MWNld2pweGw5NTZrbA==
+16/09/25, 00:17 - Sayantan Bharati: https://www.instagram.com/p/DOgc1iwkve4/?img_index=3&igsh=ZzNiYTZ0eWl4aGZl
+16/09/25, 00:19 - You changed the group name from "Dev" to "LinksBerg"
+16/09/25, 00:24 - Sayantan Bharati: https://www.instagram.com/reel/DOm57rajw5f/?igsh=dDhvcDRnYjFncnlz
+16/09/25, 00:25 - Sayantan Bharati: https://www.instagram.com/reel/DLm3QhbtoSH/?igsh=bGNkODRpNDI5bzNk
+18/09/25, 00:29 - Sayantan Bharati: https://www.facebook.com/share/r/1GxCewXDwm/
+18/09/25, 00:45 - Sayantan Bharati: https://www.facebook.com/share/r/1CjPZChSyi/
+19/09/25, 00:52 - Sayantan Bharati: https://www.instagram.com/p/DOv6jfpkrPp/?img_index=2&igsh=MWUyZ2RqZjN6NGEybg==
+19/09/25, 22:05 - Sayantan Bharati: https://www.instagram.com/p/DN7TsCbiKys/?img_index=2&igsh=MXhta2U1YTUzbTVsbA==
+20/09/25, 01:19 - Sayantan Bharati: https://www.instagram.com/p/DOt0jpFCdDI/?img_index=2&igsh=aWk1NnlicXI5ZXRq
+20/09/25, 01:21 - Sayantan Bharati: https://www.instagram.com/reel/DOn3OCwCPI7/?igsh=OG1zenR4NzE2Ynd0
+20/09/25, 01:22 - Sayantan Bharati: https://www.instagram.com/reel/DOjddrkiYhn/?igsh=am1lb295cWdjMzE4
+21/09/25, 09:55 - Sayantan Bharati: https://www.instagram.com/reel/DOq8qlrj_Sm/?igsh=MXFiMGp0ODh5bzRnaQ==
+21/09/25, 13:39 - Sayantan Bharati: https://www.instagram.com/reel/DMLJFZES3mT/?igsh=ZGpjMDF2cWNlMWh2
+21/09/25, 13:39 - Sayantan Bharati: https://www.instagram.com/reel/DOldOaEj-4h/?igsh=MTN3aXdrc3UwYjZy
+21/09/25, 13:56 - Sayantan Bharati: https://www.instagram.com/reel/DNsveQj5EBZ/?igsh=MWdvdzllbzJ5M2FzcA==
+22/09/25, 00:57 - Sayantan Bharati: https://www.instagram.com/p/DOyc8SCCQPM/?img_index=1&igsh=czl2Z2U0a3djZm90
+22/09/25, 01:28 - Sayantan Bharati: https://www.instagram.com/p/DOk2JGsEWZk/?img_index=2&igsh=NjZyanA1cXJqdHV6
+23/09/25, 17:32 - Sayantan: https://www.facebook.com/share/r/1Cf2CRz25F/
+23/09/25, 17:59 - Sayantan: https://www.facebook.com/share/r/1B7meij79b/
+24/09/25, 02:51 - Sayantan Bharati: https://www.facebook.com/share/v/1Gqdj52boM/
+24/09/25, 23:47 - Sayantan Bharati: https://www.instagram.com/reel/DO51PKJk42b/?igsh=MWFtc3dhYzZqcDg3MQ==
+24/09/25, 23:51 - Sayantan Bharati: https://www.instagram.com/reel/DO8g1faE1gi/?igsh=dWx6bTlpYWZjZm4z
+25/09/25, 03:11 - Sayantan Bharati: https://www.instagram.com/reel/DO5zJHICC2n/?igsh=MWl5NmJ6NHR1b3VrMg==
+27/09/25, 01:35 - Sayantan Bharati: https://www.instagram.com/reel/DPDhclWDoq9/?igsh=MTdsbHUxc2IybjI3NA==
+27/09/25, 01:37 - Sayantan Bharati: https://www.instagram.com/reel/DPDj28eglse/?igsh=MWN1cnl3OW0wdnU3cA==
+27/09/25, 14:40 - Sayantan Bharati: https://www.threads.com/@rajhere.in/post/DPEEw7QiQ98?xmt=AQF0afxLWgQ5XtSOA7dsVz4zNpbMk-YZLZTwS4021BtDrA&slof=1
+28/09/25, 17:39 - Sayantan Bharati: https://m.facebook.com/story.php?story_fbid=1331251288529271&id=100049332366091&sfnsn=wiwspwa&mibextid=6aamW6
+29/09/25, 02:58 - Sayantan Bharati: https://www.instagram.com/reel/DPFaesSgrSq/?igsh=MWNxMmR3YzE4MGt2aA==
+29/09/25, 09:51 - Sayantan Bharati: https://www.facebook.com/share/1AE4dZefqc/
+29/09/25, 15:20 - Sayantan: https://www.instagram.com/reel/DOpCO1CjNEn/?igsh=dHRsZnlvYjRla21v
+01/10/25, 00:14 - Sayantan Bharati: https://www.instagram.com/reel/DPPCmeoErkp/?igsh=ZnMxZmQ1MDcyZ2Z3
+01/10/25, 00:20 - Sayantan Bharati: https://www.instagram.com/p/DO-EmPfCV9P/?img_index=1&igsh=MWlkamszYjd2OWFzcw==
+01/10/25, 11:28 - Sayantan Bharati: https://www.instagram.com/p/DO-JZ1DDLCP/?img_index=3&igsh=dmFsb3YxZnR3a2Vy
+02/10/25, 12:59 - Sayantan Bharati: https://www.instagram.com/reel/DNbkO0nhL-0/?igsh=anVjZTQ2YThvMGdi
+04/10/25, 12:34 - Sayantan Bharati: https://www.linkedin.com/posts/theabdul-rehman345_300-sql-queries-ugcPost-7379403835687002113-p1h1?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+04/10/25, 13:05 - Sayantan Bharati: https://www.linkedin.com/posts/mirza-yasir-abdullah-baig_probability-handwritten-notes-for-aiml-ugcPost-7379892505992904704-ltYp?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+04/10/25, 13:22 - Sayantan Bharati: https://www.facebook.com/share/p/17KMMR2Kie/
+04/10/25, 18:47 - Sayantan Bharati: https://www.instagram.com/reel/DPSKdKdjXNa/?igsh=MTR0ZWw2NnZ6amE1dA==
+04/10/25, 19:21 - Sayantan Bharati: https://www.linkedin.com/posts/abhisek-sahu-84a404b1_eda-using-pandas-ugcPost-7380013814617944064-wi6n?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+04/10/25, 19:24 - Sayantan Bharati: https://www.linkedin.com/posts/bhavesh-arora-11b0a319b_sql-and-dsa-interview-questions-by-amazon-ugcPost-7380193553551052800-9UH_?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+04/10/25, 19:25 - Sayantan Bharati: https://www.linkedin.com/feed/update/urn:li:groupPost:7039829-7380189611337265152?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+04/10/25, 20:27 - Sayantan Bharati: https://www.facebook.com/share/p/1B3fCs9ZF6/
+07/10/25, 03:13 - Sayantan Bharati: https://www.facebook.com/share/v/17cxEtcFGs/
+07/10/25, 03:49 - Sayantan Bharati: https://www.facebook.com/share/r/17RioQfNtw/
+08/10/25, 00:28 - Sayantan Bharati: https://www.instagram.com/reel/DNir_rexVT1/?igsh=ZGp1NnoxYjZsbHRo
+08/10/25, 06:31 - Sayantan Bharati: https://www.facebook.com/share/r/1D2i9sXPWc/
+10/10/25, 10:26 - Sayantan: https://www.instagram.com/p/DPk-hZaEx-i/?img_index=5&igsh=MTQ4ZjZ4aGQ3MWN1Zg==
+10/10/25, 13:12 - Sayantan Bharati: https://www.instagram.com/p/DPks7_BEkm6/?img_index=1&igsh=MThkY2swdGhuM2hobg==
+10/10/25, 13:14 - Sayantan Bharati: https://www.instagram.com/p/DPb067fDXsh/?img_index=2&igsh=MTZsa3ZzcnpqZWZtYw==
+13/10/25, 01:59 - Sayantan Bharati: https://www.instagram.com/p/DPmv5t9jRtt/?igsh=MXd5aXhtcmw3dWNpcA==
+13/10/25, 09:47 - Sayantan Bharati: https://www.facebook.com/share/r/1AZLxqZHrf/
+13/10/25, 13:42 - Sayantan Bharati: https://www.facebook.com/share/r/1BKBMonUX4/
+14/10/25, 23:44 - Sayantan Bharati: https://www.instagram.com/p/DPy3OgKkgo3/?img_index=2&igsh=MWxlcHNnb241bDFqbg==
+16/10/25, 19:29 - Sayantan Bharati: https://www.instagram.com/p/DP2xTWuCPDS/?img_index=3&igsh=NzJoa3hwdHJuM3hv
+18/10/25, 16:22 - Sayantan Bharati: ⚡️ **ALL-IN-ONE Basic Electrical — Complete 1st Sem Notes** 🔌
+
+Supercharge your fundamentals with this **comprehensive Basic Electrical Notes Pack**, specially curated for **1st Semester students**! 📘✨
+
+Whether you're revising for exams or building your electrical basics from scratch, this PDF covers **all essential topics** — from **Ohm’s Law** to **AC/DC circuits, transformers, power measurement, and more!** ⚙️💡
+
+🎯 Perfect for:
+
+* B.Tech / Diploma 1st Year Students 🧑‍🔧
+* Quick Revision Before Exams 📝
+* Strengthening Core Electrical Concepts ⚡
+
+📥 **Download Now:**
+🔗 [Basic Electrical Complete Notes (1st Sem)](https://drive.google.com/file/d/1H0N3bHd5RP4mjqS-jsgc637nsfY7-Vjl/view)
+
+📚 Stay ahead with *Campus Hub* — Your one-stop learning station! 🚀
+#BasicElectrical #1stSemNotes #EngineeringNotes #CampusHub #ElectricalFundamentals #StudySmart
+18/10/25, 16:40 - Sayantan Bharati: https://youtube.com/playlist?list=PLTdvh91dYKr3UK94wpv0HDUsleuOP_Ay5&si=jNS7_xzOjGb2FEQQ
+18/10/25, 18:42 - Sayantan Bharati: https://www.instagram.com/reel/DP4KzHID3Xt/?igsh=MWxreWsxNGgwbDFkdg==
+19/10/25, 03:38 - Sayantan Bharati: https://www.instagram.com/reel/DP36QDsD6lE/?igsh=MW4zdGFkOXd6bHloeQ==
+19/10/25, 04:59 - Sayantan Bharati: https://www.instagram.com/reel/DPwKpMACc_2/?igsh=MTJqdmxjOGs1djloaQ==
+19/10/25, 22:27 - Sayantan Bharati: https://www.instagram.com/p/DP_XoRoElkS/?img_index=4&igsh=MXNzNGQ1cHgwZzB6cA==
+20/10/25, 00:19 - Sayantan Bharati: https://www.facebook.com/share/r/17C2Zpcb5T/
+20/10/25, 01:35 - Sayantan Bharati: https://www.youtube.com/@DrTrefor/playlists
+20/10/25, 11:13 - Sayantan Bharati: https://www.facebook.com/share/1CuVSjUxex/
+22/10/25, 10:46 - Sayantan Bharati: https://drive.google.com/file/d/1z03zNYlkMTbGOD6Mr_KJ0f6wYG0wKCNh/view
+22/10/25, 14:57 - Sayantan Bharati: https://www.instagram.com/p/DPjStarEnnV/?img_index=4&igsh=MXV1aHUxdHExNjg3Mw==
+22/10/25, 15:05 - Sayantan Bharati: https://www.instagram.com/reel/DQCFZnGEyQC/?igsh=cjViNWxldjQwejZ2
+22/10/25, 18:27 - Sayantan Bharati: https://www.instagram.com/p/DPkrsfBE3cO/?img_index=9&igsh=bDZkOWN2MmZrdTNs
+22/10/25, 18:44 - Sayantan Bharati: https://youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&si=ev1tiLLQ35eoZD--
+22/10/25, 22:49 - Sayantan Bharati: https://www.instagram.com/p/DPMWBhhk2J0/?img_index=1&igsh=MTFybXZvcjVyaTlyYQ==
+23/10/25, 00:53 - Sayantan Bharati: https://www.instagram.com/p/DPbqx0eEQNz/?img_index=1&igsh=ZDR6YWYxd2Z6a3Vv
+23/10/25, 00:56 - Sayantan Bharati: https://www.instagram.com/p/DPfuOa3iZez/?igsh=azg1djVpZnUwM3A1
+23/10/25, 02:04 - Sayantan Bharati: https://www.instagram.com/p/DP_XT83jyk1/?igsh=aW5yOTdneWM0dXdp
+23/10/25, 02:55 - Sayantan Bharati: https://www.instagram.com/p/DP0RdNxk56h/?igsh=MTVpbXp4Ym1qNmN5bQ==
+23/10/25, 03:00 - Sayantan Bharati: https://www.instagram.com/p/DPvRdE9D0bi/?igsh=MTIzcmVucXN0bTM1Yg==
+23/10/25, 10:17 - Sayantan Bharati: https://www.instagram.com/reel/DPCL5pcE0Nc/?igsh=bG1wMnVjeHp6NmUz
+23/10/25, 13:25 - Sayantan Bharati: https://www.instagram.com/reel/DP_GAhuE0Ih/?igsh=bWdnang5NmtrenFh
+23/10/25, 13:26 - Sayantan Bharati: https://www.instagram.com/reel/DQB2xm8kk42/?igsh=MjJwcHh1a3oxYWtq
+23/10/25, 13:26 - Sayantan Bharati: https://www.instagram.com/p/DP2dgS0Eyi9/?igsh=MjJqMDFyMWd0enF4
+24/10/25, 11:08 - Sayantan Bharati: https://www.facebook.com/share/p/1AQPoLS5Aw/
+24/10/25, 16:01 - Sayantan Bharati: https://www.instagram.com/reel/DQLn-HPEo8Y/?igsh=MXcwY3RzYXFuMmRwcQ==
+25/10/25, 01:02 - Sayantan Bharati: https://www.instagram.com/reel/DQMdXEEkkUN/?igsh=amZmNHViNjVqbnNi
+25/10/25, 02:11 - Sayantan Bharati: https://www.instagram.com/p/DPfxkwVjgOJ/?igsh=MWRpMWd3M2ZpeXZpMQ==
+25/10/25, 02:12 - Sayantan Bharati: https://www.instagram.com/reel/DQLgBNCkgYN/?igsh=bTRxZDU5NzFuc2Vq
+25/10/25, 02:12 - Sayantan Bharati: https://www.instagram.com/p/DP5TP1FAcaJ/?img_index=2&igsh=czhlYmp1MWpzdXlu
+25/10/25, 21:40 - Sayantan Bharati: https://www.instagram.com/reel/DOkaWNUCAjH/?igsh=cWg1ZDhpMXE0OXhk
+25/10/25, 21:40 - Sayantan Bharati: 
+26/10/25, 00:39 - Sayantan Bharati: https://www.instagram.com/reel/DPbY9ycjf3c/?igsh=MWhvNjV2Y2prMjc5MA==
+26/10/25, 01:12 - Sayantan Bharati: https://www.instagram.com/reel/DLsT_MBB6bd/?igsh=MWV5NDNlbjNtazY2cA==
+26/10/25, 01:12 - Sayantan Bharati: https://www.instagram.com/p/DP5TQCjk3kL/?img_index=2&igsh=cG1xc2FzZXA2enVv
+26/10/25, 20:12 - Sayantan Bharati: https://www.instagram.com/reel/DP-_kvlk4ng/?igsh=MWdncTJmZ2N6MTlzdw==
+26/10/25, 22:03 - Sayantan Bharati: https://www.instagram.com/p/DQRsMirCL1Q/?img_index=2&igsh=MTJlZ3Exd3oxbnE4dA==
+27/10/25, 03:26 - Sayantan Bharati: https://www.facebook.com/share/r/17P6ofrav5/
+28/10/25, 16:49 - Sayantan Bharati: https://www.facebook.com/share/p/1AUBVsC7ce/
+28/10/25, 22:15 - Sayantan Bharati: https://www.facebook.com/share/r/17G1vSu6rB/
+28/10/25, 22:21 - Sayantan Bharati: https://www.facebook.com/share/r/1DFmpo2fkF/
+29/10/25, 09:57 - Sayantan Bharati: https://www.instagram.com/reel/DQMR05kDFck/?igsh=M21sMGZkdnhnMzUw
+29/10/25, 09:57 - Sayantan Bharati: https://www.instagram.com/p/DQJt-Ojkrc7/?img_index=4&igsh=dWJmOWpwbWMyeHVx
+29/10/25, 09:59 - Sayantan Bharati: https://www.instagram.com/p/DPrCk-yEpVi/?igsh=MWo0eXE3eHhqcnNpNQ==
+29/10/25, 11:55 - Sayantan Bharati: https://mlu-explain.github.io/
+29/10/25, 12:03 - Sayantan Bharati: https://www.facebook.com/share/p/1McJG33GwP/
+29/10/25, 23:33 - Sayantan Bharati: https://www.facebook.com/share/r/1AN6PqXTPr/
+30/10/25, 02:34 - Sayantan Bharati: https://www.instagram.com/reel/DQJ0CuLCGEL/?igsh=emE0amljeXhuaG5o
+30/10/25, 10:40 - Sayantan Bharati: https://www.facebook.com/share/r/19m6FwEMsN/
+30/10/25, 17:53 - Sayantan Bharati: https://www.facebook.com/share/v/1Bs8egYQnN/
+30/10/25, 20:14 - Sayantan Bharati: https://www.facebook.com/share/r/16QbqUHeT4/
+30/10/25, 20:25 - Sayantan Bharati: https://www.facebook.com/share/r/1bL13nykSC/
+30/10/25, 21:38 - Sayantan Bharati: https://www.instagram.com/reel/DPENCs5gQlJ/?igsh=MWI0MXNocXpjc2xncw==
+31/10/25, 04:33 - Sayantan: https://www.instagram.com/reel/DQch2hgkzsQ/?igsh=dHh5bGs5am9hemJl
+31/10/25, 04:44 - Sayantan: https://www.instagram.com/p/DPlup9NCARV/?img_index=10&igsh=MWg1ODR0cW5udzZrOA==
+31/10/25, 04:47 - Sayantan: https://www.instagram.com/p/DQL68EqE9do/?img_index=1&igsh=c2E4ZzQ3NGd2ODhm
+31/10/25, 13:40 - Sayantan Bharati: https://www.facebook.com/share/r/1FyZ6KycmG/
+01/11/25, 01:16 - Sayantan: https://www.facebook.com/share/r/16KUP1ad2m/
+01/11/25, 02:47 - Sayantan Bharati: https://www.facebook.com/share/v/16thW6zVww/
+01/11/25, 03:13 - Sayantan Bharati: https://www.instagram.com/reel/DQegohHiO2U/?igsh=MWtjdno2NmVzNm94Ng==
+01/11/25, 16:21 - Sayantan Bharati: https://youtu.be/dgm4-3-Iv3s?si=Hd9RNYyp8kp4uoL3
+01/11/25, 18:12 - Sayantan Bharati: https://www.facebook.com/share/r/17Ge3tT4rs/
+01/11/25, 23:08 - Sayantan Bharati: https://www.facebook.com/share/r/16ejeSRTa1/
+02/11/25, 02:46 - Sayantan Bharati: https://www.facebook.com/share/p/1BFrntBkP2/
+02/11/25, 02:53 - Sayantan Bharati: https://www.facebook.com/share/v/1H6Qjp4NvC/
+02/11/25, 03:00 - Sayantan Bharati: https://www.facebook.com/share/r/1DPQeK7FDi/
+02/11/25, 03:11 - Sayantan Bharati: https://www.facebook.com/share/v/1FSRVG6euL/
+02/11/25, 03:52 - Sayantan Bharati: https://filezilla-project.org/
+02/11/25, 21:14 - Sayantan Bharati: https://www.facebook.com/share/v/1G27CpiAkR/
+02/11/25, 21:20 - Sayantan Bharati: https://www.facebook.com/share/r/17GoFX8CKw/
+03/11/25, 03:28 - Sayantan Bharati: https://www.facebook.com/share/r/1AXPbjK3G7/
+03/11/25, 03:40 - Sayantan Bharati: https://www.facebook.com/share/r/17MdLpDAW2/
+04/11/25, 03:41 - Sayantan Bharati: https://www.instagram.com/reel/DQXCCcKDorx/?igsh=ODRrc2E0dm42cGRv
+04/11/25, 03:42 - Sayantan Bharati: https://www.instagram.com/p/DQhNh5MEr4V/?img_index=4&igsh=b2lucDZ0cmQ4eDRl
+04/11/25, 03:45 - Sayantan Bharati: https://www.instagram.com/reel/DQcdVrpkle2/?igsh=MXdxeDJpdGl1em95dg==
+04/11/25, 03:57 - Sayantan Bharati: https://www.instagram.com/reel/DQZSrZRCM6T/?igsh=MTNrMHJzd2g0NHdtdw==
+04/11/25, 14:39 - Sayantan Bharati: https://www.facebook.com/share/v/1BzkocgEJQ/
+04/11/25, 15:05 - Sayantan Bharati: https://www.facebook.com/share/v/1FxwJKj3Dn/
+04/11/25, 20:32 - Sayantan Bharati: https://www.facebook.com/share/r/16gPagYeyC/
+04/11/25, 22:09 - Sayantan Bharati: https://www.facebook.com/share/r/16Lqu6pXYG/
+05/11/25, 02:45 - Sayantan Bharati: https://www.facebook.com/share/r/1Aw61UkpDU/
+05/11/25, 09:58 - Sayantan Bharati: https://www.facebook.com/share/17az2pJrvK/
+05/11/25, 09:58 - Sayantan Bharati: https://www.facebook.com/share/17P6GWnPUg/
+05/11/25, 10:52 - Sayantan: https://www.facebook.com/share/v/17FiS7gh4Z/
+05/11/25, 12:21 - Sayantan Bharati: https://www.facebook.com/share/r/1AwsqHJjQc/
+05/11/25, 12:36 - Sayantan Bharati: https://www.facebook.com/share/r/19mBnb8kky/
+05/11/25, 18:32 - Sayantan Bharati: https://www.facebook.com/share/v/17FeNuwKmW/
+05/11/25, 21:38 - Sayantan Bharati: https://www.facebook.com/share/r/1SB7mSSvmk/
+06/11/25, 00:50 - Sayantan Bharati: https://www.facebook.com/share/v/17GT8oBUoi/
+06/11/25, 07:12 - Sayantan Bharati: https://www.facebook.com/share/r/17eYCkJpSP/
+06/11/25, 07:14 - Sayantan Bharati: https://www.facebook.com/share/r/1BC9k6nhc4/
+06/11/25, 07:17 - Sayantan Bharati: https://www.facebook.com/share/p/1CYt533yxR/
+06/11/25, 07:21 - Sayantan Bharati: https://www.facebook.com/share/r/17N3WXndYX/
+06/11/25, 14:17 - Sayantan Bharati: https://www.facebook.com/share/r/17K8wC9pMH/
+06/11/25, 15:24 - Sayantan: https://www.facebook.com/share/r/1AWmycpgWo/
+06/11/25, 15:30 - Sayantan: https://www.facebook.com/share/r/1AWPBqED9j/
+07/11/25, 01:11 - Sayantan: https://www.instagram.com/reel/DQdYBrlE_1A/?igsh=YmViZ2Q1dGhud25r
+07/11/25, 13:52 - Sayantan Bharati: https://www.instagram.com/p/DQlGwgHjAqJ/?img_index=1&igsh=MWx6YXpkZ3Vhbnk3Yw==
+07/11/25, 14:16 - Sayantan Bharati: https://www.instagram.com/p/DQoxfVdCG9p/?img_index=3&igsh=MWJkMnQ0NHB5MDlsOQ==
+08/11/25, 18:38 - Sayantan Bharati: https://www.instagram.com/p/DQrcCAJkReO/?img_index=6&igsh=bXZyeXY2aWp0bDVz
+08/11/25, 20:22 - Sayantan Bharati: https://www.facebook.com/share/17LSRsHXia/
+08/11/25, 21:02 - Sayantan: https://www.facebook.com/share/r/1FZjrM4oYh/
+09/11/25, 01:02 - Sayantan Bharati: https://www.instagram.com/p/DQzPKIYEnST/?img_index=1&igsh=ZDF0c2h0dmtpdHdz
+09/11/25, 01:03 - Sayantan Bharati: https://www.instagram.com/p/DQyALWzgco6/?img_index=3&igsh=MWV3OTkxZjV2YmJmbA==
+09/11/25, 01:05 - Sayantan Bharati: https://www.instagram.com/reel/DNYxLEFo2vn/?igsh=cTBmMWZpcnVyaXVj
+09/11/25, 01:08 - Sayantan Bharati: https://www.instagram.com/p/DQtqB2TjM-6/?igsh=aG1vbGJ0OTlyZnpm
+09/11/25, 01:09 - Sayantan Bharati: https://www.instagram.com/reel/DQpWvZgk_R3/?igsh=aHlpaHpteGp4MDk5
+09/11/25, 21:20 - Sayantan Bharati: https://www.facebook.com/share/v/1Cezz42ifw/
+11/11/25, 20:29 - Sayantan: https://www.facebook.com/share/r/17Zrji77Ee/
+12/11/25, 06:59 - Sayantan Bharati: https://www.facebook.com/share/r/1DtCBYFZMV/
+12/11/25, 07:16 - Sayantan Bharati: https://www.facebook.com/share/r/1A39Ddqht7/
+12/11/25, 07:18 - Sayantan Bharati: https://www.facebook.com/share/r/1Jqi4ib3mx/
+12/11/25, 07:32 - Sayantan Bharati: https://www.facebook.com/share/v/17bgCzWLAk/
+12/11/25, 13:55 - Sayantan Bharati: 2 : 30 AI
+13/11/25, 01:56 - Sayantan Bharati: https://www.instagram.com/p/DQ61E04D6e8/?img_index=1&igsh=eWtudTd3YnJpdmtk
+13/11/25, 13:49 - Sayantan Bharati: https://www.instagram.com/p/DQ4Elp5CUkb/?img_index=6&igsh=MTBjdnlqOWVhMXZ4Zg==
+13/11/25, 13:53 - Sayantan Bharati: https://www.instagram.com/reel/DQbtEUECEEZ/?igsh=c3JpMzVkNGMycHJi
+13/11/25, 13:56 - Sayantan Bharati: https://www.instagram.com/reel/DL4A3V0S0hi/?igsh=MTk4MWVjNDlkaHFhOQ==
+13/11/25, 13:57 - Sayantan Bharati: https://www.instagram.com/reel/DOCgXEOjCp1/?igsh=bjZ0aWVnOHp4N213
+13/11/25, 14:21 - Sayantan Bharati: https://www.instagram.com/reel/DMXpmItSZBj/?igsh=MWZqZms4eXBlaXBraQ==
+13/11/25, 14:21 - Sayantan Bharati: https://www.instagram.com/reel/DQ6q-w9CATK/?igsh=MWNmdmtxeHcwYmxydg==
+13/11/25, 14:23 - Sayantan Bharati: https://www.instagram.com/reel/DK8Rr53SSFB/?igsh=anNyazNvNjJ0Njc=
+14/11/25, 00:13 - Sayantan Bharati: https://www.instagram.com/p/DQTWOjkkyNX/?igsh=Ymd4aXYydHJhZWdk
+15/11/25, 13:07 - Sayantan Bharati: https://www.facebook.com/share/r/1BEP3oScDe/
+16/11/25, 09:01 - Sayantan Bharati: https://www.instagram.com/reel/DMC96P0OiFR/?igsh=azIwczM2Nm9kYXc5
+16/11/25, 09:10 - Sayantan Bharati: https://www.instagram.com/reel/DOi530MEr4w/?igsh=MTRtbTVwb3lzaXV2eQ==
+16/11/25, 09:20 - Sayantan Bharati: https://www.instagram.com/reel/DKJ_qlSMlvB/?igsh=NWwwamZ1M240aXc2
+16/11/25, 09:38 - Sayantan Bharati: https://www.instagram.com/p/DJ8iCaDsJTn/?igsh=MTd0eXBtZ2FldGt1ZQ==
+16/11/25, 11:02 - Sayantan Bharati: https://www.instagram.com/p/DQwaqcrgHlp/?igsh=MW94bDJoenN6cW1ydQ==
+16/11/25, 12:56 - Sayantan Bharati: https://www.threads.com/@basic.gyaan/post/DRE9aTNEsQk?xmt=AQF0LgxpnZBZCdPP6EO8SJgzCvMGH45CIkrNNYzdQnvAlX6kxu0QLIAoRhUEBHUIkzlP0RAz&slof=1
+16/11/25, 12:58 - Sayantan Bharati: https://www.instagram.com/reel/DQ4fB6Bkh8v/?igsh=MWw0ODJxMGpmcG9pMg==
+16/11/25, 23:16 - Sayantan: https://www.facebook.com/share/r/1D7AwUbySq/
+16/11/25, 23:17 - Sayantan: https://www.facebook.com/share/v/1C9LcbfU3s/
+17/11/25, 00:17 - Sayantan: https://www.instagram.com/reel/DOGt2Ilgfnx/?igsh=dWg4d3VpaHUzZWF0
+17/11/25, 00:29 - Sayantan: https://www.instagram.com/p/DQ_CkmggKHB/?igsh=MWd2dG9qaHg4eHV3MA==
+17/11/25, 00:36 - Sayantan: https://www.instagram.com/p/DQ6zYi5CEHA/?img_index=4&igsh=MTZ6cjh2Z3p2ejJheA==
+17/11/25, 02:14 - Sayantan Bharati: https://www.instagram.com/reel/DPllt6_kxKE/?igsh=NG5xMHBvM2lhaXl1
+17/11/25, 02:22 - Sayantan Bharati: https://www.instagram.com/p/DQvQxN_E6JJ/?img_index=1&igsh=MTJ5c3c3cmpmZ2ZjOQ==
+17/11/25, 10:11 - Sayantan Bharati: https://www.threads.com/@ahmadkhane12/post/DRHMNJqDS3_?xmt=AQF06dAKiCjy-_UsKkJ2h30CkWM0LJK4WdD33dt3DasZfALLzb4NclWzxiN1HSXhwXsvAJ-B&source_surface=35&slof=1
+17/11/25, 10:38 - Sayantan Bharati: https://www.instagram.com/reel/DQeNW_cDNdF/?igsh=MTN5eW8ybGs4dW5zNg==
+17/11/25, 15:44 - Sayantan Bharati: https://www.facebook.com/share/v/1EXNEZFLXD/
+17/11/25, 17:41 - Sayantan Bharati: https://www.instagram.com/reel/DQ9ad1SEYJl/?igsh=MWpzaHU2c2E3aGI3MA==
+17/11/25, 17:53 - Sayantan Bharati: https://www.instagram.com/reel/DQdpLCEj9zw/?igsh=cXUyd21qMWM1Y2Vh
+17/11/25, 17:55 - Sayantan Bharati: https://www.instagram.com/p/DREW6I2ktyU/?img_index=3&igsh=b2xvYmlzN2M4MmUw
+18/11/25, 02:01 - Sayantan Bharati: https://www.instagram.com/reel/DMx8mPIBFvG/?igsh=MW5yNXBpcXYzZnp3eQ==
+18/11/25, 02:04 - Sayantan Bharati: https://www.instagram.com/p/DRBbyTkkmkS/?img_index=4&igsh=bDM1bWg4cDEybXB3
+18/11/25, 02:06 - Sayantan Bharati: https://www.instagram.com/reel/DN--DVKk0e0/?igsh=dmhkNGZsdjY3b2Jk
+18/11/25, 11:32 - Sayantan Bharati: https://www.facebook.com/share/r/1KcomLeT65/
+18/11/25, 11:36 - Sayantan Bharati: https://www.facebook.com/share/r/17giajEhh2/
+18/11/25, 11:49 - Sayantan Bharati: https://www.instagram.com/reel/DOKjGs2Cem7/?igsh=MWdwNWFzdjAxNW1rdg==
+18/11/25, 12:26 - Sayantan Bharati: https://www.instagram.com/reel/DRHwIpFCAnP/?igsh=MXJmOTNyd2N6cDdieg==
+18/11/25, 15:23 - Sayantan Bharati: https://www.facebook.com/share/r/1EPyxL2kNz/
+20/11/25, 01:19 - Sayantan Bharati: https://www.facebook.com/share/r/1ac2fkLz5w/
+20/11/25, 01:22 - Sayantan Bharati: https://www.facebook.com/share/r/1Gz2hYBrZa/
+20/11/25, 07:49 - Sayantan Bharati: https://www.facebook.com/share/r/1AnFW4Kw4K/
+20/11/25, 12:09 - Sayantan Bharati: https://www.facebook.com/share/r/1GMsNzAcT8/
+21/11/25, 13:48 - Sayantan Bharati: https://www.instagram.com/p/DQr2EaKDDFn/?img_index=3&igsh=MXZ5NGc1a2Q1ODJqdg==
+22/11/25, 12:18 - Sayantan Bharati: https://www.instagram.com/p/DQy6psGjbyA/?img_index=1&igsh=MXZ2a3V0MDdrNjZjcQ==
+22/11/25, 12:21 - Sayantan Bharati: https://www.instagram.com/p/DQszK2YEiM3/?img_index=1&igsh=MThkeTduNmFpbmVvag==
+24/11/25, 02:09 - Sayantan Bharati: https://www.instagram.com/p/DQmVYSFjJOX/?img_index=3&igsh=MTBqZW52b2dvaGMyaQ==
+24/11/25, 02:15 - Sayantan Bharati: https://www.instagram.com/reel/DQ_-Xi9DDUo/?igsh=ajdnZ2tyMTc0c3ps
+24/11/25, 02:47 - Sayantan Bharati: https://www.instagram.com/p/DQWnOTnCHwT/?img_index=2&igsh=MWY1NnowaDZxc3dzbg==
+24/11/25, 08:37 - Sayantan Bharati: https://www.facebook.com/share/v/1DMs82TCF5/
+24/11/25, 15:46 - Sayantan Bharati: https://www.facebook.com/share/r/16CRGzroLn/
+24/11/25, 23:04 - Sayantan Bharati: https://www.instagram.com/p/DQomuIPjIDZ/?img_index=7&igsh=YnU2YjNoNWk5dWQ2
+24/11/25, 23:29 - Sayantan Bharati: https://www.instagram.com/p/DRaDw7Ok_T8/?img_index=2&igsh=eGFkYWZ0Z2tjcTR5
+24/11/25, 23:35 - Sayantan Bharati: https://www.instagram.com/reel/DPPHNRWEbyC/?igsh=MTExMTl0M3E5cHpkZA==
+24/11/25, 23:37 - Sayantan Bharati: https://www.instagram.com/reel/DP73kC6gYtE/?igsh=MWh2bDloMGg5bTRiNQ==
+25/11/25, 07:47 - Sayantan Bharati: https://www.facebook.com/share/r/1DJ4RYXes2/
+27/11/25, 18:06 - Your security code with Sayantan changed. Tap to learn more.
+27/11/25, 20:19 - Sayantan Bharati: https://www.instagram.com/p/DReC1FfDGqa/?img_index=1&igsh=cGoxenBhMGoyaTgy
+28/11/25, 20:15 - Sayantan Bharati: https://www.instagram.com/p/DRj6_WYEiE1/?img_index=2&igsh=MWRrZGV4NnFubzEzMA==
+29/11/25, 09:18 - Sayantan Bharati: https://www.instagram.com/p/DRKmVWyktkx/?img_index=2&igsh=MWJjbzZibmJsaHdzcg==
+29/11/25, 10:40 - Sayantan Bharati: https://www.facebook.com/share/v/1C2TvfhNNE/
+29/11/25, 11:04 - Sayantan Bharati: https://www.instagram.com/reel/DRemV1tidHd/?igsh=MXRsNnRhZjlweGw2dg==
+29/11/25, 11:09 - Sayantan Bharati: https://www.instagram.com/reel/DRR0I7IDA6O/?igsh=a3NyemV0em1obzF3
+29/11/25, 15:17 - Sayantan Bharati: https://www.instagram.com/reel/DRmn1mrERa4/?igsh=ZThwY2tvdnZnY3hz
+29/11/25, 15:18 - Sayantan Bharati: https://www.instagram.com/p/DRcOEjxAS_8/?img_index=3&igsh=dmExd3V2YjdzMmhs
+29/11/25, 15:27 - Sayantan Bharati: https://www.instagram.com/p/DRUAKMXjUDP/?igsh=MXQ3MDV5ODF2MmVlZQ==
+29/11/25, 23:18 - Sayantan Bharati: https://www.facebook.com/share/r/1Fq8RGtXbd/
+30/11/25, 18:53 - Sayantan Bharati: https://www.instagram.com/p/DRo6IkLgZAN/?img_index=2&igsh=MXcxN25iYXdkdHJ3ZA==
+01/12/25, 02:53 - Sayantan Bharati: https://www.instagram.com/reel/DQ38yubkmVR/?igsh=MW5ocnE2YzZpZWpnOQ==
+01/12/25, 16:34 - Sayantan Bharati: https://www.instagram.com/p/DQwYr8ME9HR/?img_index=2&igsh=am5sZGE0MWVwYjdl
+02/12/25, 07:23 - Sayantan Bharati: https://www.facebook.com/share/p/19QBM9dBWo/
+03/12/25, 13:08 - Sayantan Bharati: https://www.facebook.com/share/r/17W8D3m6GA/
+04/12/25, 06:44 - Sayantan Bharati: https://www.facebook.com/share/r/1AToRUD5HM/
+06/12/25, 09:56 - Sayantan Bharati: https://www.instagram.com/p/DR1UWtsk3zE/?img_index=2&igsh=aWoxMzhzNnV2ejd3
+06/12/25, 10:31 - Sayantan Bharati: https://www.instagram.com/p/DRv-4UXj4cx/?img_index=6&igsh=MWIwczNqcTc5aWdtYQ==
+07/12/25, 19:27 - Sayantan Bharati: See this Instagram post by @frontend_in.depth: https://www.instagram.com/p/DR8ldtBAlMm/?igsh=YzAyMDM1MGJkZA==
+08/12/25, 10:27 - Sayantan Bharati: https://www.techprofree.com/data-science-from-scratch-learning-pdf-notes/?fbclid=IwdGRjcAOjOd1jbGNrA6M5rWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHmIlUrP-a5pBFR6H20vZqI8h8WgWc929TrMyqsbX_VgcYog_N_M2geebrVLv_aem_7NUSSI_QhULGa1dTCdqBDg
+09/12/25, 21:07 - Sayantan Bharati: https://www.facebook.com/share/r/17UZaKmxks/
+10/12/25, 14:49 - Sayantan Bharati: https://www.linkedin.com/posts/shailja-chaurasia_python-interview-code-questions-complete-ugcPost-7394115637180104705-krbl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+10/12/25, 14:50 - Sayantan Bharati: https://www.linkedin.com/posts/vinay-kewat_pdf-activity-7403660545616220160--oqG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+11/12/25, 12:40 - Sayantan Bharati: https://digital.marksense.in/product/software-system-design/?utm_source=fb&utm_medium=paid&utm_campaign=%7B%7Bcampaign_name%7D%7D&utm_content=%7B%7Bad_name%7D%7D_%7B%7Bad_id%7D%7D&placement=Facebook_Mobile_Feed&adset=2%20PI%201%25%20LLA%20of%20Purchaser%20Intent%20adset&utm_placement=Facebook_Mobile_Feed&utm_adset=2%20PI%201%25%20LLA%20of%20Purchaser%20Intent%20adset&fbclid=IwdGRjcAOnTY5leHRuA2FlbQEwAGFkaWQBqyrP5_0-M3NydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHo765oxZHPh-AvOmJQw8-e_g3gPFUruVFXB9wyOfvoxjINPP-fakdBZlPebL_aem_IjYHX3O7Qvm-t2KjDDETOw&utm_id=120227830926870403&utm_term=120227831049040403
+11/12/25, 14:18 - Sayantan Bharati: https://www.instagram.com/p/DSAsbjWE6IW/?img_index=1&igsh=YmdsdmR0dHRueDl0
+11/12/25, 22:39 - Sayantan Bharati: https://lmarena.ai/
+15/12/25, 13:34 - Sayantan Bharati: https://github.com/cporter202/scraping-apis-for-devs?fbclid=IwdGRjcAOsoDljbGNrA6ygNmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHr0C9qnHymvpbExc12q3bQO4yb9b4-1NOPBtRDWQAiixp_inqqJz7CuIyqeH_aem_nT2zCeZbsw0hd2wFLB9QVg
+17/12/25, 10:13 - Sayantan Bharati: https://www.facebook.com/share/r/1BqftApMdy/
+18/12/25, 07:08 - Sayantan Bharati: https://www.instagram.com/p/DSG9HLWAqaV/?img_index=2&igsh=MXhnd3NnNjNzd29mNQ==
+18/12/25, 18:32 - Sayantan Bharati: https://www.instagram.com/reel/DSY9xh4DxdR/?igsh=MWswcTJ4cDFjZTc2OA==
+20/12/25, 02:32 - Sayantan Bharati: https://www.instagram.com/reel/DSaEynGDy2A/?igsh=MXVtc2hzaXRnczh3OA==
+20/12/25, 18:51 - Sayantan Bharati: https://www.facebook.com/share/r/1D3Hn3KrRw/
+20/12/25, 19:03 - Sayantan Bharati: https://www.facebook.com/share/r/1G64UoYaeA/
+20/12/25, 19:06 - Sayantan Bharati: https://www.facebook.com/share/r/1D2e49ymPy/
+20/12/25, 19:11 - Sayantan Bharati: https://www.facebook.com/share/r/1F9F5rLdXg/
+20/12/25, 21:06 - Sayantan Bharati: https://www.facebook.com/share/r/16Z6AvrUWd/
+20/12/25, 21:43 - Sayantan Bharati: https://www.facebook.com/share/r/1C1X5VVRXK/
+21/12/25, 12:36 - Sayantan Bharati: https://www.facebook.com/share/r/1K7ZzfBmb2/
+21/12/25, 22:13 - Sayantan Bharati: https://github.com/Zie619/n8n-workflows
+23/12/25, 21:19 - Sayantan Bharati: https://www.linkedin.com/posts/mali-lokesh_nodejs-learning-roadmap-activity-7408710569047814144-nk4y?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+24/12/25, 22:00 - Sayantan Bharati: https://www.facebook.com/share/p/1AxmKMtJbo/
+25/12/25, 18:42 - Sayantan Bharati: https://www.facebook.com/share/r/1BqNdRXCTs/
+26/12/25, 09:50 - Sayantan Bharati: https://www.facebook.com/share/r/1FyiHpiGkS/
+26/12/25, 10:28 - Sayantan Bharati: https://www.facebook.com/share/r/1AZCGx4tTL/
+26/12/25, 14:41 - Sayantan Bharati: https://www.facebook.com/share/r/17hb3EhP6C/
+26/12/25, 16:30 - Sayantan Bharati: https://www.facebook.com/share/r/16ZVdaMpWZ/
+26/12/25, 23:25 - Sayantan Bharati: https://www.instagram.com/p/DSmuhrvj62-/?img_index=2&igsh=amw5dmdpcGhwcWNv
+26/12/25, 23:36 - Sayantan Bharati: https://www.instagram.com/reel/DSM7ZZIiR8A/?igsh=MTMzaHFuODhhcGdrNg==
+27/12/25, 00:05 - Sayantan Bharati: https://www.facebook.com/share/r/1SqJWify2f/
+27/12/25, 00:08 - Sayantan Bharati: https://www.facebook.com/share/r/1CCEJZvMnU/
+27/12/25, 04:57 - Sayantan Bharati: https://www.facebook.com/share/r/1GzuYfuDGC/
+28/12/25, 17:41 - Sayantan Bharati: https://www.facebook.com/share/r/1AbeEjWWR1/
+29/12/25, 04:11 - Sayantan Bharati: https://www.facebook.com/share/r/1HScCivWEq/
+29/12/25, 09:27 - Sayantan Bharati: https://www.instagram.com/reel/DSw0Y68k3Ph/?igsh=MTh6OW1lNWVldmVpbg==
+30/12/25, 12:16 - Sayantan Bharati: https://www.facebook.com/share/r/17bRwm1SEF/
+31/12/25, 17:27 - Sayantan Bharati: https://www.linkedin.com/posts/akarsh-vyas-971590229_complete-python-book-for-beginners-ugcPost-7344687818494939136-nkVl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+31/12/25, 23:57 - Sayantan Bharati: https://www.linkedin.com/posts/digitaldebjeet_jobsearch-resumetips-chatgpt-activity-7411659297652285440-TQgl?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=copy_link
+01/01/26, 07:17 - Sayantan Bharati: https://www.linkedin.com/posts/shubham-dhatwalia_40-javascript-questions-recruiters-ask-in-activity-7410518561322070016-R-Ci?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+01/01/26, 08:11 - Sayantan Bharati: https://www.instagram.com/reel/DNf8gPFsXN8/?igsh=bGpja3FmMXZkMmJ6
+01/01/26, 18:33 - Sayantan Bharati: https://youtu.be/Vp4glSVPT8o?si=FbddrGQC5Cx9P0JR
+02/01/26, 11:54 - Sayantan Bharati: https://www.facebook.com/share/r/1C9gkag9AW/
+03/01/26, 00:47 - Sayantan Bharati: https://www.instagram.com/p/DSy57X3gRCH/?img_index=2&igsh=b2duM29xazN0a21i
+03/01/26, 00:48 - Sayantan Bharati: https://www.instagram.com/p/DSpCx8HD53E/?igsh=MXIwaWY4YzI5MmNrZA==
+03/01/26, 02:28 - Sayantan Bharati: https://www.instagram.com/reel/DS5eAUrklnE/?igsh=Zm83NW11NjFiMHd2
+04/01/26, 15:00 - Sayantan Bharati: https://systemdesign.moosibou.com/
+04/01/26, 15:00 - Sayantan Bharati: https://github.com/liquidslr/leetcode-company-wise-problems/tree/main/Agoda
+04/01/26, 15:00 - Sayantan Bharati: https://github.com/snehasishroy/leetcode-companywise-interview-questions/blob/master/agoda/three-months.csv
+08/01/26, 09:14 - Sayantan Bharati: https://www.facebook.com/share/r/1DT5WoZywv/
+12/01/26, 15:00 - Sayantan Bharati: https://www.facebook.com/share/r/1JovQy5agC/
+13/01/26, 05:27 - Sayantan Bharati: https://www.instagram.com/reel/DTQZugWgrgg/?igsh=dGkyNXIzZ2g0NGRx
+14/01/26, 23:46 - Sayantan Bharati: https://www.instagram.com/reel/DTfi2q0EwmP/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==
+16/01/26, 01:39 - Sayantan Bharati: https://www.facebook.com/share/r/1HE9whX8LS/
+16/01/26, 01:50 - Sayantan Bharati: https://www.facebook.com/share/r/1Cc1jYLaFG/
+16/01/26, 23:27 - Sayantan Bharati: https://www.facebook.com/share/r/17z53V7tMN/
+17/01/26, 06:20 - Sayantan Bharati: https://www.threads.com/@rammcodes_/post/DTkt58_DxYU?xmt=AQF0en6NCRry-I52J80cg8eBM7l4gTSh3WRb2JzurCFtA25vESVxUpvAtZ2pblDM_fZ-x52N&slof=1
+18/01/26, 02:08 - Sayantan Bharati: https://www.facebook.com/share/r/1ABc7vAiLJ/
+21/01/26, 00:11 - Sayantan Bharati: https://www.linkedin.com/posts/ashishps1_dsa-was-hard-until-i-learned-these-20-patterns-activity-7419244061485875200-YgY2?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+21/01/26, 02:23 - Sayantan Bharati: https://www.facebook.com/share/r/1HN8tHtsDi/
+21/01/26, 03:19 - Sayantan Bharati: https://www.instagram.com/p/DTJ8JL0CrrL/?img_index=2&igsh=b294c201YWs5aGVq
+21/01/26, 10:10 - Sayantan Bharati: https://www.facebook.com/share/r/1EHsWGGZxR/
+22/01/26, 03:54 - Sayantan Bharati: https://www.facebook.com/share/r/1G4yxKFvtb/
+22/01/26, 11:49 - Sayantan Bharati: https://www.facebook.com/share/r/1C88yaPbUx/
+22/01/26, 11:54 - Sayantan Bharati: https://www.facebook.com/share/r/1GC98uqBkb/
+24/01/26, 00:41 - Sayantan Bharati: https://www.facebook.com/share/r/19uR9gtho1/
+25/01/26, 01:28 - Sayantan Bharati: https://www.threads.com/@thenawazshaikh/post/DT4a_2diC2m?xmt=AQF0k-20giVr92AHcnNtOb8tDLYSL2_AFQ6lIcVdFPs3XeZHpdNhm8TQuhVuF8t4kFr8v0fP&source_surface=35&slof=1
+26/01/26, 00:46 - Sayantan Bharati: https://www.linkedin.com/posts/emmanuelumeh_interview-reactjs-javascript-share-7419308132603981824-xvmC?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+26/01/26, 00:50 - Sayantan Bharati: https://www.facebook.com/share/r/1ByaRuFG4D/
+26/01/26, 10:00 - Sayantan Bharati: https://www.linkedin.com/posts/raul-junco_most-system-design-interviews-dont-fail-share-7419726430055428097-GFJM?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+26/01/26, 10:46 - Sayantan Bharati: https://www.instagram.com/reel/DTzF6k5ju6j/?igsh=Y3ZhdGU4bzh1cXVl
+27/01/26, 01:25 - Sayantan Bharati: https://www.instagram.com/reel/DTsM784k7hv/?igsh=MWpqbTY3YnpubmgzMA==
+27/01/26, 01:59 - Sayantan Bharati: https://www.instagram.com/reel/DTiVzQOEwLp/?igsh=bnQ3ZmpibGgyMmF3
+29/01/26, 01:40 - Sayantan Bharati: https://www.instagram.com/reel/DT-25-lEr-S/?igsh=MXBjcDhxNWRvdDNmcA==
+30/01/26, 10:41 - Sayantan Bharati: https://algomaster.io/animations/dsa
+30/01/26, 10:42 - Sayantan Bharati: https://www.linkedin.com/posts/eric-hu-4b9886141_js-questions-ugcPost-7422629758800400384-aqvN?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+30/01/26, 10:49 - Sayantan Bharati: https://www.linkedin.com/posts/alpnap_angular-ugcPost-7422852435972571136-exlp?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+30/01/26, 13:09 - Sayantan Bharati: You deleted this message
+30/01/26, 23:43 - Sayantan Bharati: https://www.instagram.com/reel/DT-x2eeiMJt/?igsh=MWtpZWhreWZhY2xmNA==
+31/01/26, 14:32 - Sayantan Bharati: https://www.instagram.com/reel/DUBmPmlkmdm/?igsh=ODQ2aGoxaDczdDdo
+01/02/26, 02:30 - Sayantan Bharati: https://www.facebook.com/share/r/17zs5AGYD7/
+01/02/26, 13:21 - Sayantan Bharati: https://www.linkedin.com/posts/rashmi-ranjan-bastia-50b489336_reactjs-ugcPost-7422457064754561026-JJkS?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+02/02/26, 16:09 - Sayantan Bharati: https://www.facebook.com/share/r/1DziFHb4qf/
+03/02/26, 04:02 - Sayantan Bharati: https://www.facebook.com/share/v/1DSwXVaVhK/
+03/02/26, 10:19 - Sayantan Bharati: https://www.facebook.com/share/r/1G4wRn8idB/
+03/02/26, 10:31 - Sayantan Bharati: https://www.instagram.com/reel/DULqUBjEh_k/?igsh=MTVnMTF4YXo0dmUyMw==
+03/02/26, 19:08 - Sayantan Bharati: https://youtube.com/playlist?list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2&si=r204cbAvQIiTx8Vo
+06/02/26, 13:44 - Sayantan Bharati: https://www.facebook.com/share/r/1DKK4nH6Yb/
+08/02/26, 02:44 - Sayantan Bharati: https://www.instagram.com/reel/DTrpRd7jg6y/?igsh=dzYwcnBvMHgybGVv
+09/02/26, 01:21 - Sayantan Bharati: https://www.instagram.com/p/DUaCif-kfOt/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==
+10/02/26, 11:21 - Sayantan Bharati: https://www.facebook.com/share/r/1SihUADeBr/
+11/02/26, 13:07 - Sayantan Bharati: https://www.facebook.com/share/r/1AWFwPKXRx/
+15/02/26, 15:22 - Sayantan Bharati: https://www.linkedin.com/posts/naresh-edagotti-6a71a1233_llm-interview-guide-ugcPost-7428634656276631552-TfAv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+16/02/26, 18:22 - Sayantan Bharati: https://www.facebook.com/share/r/18BUrBNZwJ/
+17/02/26, 18:00 - Sayantan Bharati: https://www.facebook.com/share/r/1ZnMWEpYqZ/
+17/02/26, 23:25 - Sayantan Bharati: https://www.linkedin.com/posts/kamal-sharma-2a654a191_interview-questions-ugcPost-7429484004569055232-gdaN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+18/02/26, 04:03 - Sayantan Bharati: https://www.facebook.com/share/r/1KzgoEuG3u/
+18/02/26, 14:56 - Sayantan Bharati: https://www.facebook.com/share/r/16vzgt3sQX/
+18/02/26, 19:26 - Sayantan Bharati: https://docs.google.com/document/d/1RKe2Ficwr628oLG1LVs3dqUULMWkfA-GIeTBKRQneAA/mobilebasic?fbclid=PAT01DUAQCpEZleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeSG8XHK-zxbthUXLlrT8FPF8gm-Xi8gXU6_stseeVCP8cswN8uYSrwOdZEuQ_aem_UaaiVk0jPE6DxLCandwz0g
+19/02/26, 14:33 - Sayantan Bharati: https://www.facebook.com/share/r/1DkiXNafnp/
+20/02/26, 07:36 - Sayantan Bharati: https://www.facebook.com/share/r/1Ak9TZSz4P/
+20/02/26, 22:13 - Sayantan Bharati: https://www.facebook.com/share/r/1C2eiLuj2r/
+21/02/26, 01:37 - Sayantan Bharati: https://www.facebook.com/share/v/1CgheAD9q2/
+21/02/26, 01:41 - Sayantan Bharati: https://www.facebook.com/share/r/1EQsyYJ1xN/
+21/02/26, 13:43 - Sayantan Bharati: https://www.facebook.com/share/p/1C5Rn2TGCb/
+22/02/26, 11:51 - Sayantan Bharati: https://www.facebook.com/share/r/1PYHTzAMxf/
+22/02/26, 16:58 - Sayantan Bharati: https://www.facebook.com/share/r/176NsZ5zaX/
+23/02/26, 05:53 - Sayantan Bharati: https://www.arjaythedev.com/?fbclid=IwVERTSAQIfTBleHRuA2FlbQIxMABzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR4b11JRUKrm382bTdfYDf_AixzF3yOwSORZ-lMUTZEyp2uvKZXJ_OX1HH20CA_aem_MwuX9KOLxbsxl5xDaVlAXA&sfnsn=wiwspwa
+23/02/26, 14:40 - Sayantan Bharati: https://www.facebook.com/share/v/1BhkpMUHej/
+24/02/26, 19:51 - Sayantan Bharati: https://www.facebook.com/share/r/1HWomV7ChB/
+28/02/26, 04:07 - Sayantan Bharati: https://www.facebook.com/share/r/1BDc9rhMMb/
+01/03/26, 06:53 - Sayantan Bharati: https://www.linkedin.com/posts/yashbagal666_system-design-handbook-ugcPost-7433376159964352513-q8Xx?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+01/03/26, 21:36 - Sayantan Bharati: https://www.facebook.com/share/r/17a6hxy1WM/
+02/03/26, 01:28 - Sayantan Bharati: https://www.instagram.com/reel/DVEOaV1jeqW/?igsh=cWJhbXBwNjZtZHc5
+02/03/26, 18:51 - Sayantan Bharati: https://www.facebook.com/share/r/1AeA1WqaeY/
+04/03/26, 02:55 - Sayantan Bharati: https://www.instagram.com/reel/DVOouwUk9jC/?igsh=MTI1YnVpdDI5N2Mwcw==
+05/03/26, 03:43 - Sayantan Bharati: https://www.facebook.com/share/r/1GDGsyjtuM/
+05/03/26, 04:40 - Sayantan Bharati: https://www.facebook.com/share/r/1FEMZStV8d/
+06/03/26, 08:53 - Sayantan Bharati: https://www.facebook.com/share/v/1DuJPyLvSV/
+06/03/26, 09:31 - Sayantan Bharati: https://www.facebook.com/share/r/1ZEdAH2aeD/
+07/03/26, 00:18 - Sayantan Bharati: https://www.instagram.com/reel/DU28psBk_yA/?igsh=Y3k2ZTl3MHFsMHBk
+07/03/26, 00:46 - Sayantan Bharati: https://www.instagram.com/p/DVBLspOk2zr/?igsh=ZXg1bnVlYXhuN3Z5
+07/03/26, 11:40 - Sayantan Bharati: https://www.facebook.com/share/r/18726EvmX3/
+07/03/26, 23:58 - Sayantan Bharati: https://www.linkedin.com/posts/ashishps1_if-you-want-to-get-good-at-system-design-share-7435178150428434432--5Wv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+08/03/26, 12:15 - Sayantan Bharati: https://www.facebook.com/share/r/1BEBR5k3Q6/
+08/03/26, 14:18 - Sayantan Bharati: https://www.instagram.com/p/DUu4_iaDczb/?img_index=2&igsh=eDJkampseXY1bm9q
+08/03/26, 14:41 - Sayantan Bharati: https://www.facebook.com/share/r/1Ps93GpDm8/
+09/03/26, 12:05 - Sayantan Bharati: https://www.instagram.com/p/DNdNXW1zvUq/?igsh=bHQ0bXI0bzNudzhw
+09/03/26, 14:01 - Sayantan Bharati: https://www.instagram.com/reel/DVipWEXCe8P/?igsh=MXhkcngwY3Z6ZmJkZw==
+09/03/26, 14:04 - Sayantan Bharati: https://www.instagram.com/reel/DVICnnDEhvX/?igsh=MXZjbzFlZGMxcG8zYw==
+10/03/26, 21:17 - Sayantan Bharati: https://www.facebook.com/share/r/1JGUGExMXU/
+10/03/26, 21:29 - Sayantan Bharati: https://www.facebook.com/share/r/1SJkBvAWBN/
+14/03/26, 10:13 - Sayantan Bharati: https://www.threads.com/@saadkhalidhere/post/DV2A88rCCnc?xmt=AQF0crRn37PP1-1EtVvMs7CZWDjoYGOdMlUdzDECdlkR0ih4Dxb2Lh5pYIHum717OZbPXnxC&source_surface=35&slof=1
+14/03/26, 15:10 - Sayantan Bharati: https://www.facebook.com/share/r/1HKSQSqosi/
+16/03/26, 01:01 - Sayantan Bharati: https://www.facebook.com/share/r/1DoqcqksDD/
+16/03/26, 02:07 - Sayantan Bharati: https://www.threads.com/@ashoksangireddyy/post/DV5RvxzjMf8?xmt=AQF07algqGrRRyznAA4XNi7rFx8MrnAgxA9uRIx8-EzX-t7um1tSMdjDUTDc6PvoeU4Gy698&source_surface=35&slof=1
+16/03/26, 02:08 - Sayantan Bharati: https://www.threads.com/@aliansari0/post/DV5yPXejvaf?xmt=AQF01XjTA4QllyB3AVlOFUThxDow3A0X0W8Y_5HtOJYGWqi1nfwVbYS6Xr27qN28OU23agY&source_surface=35&slof=1
+16/03/26, 23:29 - Sayantan Bharati: https://www.geekyfrontend.com/checkout/nodejs?utm_medium=paid&utm_source=th&utm_id=120232759923640609&utm_content=120234704400310609&utm_term=120232759923650609&utm_campaign=120232759923640609&fbclid=PAZXh0bgNhZW0BMABhZGlkAaso053SEbFzcnRjBmFwcF9pZBAzNDE5NjI4MzA1MDI1OTE3AAGnX3eh0lh3tVOnX4w5kurT3dUD14zhoh1b4oZEdfq96wJ6YPsPvbcSwUV_lRo_aem_5mAjF3u20MU87H-DJdIvog
+17/03/26, 07:18 - Sayantan Bharati: https://www.facebook.com/share/r/188Jo7oRWn/
+17/03/26, 07:43 - Sayantan Bharati: https://www.facebook.com/share/r/17f2ZEakHq/
+17/03/26, 07:43 - Sayantan Bharati: https://www.facebook.com/share/r/1DW4L9W9b9/
+17/03/26, 08:00 - Sayantan Bharati: https://www.facebook.com/reel/1380968580381408?sfnsn=wiwspwa&mibextid=6AJuK9
+18/03/26, 01:57 - Sayantan Bharati: https://www.facebook.com/share/r/18EXiNA6H4/
+18/03/26, 18:14 - Sayantan Bharati: https://www.facebook.com/share/r/18k1nUL2jT/
+19/03/26, 01:03 - Sayantan Bharati: https://www.facebook.com/share/r/1CZQGVGcJR/
+19/03/26, 13:28 - Sayantan Bharati: https://www.facebook.com/share/r/1AaMoNYMHE/
+19/03/26, 13:37 - Sayantan Bharati: https://www.facebook.com/share/r/1FweZdPXGg/
+19/03/26, 13:38 - Sayantan Bharati: https://www.facebook.com/share/r/1FWd1BdxfT/
+19/03/26, 19:01 - Sayantan Bharati: https://www.facebook.com/share/r/18Qd7sG3w7/
+19/03/26, 19:02 - Sayantan Bharati: https://www.facebook.com/share/r/16KuFWnRUW/
+20/03/26, 16:33 - Sayantan Bharati: https://www.facebook.com/share/r/1CBcGi2qmh/
+23/03/26, 06:48 - Sayantan Bharati: https://www.facebook.com/share/r/18APV9SxXL/
+23/03/26, 07:02 - Sayantan Bharati: https://www.facebook.com/share/r/1HW4Kk4g4L/
+23/03/26, 08:18 - Sayantan Bharati: https://www.facebook.com/share/r/19aefqians/
+23/03/26, 08:24 - Sayantan Bharati: https://www.facebook.com/share/r/1CFUg4dKN1/
+23/03/26, 19:55 - Sayantan Bharati: https://www.instagram.com/reel/DWEIhJrjYcp/?igsh=dGVzMHBxdHA5OHB1
+24/03/26, 19:46 - Sayantan Bharati: https://www.instagram.com/reel/DV5oMfjCBtF/?igsh=ODRlNno2Y2dlanV1
+24/03/26, 23:34 - Sayantan Bharati: https://www.instagram.com/reel/DWPh4Rpk7n1/?igsh=OHg4ZXF3MWZrZjE4
+24/03/26, 23:35 - Sayantan Bharati: https://www.instagram.com/reel/DVRSIgbEtFY/?igsh=MXJrYzI0cGx1dXUxag==
+24/03/26, 23:39 - Sayantan Bharati: https://www.facebook.com/share/r/1BzXqEHs2C/
+24/03/26, 23:51 - Sayantan Bharati: https://www.facebook.com/share/r/1FXjcTLCer/
+25/03/26, 14:46 - Sayantan Bharati: https://www.facebook.com/share/r/188zmC34fR/
+26/03/26, 02:05 - Sayantan Bharati: https://www.instagram.com/p/DWRJJu6Em_E/?img_index=1&igsh=bHBjOXk2dmlncngx
+26/03/26, 02:05 - Sayantan Bharati: https://www.instagram.com/reel/DWRCfyWktZV/?igsh=bDZwc3kyZDZlZmc0
+26/03/26, 10:35 - Sayantan Bharati: https://www.facebook.com/share/r/1XTc9GVBKn/
+26/03/26, 12:22 - Sayantan Bharati: https://www.facebook.com/share/r/1aFUpAMyyq/
+26/03/26, 20:57 - Sayantan Bharati: https://www.facebook.com/share/r/1DoVQvCN7t/
+26/03/26, 23:14 - Sayantan Bharati: https://www.facebook.com/share/r/1ChkBRwiyV/
+27/03/26, 04:36 - Sayantan Bharati: https://www.facebook.com/share/r/1CW1KKHZ5s/
+27/03/26, 09:10 - Sayantan Bharati: https://www.facebook.com/share/v/18Tj6F9u6y/
+27/03/26, 10:35 - Sayantan Bharati: https://www.facebook.com/share/v/17L7R8RNKL/
+29/03/26, 02:13 - Sayantan Bharati: https://www.facebook.com/share/p/1DhzvhDjUL/
+29/03/26, 16:03 - Sayantan Bharati: https://www.facebook.com/share/p/1dKFBA7AKZ/
+29/03/26, 17:05 - Sayantan Bharati: https://www.facebook.com/share/r/188XZVXX5v/
+29/03/26, 17:09 - Sayantan Bharati: https://www.facebook.com/share/r/14Zr7U5uUmd/
+30/03/26, 05:14 - Sayantan Bharati: https://www.facebook.com/share/1PBiFGSTfR/
+30/03/26, 05:22 - Sayantan Bharati: https://www.facebook.com/share/v/18dgZfuwXP/
+30/03/26, 05:31 - Sayantan Bharati: https://www.facebook.com/share/r/1DrTfou41J/
+30/03/26, 06:45 - Sayantan Bharati: https://www.facebook.com/share/r/1GTsQ2rJ7h/
+30/03/26, 06:55 - Sayantan Bharati: https://www.facebook.com/share/r/1C8kNrq5V3/
+30/03/26, 11:21 - Sayantan Bharati: https://www.facebook.com/share/r/1EbThQVrP9/
+30/03/26, 11:40 - Sayantan Bharati: https://www.instagram.com/reel/DWWN4DVk5go/?igsh=MTB5b2R5bnVrcG1keg==
+31/03/26, 01:06 - Sayantan Bharati: https://www.instagram.com/reel/DWd2A77k_bI/?igsh=MXd3MHZhcmw5cWtxNg==
+01/04/26, 00:18 - Sayantan Bharati: https://www.facebook.com/share/r/1C6PR2SUB8/
+01/04/26, 00:49 - Sayantan Bharati: https://www.facebook.com/share/r/17PNeW1baq/
+01/04/26, 01:06 - Sayantan Bharati: https://www.instagram.com/reel/DWQmcmfjXyX/?igsh=amxsOWI2NG43cTl6
+01/04/26, 01:45 - Sayantan Bharati: https://www.facebook.com/share/r/1CjQ9Wmbkv/
+01/04/26, 13:22 - Sayantan Bharati: https://www.linkedin.com/posts/akashkes22_softwareengineering-restapi-developers-share-7444956328231366656-yhyB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+01/04/26, 23:19 - Sayantan Bharati: https://www.facebook.com/share/r/18eMT5Mtwg/
+02/04/26, 14:10 - Sayantan Bharati: https://www.instagram.com/p/DWYHERdmksi/?img_index=4&igsh=enJqZzZ6emt5eDlo
+02/04/26, 14:15 - Sayantan Bharati: https://www.instagram.com/reel/DWl3Bo6jqX1/?igsh=OWJ2cWppZ3d5ZHFz
+02/04/26, 20:59 - Sayantan Bharati: https://www.facebook.com/share/r/1DdxfWxq4q/
+02/04/26, 21:21 - Sayantan Bharati: https://www.linkedin.com/posts/parikh-jain-79568798_let-me-save-you-50-hours-of-jumping-between-share-7445353692481990656-q8G5?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+02/04/26, 21:22 - Sayantan Bharati: https://www.linkedin.com/posts/nk-systemdesign-one_if-i-had-to-start-with-system-design-id-share-7445394799458680833-EAt1?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+03/04/26, 11:13 - Sayantan Bharati: https://www.linkedin.com/posts/abhishek-r-95902120a_softwareengineering-share-7444634943873413121-pEAI?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+03/04/26, 13:57 - Sayantan Bharati: https://www.facebook.com/share/r/1DytLrVHFf/
+03/04/26, 15:57 - Sayantan Bharati: https://www.facebook.com/share/r/1AtAeM4Ymc/
+04/04/26, 01:36 - Sayantan Bharati: https://www.facebook.com/share/r/1GrHWZDWFn/
+04/04/26, 07:37 - Sayantan Bharati: https://www.facebook.com/share/r/1CRuuD6wcg/
+05/04/26, 18:25 - Sayantan Bharati: https://www.linkedin.com/posts/rocky-bhatia-a4801010_system-design-is-the-language-of-scale-and-share-7445798426904109056-RrQK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+05/04/26, 18:25 - Sayantan Bharati: https://www.linkedin.com/posts/nishant-singh-java_mastering-system-design-10-key-pillars-every-share-7446134009295958016-22ug?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+05/04/26, 19:54 - Sayantan Bharati: https://www.linkedin.com/posts/shubhamwadekar_sql-a-day-can-keep-interview-rejection-away-share-7446556333555978240-9MWY?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+05/04/26, 19:56 - Sayantan Bharati: https://www.linkedin.com/posts/iam-nishantkumar_sql-share-7446394996561448961-vpu3?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+05/04/26, 22:39 - Sayantan Bharati: https://www.instagram.com/p/DWWRwuBE-rD/?img_index=4&igsh=MWtjYnVyeWVyZzExZg==
+05/04/26, 22:42 - Sayantan Bharati: https://www.facebook.com/share/r/1CA1fLnGHM/
+07/04/26, 06:55 - Sayantan Bharati: https://www.facebook.com/share/r/1BLFS1qB4n/
+07/04/26, 07:01 - Sayantan Bharati: https://www.facebook.com/share/r/1HsVxLxUQX/
+07/04/26, 07:23 - Sayantan Bharati: https://www.facebook.com/share/v/1FENJJxWVy/
+08/04/26, 16:47 - Sayantan Bharati: https://www.facebook.com/share/v/1DZYQVdmC7/
+08/04/26, 19:35 - Sayantan Bharati: https://www.facebook.com/reel/1254006372883378?sfnsn=wiwspwa&mibextid=6AJuK9
+08/04/26, 19:44 - Sayantan Bharati: https://www.facebook.com/share/r/1BDbesxyGN/
+09/04/26, 02:11 - Sayantan Bharati: https://www.instagram.com/reel/DW3Ei3xDTD6/?igsh=MXdkZDl0eHIxZDVjOA==
+09/04/26, 11:21 - Sayantan Bharati: https://www.facebook.com/share/v/18P4zJ3Vuw/
+09/04/26, 12:01 - Sayantan Bharati: https://www.facebook.com/share/r/1Mm5BAasbZ/
+09/04/26, 23:05 - Sayantan Bharati: https://youtu.be/q6z_UCBM5Ek?si=cvkfhNc8Ph4cqzG0
+10/04/26, 09:32 - Sayantan Bharati: https://www.facebook.com/share/v/1HNzCuCRYx/
+11/04/26, 02:05 - Sayantan Bharati: https://www.linkedin.com/posts/ankit-pangasa_systemdesign-techinterviews-softwareengineering-share-7447127142661996544-gJPK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+11/04/26, 11:43 - Sayantan Bharati: https://www.facebook.com/share/v/1Hk97oiUtD/
+11/04/26, 11:51 - Sayantan Bharati: https://www.facebook.com/share/v/14dRp1KAPju/
+11/04/26, 14:10 - Sayantan Bharati: https://www.instagram.com/p/DWlFyM7GWx2/?img_index=1&igsh=cGxqb2F5eG80ejln
+11/04/26, 23:48 - Sayantan Bharati: https://www.facebook.com/share/r/1KuftyWum7/
+12/04/26, 14:08 - Sayantan Bharati: https://www.facebook.com/share/r/1AukTzDeMV/
+13/04/26, 02:58 - Sayantan Bharati: https://www.facebook.com/share/r/1CawjTrebs/
+13/04/26, 03:12 - Sayantan Bharati: https://www.facebook.com/share/r/18LZSocEL4/
+14/04/26, 13:51 - Sayantan Bharati: https://www.linkedin.com/posts/shubham-soni-374a86175_systemdesign-softwareengineering-programming-share-7449675870484500480-hdft?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+14/04/26, 14:02 - Sayantan Bharati: https://www.linkedin.com/posts/rocky-bhatia-a4801010_if-your-system-keeps-breaking-as-you-scale-share-7447244948795604994-1hPq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+14/04/26, 17:10 - Sayantan Bharati: https://www.instagram.com/reel/DW-RrL_DvEc/?igsh=MXM3NXMzZGlnOXFxYw==
+14/04/26, 17:56 - Sayantan Bharati: You deleted this message
+14/04/26, 19:29 - Sayantan Bharati: https://www.threads.com/@aureliengmz/post/DXFed4jDvCX?xmt=AQF038k6raudvV4NMf5p6YfXeZS_ptIJAj1-GLs3fqcszAhGbnKswLOEo1qiLJ_XA5RLVnhS&source_surface=35&slof=1
+15/04/26, 20:23 - Sayantan Bharati: https://www.facebook.com/share/r/18R4r1SFyL/
+16/04/26, 01:12 - Sayantan Bharati: https://www.facebook.com/share/r/17MSiFQreF/
+16/04/26, 01:20 - Sayantan Bharati: https://www.linkedin.com/posts/alexxubyte_figma-design-to-code-code-to-design-clearly-share-7449870782027153408-haQD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+17/04/26, 01:28 - Sayantan Bharati: https://www.instagram.com/reel/DXMnuRqkhFh/?igsh=MWN0MHk1ZWs1a2tteQ==
+18/04/26, 01:18 - Sayantan Bharati: https://www.facebook.com/share/v/1Dbjk1p7Fm/
+18/04/26, 23:00 - Sayantan Bharati: https://www.linkedin.com/posts/jitendrakumargupta07_ai-artificialintelligence-llm-share-7451151168774365184-sRCd?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+19/04/26, 01:27 - Sayantan Bharati: https://www.facebook.com/share/r/18G3mUEpUc/
+20/04/26, 10:52 - Sayantan Bharati: https://www.facebook.com/share/r/18EQjnQQr9/
+20/04/26, 10:53 - Sayantan Bharati: https://www.facebook.com/share/v/1BExkQ6sH8/
+20/04/26, 13:51 - Sayantan Bharati: https://www.facebook.com/share/r/1CVxZkg2Uv/
+20/04/26, 20:49 - Sayantan Bharati: https://www.instagram.com/reel/DWVUJM9CTaG/?igsh=MWk5dm5sNHY3eHg5Ng==
+20/04/26, 20:49 - Sayantan Bharati: https://www.instagram.com/p/DW8hOC4GlQ8/?img_index=3&igsh=cGc5bWZ3NDJhdTlk
+20/04/26, 20:57 - Sayantan Bharati: https://www.facebook.com/share/v/18VP7XoCZz/
+21/04/26, 00:33 - Sayantan Bharati: https://www.facebook.com/share/v/17KQXZxf63/
+21/04/26, 00:55 - Sayantan Bharati: https://www.facebook.com/share/r/1C5bncJjxD/
+21/04/26, 20:10 - Sayantan Bharati: https://www.facebook.com/share/r/1DuxBxyvon/
+22/04/26, 20:48 - Sayantan Bharati: https://www.instagram.com/reel/DVu6DZFjCNd/?igsh=MXV6ZWdtZTA0Z3hnZQ==
+22/04/26, 20:49 - Sayantan Bharati: https://www.instagram.com/reel/DXWuluFD90K/?igsh=MTZiOTQ3bGhndWU2Zw==
+23/04/26, 09:56 - Sayantan Bharati: https://www.instagram.com/reel/DXMZyWajvZw/?igsh=MWxwdDJvbjZ0ZnEycA==
+23/04/26, 14:43 - Sayantan Bharati: https://www.instagram.com/reel/DU0s_hNjXrn/?igsh=MXhkZzJzZ2Q3d2lqZw==
+23/04/26, 16:40 - Sayantan Bharati: https://www.instagram.com/reel/DWJdD66D-As/?igsh=enh5YXR5enZ1aXp5
+24/04/26, 01:07 - Sayantan Bharati: https://www.instagram.com/reel/DV_KxfeEbsS/?igsh=aDc5NHpyZGFvY3dt
+25/04/26, 06:23 - Sayantan Bharati: https://www.instagram.com/p/DXGOlE2ES8P/?img_index=2&igsh=a3g4b2U4cTM2NXBk
+25/04/26, 15:18 - Sayantan Bharati: https://www.instagram.com/p/DXW6v0TGH6Q/?img_index=2&igsh=OGF0amM2bHR2d3Zn
+25/04/26, 15:28 - Sayantan Bharati: https://www.instagram.com/reel/DXeasUsjJDh/?igsh=MTA3NHd2aGg1NjM1aA==
+25/04/26, 18:31 - Sayantan Bharati: https://www.facebook.com/share/r/19LkPPuunN/
+25/04/26, 18:44 - Sayantan Bharati: https://www.instagram.com/reel/DXg-dfKEdfO/?igsh=bGM1Y3NobTluZ2Q5
+25/04/26, 18:46 - Sayantan Bharati: https://www.instagram.com/p/DWynlBsindJ/?img_index=1&igsh=MTFhb2dranUzejJpeg==
+25/04/26, 18:46 - Sayantan Bharati: https://www.instagram.com/reel/DXHHJQ6kgic/?igsh=MTN4OHhqYmkzOWxtbw==
+25/04/26, 19:05 - Sayantan Bharati: https://www.instagram.com/p/DW1KTp-k9-0/?img_index=1&igsh=MWpqcDd5MDN2am9yNw==
+26/04/26, 01:29 - Sayantan Bharati: https://www.instagram.com/reel/DXJ3kK2CUrT/?igsh=MXkweXo3enZkcG1mbg==
+26/04/26, 15:12 - Sayantan Bharati: https://www.instagram.com/p/DXAFx5NCeyy/?img_index=3&igsh=MWM2a2h4a2hybHQwZg==
+26/04/26, 21:00 - Sayantan Bharati: https://www.facebook.com/share/r/1CsSE6CyPP/
+27/04/26, 23:07 - Sayantan Bharati: https://www.instagram.com/p/DXoptM4EoG6/?img_index=4&igsh=MWd6eThscWYyZ2lhYQ==
+28/04/26, 02:56 - Sayantan Bharati: https://www.instagram.com/reel/DXo-AZXkk2r/?igsh=a2V3ZTE5dmVzZm5y
+28/04/26, 13:15 - Sayantan Bharati: https://www.instagram.com/p/DWxz9AsAgNb/?img_index=2&igsh=dDRsdG5jeDdpNDl5
+28/04/26, 13:23 - Sayantan Bharati: https://www.instagram.com/p/DXeglxEk-mo/?img_index=7&igsh=MWh4Z3ZtbXY4cTd6bg==
+28/04/26, 14:42 - Sayantan Bharati: https://www.instagram.com/reel/DXcDamYDgHL/?igsh=MTJybjc1dGtpOTN4MA==
+28/04/26, 16:00 - Sayantan Bharati: https://www.instagram.com/p/DXb8f9hD2nH/?img_index=7&igsh=eDByejVlYWQ1M29h
+28/04/26, 16:00 - Sayantan Bharati: https://www.instagram.com/reel/DXjgFVTjMYr/?igsh=OHR4bHBreW9pY2dv
+28/04/26, 16:04 - Sayantan Bharati: https://www.instagram.com/reel/DXMI2k3k-VY/?igsh=emtvaWZ0ODJ0MzYw
+28/04/26, 16:26 - Sayantan Bharati: https://www.instagram.com/p/DXU2_ThE4az/?img_index=1&igsh=YnIwMGppNTRlMTZh
+29/04/26, 02:57 - Sayantan Bharati: https://www.facebook.com/share/v/18pLySKhqw/
+29/04/26, 19:47 - Sayantan Bharati: https://www.facebook.com/share/r/18ZFoMKmQz/
+29/04/26, 20:15 - Sayantan Bharati: https://www.instagram.com/p/DXpxFmOHONg/?img_index=3&igsh=MWdhdTZkanZmMnU5cg==
+29/04/26, 20:45 - Sayantan Bharati: https://www.instagram.com/reel/DXj09lDTSiM/?igsh=OXphMHFnNWpranBz
+29/04/26, 23:58 - Sayantan Bharati: https://www.instagram.com/reel/DXresH0Tosq/?igsh=bWtrdTI1MXEyM3A=
+29/04/26, 23:59 - Sayantan Bharati: https://www.instagram.com/reel/DW2reLxCIoa/?igsh=dDV2M3JwNGk5bHE=
+30/04/26, 00:55 - Sayantan Bharati: https://www.instagram.com/reel/DU3aFUwjbmO/?igsh=NnZxOTZ2MDdqNDk5
+30/04/26, 12:07 - Sayantan Bharati: https://www.instagram.com/p/DXviy8oDDwu/?img_index=2&igsh=MWh5OWZ2ZmgzNzFqNg==
+30/04/26, 17:46 - Sayantan Bharati: https://www.instagram.com/p/DXUIfCvDit0/?img_index=1&igsh=Y2NnbWxnZjM2dTQ3
+01/05/26, 10:49 - Sayantan Bharati: https://www.instagram.com/reel/DWJlDf0Dzxa/?igsh=aWlvZXF5cGRqNGd1
+02/05/26, 08:12 - Sayantan Bharati: https://www.instagram.com/reel/DXtYCBZEZmS/?igsh=MTk1cTJsZDMzbW51dA==
+02/05/26, 08:13 - Sayantan Bharati: https://www.instagram.com/reel/DXxQS0AO1Km/?igsh=ZTJ3YTBidm1zd2Ru
+02/05/26, 08:15 - Sayantan Bharati: https://www.instagram.com/reel/DXhAd0Jk2cm/?igsh=MWcwYTRtbjRxZnlpYw==
+02/05/26, 08:16 - Sayantan Bharati: https://www.instagram.com/reel/DWlr66hATT1/?igsh=eGEyNmk0dHVhYTlm
+02/05/26, 08:17 - Sayantan Bharati: https://www.instagram.com/reel/DXopoviTCxh/?igsh=OHptMGk4em1tbGtm
+02/05/26, 08:18 - Sayantan Bharati: https://www.instagram.com/reel/DWG_1fwkQH2/?igsh=Z2FxaXk4ajUzZXg5
+02/05/26, 08:18 - Sayantan Bharati: https://www.instagram.com/reel/DXt6opNiAN1/?igsh=eTdoMXZsOXJlMGsx
+02/05/26, 08:19 - Sayantan Bharati: https://www.instagram.com/reel/DXw-N7tyh4o/?igsh=bmpma24zMG1jMzd5
+02/05/26, 10:02 - Sayantan Bharati: https://www.instagram.com/reel/DXn5vaqjL4W/?igsh=MXg4Znp1MHZkOTMxeg==
+03/05/26, 05:28 - Sayantan Bharati: https://www.instagram.com/p/DX15lWZlcJj/?img_index=1&igsh=ZXBvbDlmdGg4dXd2
+03/05/26, 11:22 - Sayantan Bharati: https://www.instagram.com/reel/DX0r4ptzofN/?igsh=dHozc3VzaHd3ZHZz
+04/05/26, 02:14 - Sayantan Bharati: https://www.facebook.com/share/r/1CQoNrX3Gt/
+05/05/26, 03:04 - Sayantan Bharati: https://www.facebook.com/share/r/1CgrCpG6vx/
+05/05/26, 21:11 - Sayantan Bharati: https://www.facebook.com/share/r/18UZHg6zej/
+06/05/26, 03:46 - Sayantan Bharati: https://www.facebook.com/share/p/17ufn2HhK9/
+06/05/26, 16:57 - Sayantan Bharati: https://www.facebook.com/share/r/1aEDoZ9sFE/
+07/05/26, 01:44 - Sayantan Bharati: https://www.facebook.com/share/r/18mD6RuP2U/
+07/05/26, 01:46 - Sayantan Bharati: https://www.facebook.com/share/p/1NwBCHvMXu/
+07/05/26, 02:44 - Sayantan Bharati: https://www.instagram.com/p/DXzOvBMFhI_/?img_index=11&igsh=MWV0a2htZmszbXY0MA==
+07/05/26, 07:23 - Sayantan Bharati: https://www.facebook.com/share/r/17JHVCFmT7/
+07/05/26, 20:51 - Sayantan Bharati: https://www.facebook.com/share/r/1JwkLEi7KW/
+07/05/26, 20:53 - Sayantan Bharati: https://www.facebook.com/share/r/1B33vSPXiq/
+07/05/26, 23:16 - Sayantan Bharati: https://www.facebook.com/share/r/1HR5XY1usg/
+08/05/26, 00:31 - Sayantan Bharati: https://www.facebook.com/share/r/1BFR5cki6J/
+08/05/26, 00:35 - Sayantan Bharati: https://www.facebook.com/share/r/1BZMqmXkXt/
+12/05/26, 02:05 - Sayantan Bharati: https://www.facebook.com/share/r/1BXD8NTtpN/
+14/05/26, 10:51 - Sayantan Bharati: https://www.facebook.com/share/r/1Da6KZUBCW/
+14/05/26, 19:28 - Sayantan Bharati: https://www.instagram.com/p/DYT80uSArmB/?img_index=2&igsh=MWJmZXA3cmpubnJibA==
+14/05/26, 19:28 - Sayantan Bharati: https://www.instagram.com/p/DYT74_FmkVG/?igsh=MWh2dXAxZmwzNnoxcA==
+15/05/26, 18:25 - Sayantan Bharati: https://www.facebook.com/share/r/1NTEaAHfa3/
+15/05/26, 18:54 - Sayantan Bharati: https://www.facebook.com/share/r/1BQS2sZSbA/
+16/05/26, 01:39 - Sayantan Bharati: https://www.instagram.com/reel/DYQ_ae3PGrI/?igsh=cXF1M3A5cWZscTVw
+16/05/26, 03:12 - Sayantan Bharati: https://www.instagram.com/reel/DYVBFlCTUkw/?igsh=M3E2anR4MnNmYzA2
+17/05/26, 04:43 - Sayantan Bharati: https://www.instagram.com/p/DYZ5UTiknH2/?img_index=1&igsh=MXBycWgwczNoYmo5bA==
+17/05/26, 21:46 - Sayantan Bharati: https://www.facebook.com/share/r/1D4bre9TsT/
+18/05/26, 01:48 - Sayantan Bharati: https://www.facebook.com/share/r/1LVyWXN1s7/
+19/05/26, 06:58 - Sayantan Bharati: https://www.instagram.com/reel/DYZugeXMqgg/?igsh=eHczdXN6dzIzaTkz
+19/05/26, 06:58 - Sayantan Bharati: https://www.instagram.com/reel/DYUjRPGigct/?igsh=ZWRocHd5MGNldmhy
+19/05/26, 07:26 - Sayantan Bharati: https://www.facebook.com/share/r/18nWRPFZh5/
+19/05/26, 16:05 - Sayantan Bharati: https://www.instagram.com/reel/DYQ-NlTzDKk/?igsh=ZHZiMnJoczJiOWMz
+19/05/26, 22:31 - Sayantan Bharati: https://youtu.be/BbUqyF-cosA?si=9xpxhl0cjLj7UQb7
+20/05/26, 12:58 - Sayantan Bharati: https://www.instagram.com/reel/DXrZzltDMyF/?igsh=MWl5bHgwZHQ4Z2RiNg==
+21/05/26, 10:38 - Sayantan Bharati: https://www.instagram.com/p/DYTdV9Pkn7b/?igsh=aHBxMzQ4dG45bXpw
+21/05/26, 10:42 - Sayantan Bharati: https://www.instagram.com/reel/DYCrQzsIB03/?igsh=OG1wajlvc3U4b2c3
+22/05/26, 00:50 - Sayantan Bharati: https://www.facebook.com/share/v/1DLTXD7ArH/
+22/05/26, 09:08 - Sayantan Bharati: https://www.instagram.com/reel/DX_7yePMFwy/?igsh=MzVvcGp2amJzeHg4
+24/05/26, 03:24 - Sayantan Bharati: https://www.instagram.com/reel/DYpCIZjvzXH/?igsh=MXJtZHNrMmpjZmVyMg==
+24/05/26, 03:25 - Sayantan Bharati: https://www.instagram.com/p/DYeHYoiARem/?img_index=5&igsh=NXNieXR1cTAwOXMx
+25/05/26, 07:41 - Sayantan Bharati: https://www.facebook.com/share/18y4RuRjXD/
+25/05/26, 23:22 - Sayantan Bharati: https://www.instagram.com/reel/DWsqH2iiYE_/?igsh=MXFqcWNkMDIxZnNuaQ==
+28/05/26, 00:47 - Sayantan Bharati: https://www.instagram.com/reel/DYzjlwhzCHH/?igsh=MTJoOGRnbGswejA1cg==
+28/05/26, 11:07 - Sayantan Bharati: https://www.linkedin.com/posts/kamal-sharma-2a654a191_full-stack-interview-questions-ugcPost-7465233423377408000-m2nS?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+28/05/26, 12:41 - Sayantan Bharati: https://www.facebook.com/share/r/1AjBzNKHCZ/
+29/05/26, 15:16 - Sayantan Bharati: https://www.instagram.com/p/DY2Cf2jks2a/?img_index=4&igsh=MWVpeng4dXEwZzZoZA==
+29/05/26, 19:29 - Sayantan Bharati: https://www.linkedin.com/posts/alok-sharan_your-architecture-isnt-tested-by-traffic-share-7466090148322091010-iA22?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+30/05/26, 13:29 - Sayantan Bharati: https://www.facebook.com/share/1H4CYKU5mn/
+30/05/26, 21:13 - Sayantan Bharati: https://www.facebook.com/share/r/1HFNkqzSvN/
+30/05/26, 21:16 - Sayantan Bharati: https://www.facebook.com/share/r/1EpRBn8cHW/
+31/05/26, 12:32 - Sayantan Bharati: https://www.instagram.com/p/DY3nZlUPFf_/?igsh=YWthaGpmOTMzNjZm
+31/05/26, 12:33 - Sayantan Bharati: https://www.instagram.com/p/DY2HDUbjFte/?img_index=3&igsh=MXA5NzdrcGJtdzViMg==
+31/05/26, 23:56 - Sayantan Bharati: https://www.facebook.com/share/18v4RYUmmd/
+02/06/26, 20:40 - Sayantan Bharati: https://www.facebook.com/share/r/17y53DcZDE/
+03/06/26, 01:16 - Sayantan Bharati: https://www.facebook.com/share/r/18au7r7hzu/
+03/06/26, 09:08 - Sayantan Bharati: https://www.facebook.com/share/r/17rUJLoDt6/
+03/06/26, 09:19 - Sayantan Bharati: https://www.facebook.com/share/r/16wojoXZcv/
+05/06/26, 16:53 - Sayantan Bharati: You deleted this message
+07/06/26, 09:25 - Sayantan Bharati: https://www.facebook.com/share/r/1EX2C1U2nS/
+07/06/26, 20:03 - Sayantan Bharati: https://www.instagram.com/reel/DZHDpc9P5SP/?igsh=MTNxcHA5ZXd3NnpjYg==
+08/06/26, 00:31 - Sayantan Bharati: https://www.facebook.com/share/r/1CYGM5Xnp9/
+08/06/26, 01:09 - Sayantan Bharati: https://www.facebook.com/share/r/18Ckut8YAF/
+08/06/26, 01:17 - Sayantan Bharati: https://www.facebook.com/share/r/1Eyd7JZgSm/
+08/06/26, 09:34 - Sayantan Bharati: https://www.facebook.com/share/r/1EVQJ1zYao/
+08/06/26, 22:50 - Sayantan Bharati: https://www.facebook.com/share/r/1F2nw8HMZB/
+09/06/26, 19:37 - Sayantan Bharati: https://www.facebook.com/share/r/1Y9QjjDhcQ/
+09/06/26, 19:41 - Sayantan Bharati: https://www.facebook.com/share/r/1Cxj8ZAXr9/
+09/06/26, 19:54 - Sayantan Bharati: https://www.facebook.com/share/r/14jjJXgio54/
+09/06/26, 20:15 - Sayantan Bharati: https://www.linkedin.com/posts/nk-systemdesign-one_if-you-want-to-become-good-at-system-design-share-7470091796757422082-YCgF/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+09/06/26, 21:46 - Sayantan Bharati: https://www.facebook.com/share/p/1DJLbfhh4Y/
+10/06/26, 12:04 - Sayantan Bharati: https://www.linkedin.com/posts/iam-nishantkumar_sql-share-7470172564892368896-AHHj/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+10/06/26, 16:22 - Sayantan Bharati: https://www.facebook.com/share/r/18BZkntJBm/
+10/06/26, 19:23 - Sayantan Bharati: https://www.facebook.com/share/r/1GAb99G7Qy/
+10/06/26, 22:55 - Sayantan Bharati: https://www.facebook.com/share/1E63yzAyWX/
+11/06/26, 07:49 - Sayantan Bharati: https://www.linkedin.com/posts/ajeet-yadav-5a799a221_complete-nodejs-handbook-backend-interview-ugcPost-7467420157745934336-xH5-?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+11/06/26, 07:50 - Sayantan Bharati: https://www.linkedin.com/posts/adnan-maqbool-khan-0b4531a1_%F0%9D%90%8C%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%AB%F0%9D%90%A8%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%AF%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%9E%F0%9D%90%AC-%F0%9D%90%80%F0%9D%90%AB%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%AD%F0%9D%90%9E-share-7470368404600754176-wFJW?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+11/06/26, 08:49 - Sayantan Bharati: https://www.facebook.com/share/r/1A6UBgahCe/
+11/06/26, 10:11 - Sayantan Bharati: https://www.linkedin.com/posts/anand-data_bye-youtube-goodbye-tutorials-goodbye-generic-share-7470677547236659201-un78?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+11/06/26, 17:40 - Sayantan Bharati: https://www.facebook.com/share/r/1EBjkLS8Rt/
+11/06/26, 18:57 - Sayantan Bharati: https://www.facebook.com/share/r/18vyYmJYAr/
+12/06/26, 00:19 - Sayantan Bharati: https://www.facebook.com/share/r/1HR98SDw91/
+12/06/26, 11:05 - Sayantan Bharati: https://www.instagram.com/reel/DY9-WPYPB2y/?igsh=Y2l3M2YzZTl6aXE5
+12/06/26, 11:40 - Sayantan Bharati: https://www.facebook.com/share/r/1FirxNwrCx/
+12/06/26, 17:20 - Sayantan Bharati: https://www.instagram.com/reel/DZZFoKgvtqu/?igsh=MWxpc3NtbmY3b2hlNw==
+12/06/26, 17:22 - Sayantan Bharati: https://www.instagram.com/reel/DY6MJHMPsQ6/?igsh=MXdqb252bHIxYzViOQ==
+13/06/26, 08:09 - Sayantan Bharati: https://www.facebook.com/share/1HBcnduDzG/
+13/06/26, 14:41 - Sayantan Bharati: https://www.instagram.com/p/DY-6VBpEgLS/?img_index=1&igsh=Y2U4aG90cnZzNG9o
+13/06/26, 14:47 - Sayantan Bharati: https://www.instagram.com/reel/DZMp_FBOf2r/?igsh=MXN6cThnNmdiYzYycQ==
+13/06/26, 16:12 - Sayantan Bharati: https://www.facebook.com/share/r/1ca4Qkj5RJ/
+16/06/26, 22:34 - Sayantan Bharati: https://www.linkedin.com/posts/anup-panwar-dev_the-right-api-depends-on-the-problem-you-share-7472603113414299649-ooZH/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+17/06/26, 02:06 - Sayantan Bharati: https://www.facebook.com/share/r/1CxQWdCuAq/
+17/06/26, 02:17 - Sayantan Bharati: https://www.linkedin.com/posts/varun-shivaprasad-66027710a_api-design-matters-more-than-we-think-as-share-7471875929519177728-h52G?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+17/06/26, 02:58 - Sayantan Bharati: https://www.facebook.com/share/1DVktRipxR/
+17/06/26, 10:31 - Sayantan Bharati: https://www.linkedin.com/posts/akashkes22_if-you-want-to-become-a-better-backend-engineer-share-7472843845320253440-gyas?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+17/06/26, 19:12 - Sayantan Bharati: https://www.linkedin.com/posts/aditi-singh-670056325_here-are-12-websites-that-pay-in-usd-for-share-7472892780554387456-ptMH/?utm_source=share&utm_medium=member_android&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+18/06/26, 02:33 - Sayantan Bharati: https://www.facebook.com/share/r/18myU4mkSD/
+18/06/26, 11:20 - Sayantan Bharati: https://www.linkedin.com/posts/rjritikjain_dsa-codinginterview-leetcode-share-7473016912101142528-kTPG/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+18/06/26, 13:56 - Sayantan Bharati: https://www.instagram.com/reel/DZh_U1Mzq4X/?igsh=am16bzJpamQ1b211
+19/06/26, 15:19 - Sayantan Bharati: https://www.threads.com/@csabakissi/post/DZwcJ1_CWOw?xmt=AQG0d40j7zjnQTqY0eQcucVmpWSHg4iQC3DEOHDaV2U2m37MTaFIaXXTUq6IA9cPRPxauPGY&slof=1
+20/06/26, 11:06 - Sayantan Bharati: https://www.linkedin.com/posts/akashkes22_if-you-want-to-become-a-better-frontend-engineer-share-7473565940346007552-0Jsn?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+20/06/26, 14:26 - Sayantan Bharati: https://www.facebook.com/share/r/1MmUkcEMWc/
+20/06/26, 17:15 - Sayantan Bharati: https://www.facebook.com/share/r/1D4wQZZeKx/
+21/06/26, 23:35 - Sayantan Bharati: https://www.linkedin.com/posts/sumonigupta_kafka-failures-often-dont-come-from-complexity-share-7474435995518562304-4L-C/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+21/06/26, 23:35 - Sayantan Bharati: https://www.linkedin.com/posts/aryan-gupta-81887028a_sql-interview-questions-ugcPost-7474414854380920833-CmP5/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+21/06/26, 23:38 - Sayantan Bharati: https://www.linkedin.com/posts/govind-sharma-067932369_sql-database-backenddevelopment-ugcPost-7474465880635146241-1hH0/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+22/06/26, 11:40 - Sayantan Bharati: https://www.linkedin.com/posts/akashkes22_system-design-handbook-ugcPost-7474652891387977729-UJZh/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+22/06/26, 11:40 - Sayantan Bharati: https://www.linkedin.com/posts/kamal-sharma-2a654a191_systemdesign-interviewprep-backend-ugcPost-7474649197657419776-89zW/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+22/06/26, 12:54 - Sayantan Bharati: https://www.facebook.com/share/r/1HFGwM2fqd/
+23/06/26, 03:45 - Sayantan Bharati: https://www.facebook.com/share/r/1CtQ7KGQPZ/
+23/06/26, 17:12 - Sayantan Bharati: https://www.facebook.com/share/r/1919t54h22/
+23/06/26, 20:02 - Sayantan Bharati: https://www.linkedin.com/posts/thecreatorsir_if-you-want-to-become-good-at-system-design-share-7475058436490022912-2mr_?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+24/06/26, 08:30 - Sayantan Bharati: https://www.linkedin.com/posts/arslanahmad_you-dont-need-to-memorize-system-design-share-7475141731068403712-rq-1?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+24/06/26, 08:54 - Sayantan Bharati: https://www.facebook.com/share/r/1B17no8hZE/
+24/06/26, 11:29 - Sayantan Bharati: https://www.linkedin.com/posts/alpnap_reactjs-webdevelopment-frontenddevelopment-share-7475181456382771200-eqUR?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+24/06/26, 13:15 - Sayantan Bharati: https://www.linkedin.com/posts/nageena-hra_javascript-webdevelopment-frontenddeveloper-share-7475384706595733504-TLq4?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+24/06/26, 13:34 - Sayantan Bharati: https://www.linkedin.com/posts/althaf-k17_webdevelopment-javascript-reactjs-ugcPost-7474476319096037376-pR11?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+24/06/26, 13:35 - Sayantan Bharati: https://www.linkedin.com/posts/shivam-dhiman-b35b76286_nodejs-backenddevelopment-javascript-share-7473764727660142592-rEqI?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+25/06/26, 02:07 - Sayantan Bharati: https://www.facebook.com/share/r/1CzFAsaA6S/
+25/06/26, 22:42 - Sayantan Bharati: https://www.instagram.com/reel/DZh67mPTU6l/?igsh=MWpqajJtbjFjamx0Yw==
+25/06/26, 22:50 - Sayantan Bharati: https://www.instagram.com/reel/DTNcrWIiNqt/?igsh=MTJkZTVha2hzbHBwOQ==
+25/06/26, 22:57 - Sayantan Bharati: https://www.instagram.com/reel/DY1g56bk9_o/?igsh=MTV2aDVwNHd1enoyeA==
+25/06/26, 23:03 - Sayantan Bharati: https://www.instagram.com/reel/DT7pQUkjxbo/?igsh=Y3AxcHVoc3Ziejhr
+26/06/26, 18:24 - Sayantan Bharati: https://www.facebook.com/share/r/1DpVJBoosi/
+26/06/26, 19:47 - Sayantan Bharati: https://www.instagram.com/reel/DZhyJ09K_-1/?igsh=MTBhOXM2Nm5vNnNyeA==
+28/06/26, 10:01 - Sayantan Bharati: https://www.linkedin.com/posts/saurabhdubeyofficial_leetcode-dsa-important-problem-seets-ugcPost-7476838302138937344-WOkF?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+30/06/26, 00:09 - Sayantan Bharati: https://www.facebook.com/share/r/1HHZXWhDcN/
+01/07/26, 00:59 - Sayantan Bharati: https://www.instagram.com/reel/DYxIq1sMv76/?igsh=MW1ubjdkeWk4OHM4Zw==
+02/07/26, 03:42 - Sayantan Bharati: https://youtu.be/tDeLeyPvZn0?si=AsJf4tp9RtZPSNl5
+02/07/26, 03:44 - Sayantan Bharati: https://compilefuture.com/blog/5-free-claude-code-alternatives-unlimited-full-workflow/
+03/07/26, 04:15 - Sayantan Bharati: https://www.facebook.com/share/r/1Ah85D3Awc/
+03/07/26, 04:41 - Sayantan Bharati: https://www.facebook.com/share/r/1KPeopbTe4/
+03/07/26, 14:59 - Sayantan Bharati: https://www.facebook.com/share/r/18oXKumTCa/
+03/07/26, 15:06 - Sayantan Bharati: https://www.facebook.com/share/r/19JGeLhX5j/
+03/07/26, 17:04 - Sayantan Bharati: https://www.facebook.com/share/r/1B43KFsyjC/
+03/07/26, 17:05 - Sayantan Bharati: https://www.facebook.com/share/r/19G3MAxVPy/
+03/07/26, 19:32 - Sayantan Bharati: https://www.facebook.com/share/r/1L2Uiv98iz/
+04/07/26, 04:15 - Sayantan Bharati: https://www.facebook.com/share/r/1DXuDBx8Jc/
+04/07/26, 04:34 - Sayantan Bharati: https://www.facebook.com/share/r/1CfQrQvsJY/
+04/07/26, 06:07 - Sayantan Bharati: https://www.facebook.com/share/r/1CiibFMJwZ/
+04/07/26, 14:53 - Sayantan Bharati: https://www.facebook.com/share/r/192Bu42icG/
+04/07/26, 18:08 - Sayantan Bharati: https://www.facebook.com/share/r/1BVcHEgBaG/
+05/07/26, 07:41 - Sayantan Bharati: https://www.facebook.com/share/r/1DZwaWr8B8/
+05/07/26, 07:50 - Sayantan Bharati: https://www.facebook.com/share/r/1FGye7n2u7/
+05/07/26, 16:29 - Sayantan Bharati: https://www.facebook.com/share/r/1EfS6EYy2a/
+05/07/26, 23:16 - Sayantan Bharati: https://www.facebook.com/share/r/17U6h8dUBP/
+06/07/26, 09:21 - Sayantan Bharati: https://www.facebook.com/share/r/1EbEbjAPsh/
+06/07/26, 10:23 - Sayantan Bharati: https://www.linkedin.com/posts/harshit-kumar-java-ai_dsa-codinginterview-leetcode-share-7477740146705162241-IM09?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+06/07/26, 11:41 - Sayantan Bharati: https://www.linkedin.com/posts/ajeet-yadav-5a799a221_api-interview-handbook-96-most-asked-rest-ugcPost-7479737900037873664--M95?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+06/07/26, 11:41 - Sayantan Bharati: https://www.linkedin.com/posts/rocky-bhatia-a4801010_system-design-is-the-highest-leverage-skill-share-7479135385600675840-gWw4?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+07/07/26, 03:27 - Sayantan Bharati: https://www.facebook.com/share/r/1Bry1HdseA/
+08/07/26, 04:56 - Sayantan Bharati: https://www.facebook.com/share/r/1D7TsuUpT1/
+09/07/26, 03:48 - Sayantan Bharati: https://www.facebook.com/share/r/1GQiLcASq6/
+09/07/26, 14:10 - Sayantan Bharati: https://www.facebook.com/share/1HDhMUSeuh/
+09/07/26, 15:27 - Sayantan Bharati: https://www.facebook.com/share/r/1BCz3QJ6ed/
+09/07/26, 15:37 - Sayantan Bharati: https://www.threads.com/@brokariim/post/Dah4oCpCVVB?xmt=AQG0bw8MXgm_YOhabSjIOX5RhpjmfiqwA4_04tlcikwS9AP5N7e1zlylBBdQvrfHUtgvz5c&source_surface=35&slof=1
+09/07/26, 17:52 - Sayantan Bharati: https://www.facebook.com/share/1HDhMUSeuh/
+10/07/26, 01:36 - Sayantan Bharati: https://www.facebook.com/share/r/1MtEZoDbYB/
+10/07/26, 02:30 - Sayantan Bharati: https://www.facebook.com/share/r/1cLng6F7VH/
+10/07/26, 02:47 - Sayantan Bharati: https://www.facebook.com/share/r/1DCCe2bWKZ/
+10/07/26, 03:17 - Sayantan Bharati: https://www.facebook.com/share/r/195bArQxi1/
+10/07/26, 06:23 - Sayantan Bharati: https://www.facebook.com/share/r/18cyrAxVHQ/
+11/07/26, 01:24 - Sayantan Bharati: https://www.facebook.com/share/v/1CxPfdcazp/
+11/07/26, 09:21 - Sayantan Bharati: https://www.instagram.com/p/DajCWEUjktT/?img_index=2&igsh=NHhtYnJmZGN4bDUz
+11/07/26, 09:38 - Sayantan Bharati: https://www.instagram.com/reel/DaiXukoiUoq/?igsh=YmZ1ZXRwdzZucGR2
+11/07/26, 14:09 - Sayantan Bharati: https://www.facebook.com/share/r/1B9dDvDga3/
+11/07/26, 14:12 - Sayantan Bharati: https://www.facebook.com/share/r/1GdTWSRKVK/
+11/07/26, 14:26 - Sayantan Bharati: https://www.facebook.com/share/r/198k5Zzcz7/
+11/07/26, 19:24 - Sayantan Bharati: https://www.linkedin.com/posts/rocky-bhatia-a4801010_systemdesign-engineeringexcellence-backendengineering-share-7481669666499743744-JfDm/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg
+12/07/26, 01:25 - Sayantan Bharati: https://www.facebook.com/share/r/18WZ3j74YM/
+12/07/26, 04:28 - Sayantan Bharati: https://www.instagram.com/p/DZ9wXH5CCSJ/?img_index=1&igsh=bWVtNnRoc3djOXpk
+12/07/26, 04:31 - Sayantan Bharati: https://www.instagram.com/reel/DY5JN3dBvRS/?igsh=MWJ4aGd0aDhrZGYwaA==
+12/07/26, 04:43 - Sayantan Bharati: https://www.slothbytes.dev/?email=sayantanbharati611%40gmail.com&utm_source=instagram&utm_medium=dm&utm_campaign=follow-automation&mcp_token=eyJwaWQiOjQ5NTk3MDQsInNpZCI6NjExODM4NzY2LCJheCI6IjJiYzU0YTZlYTU3YmY3NGE5M2ZiYzFjOGMzMzFmNDM1IiwidHMiOjE3ODM4MTE1NTcsImV4cCI6MTc4NjIzMDc1N30.SNfAltNXAc-WVNl7Fm7W15ckf05aUq9X9k04RyFc-a0&sid=83bc6451-aa8d-4ddc-9227-33f9eb8b790b&subscriber_id=67effefd-2bc0-47cb-8f52-b43f97c3d356&fbclid=PAVERTVgS_rWZleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacRrijcZ22WbRo65JalzXrAiEiHdFHGa26E6cidCrua9n9Ab6RXgmy7arAbpA_aem_R3UHPvQ4ahSekvC7g4-RKw
+12/07/26, 17:50 - Sayantan Bharati: https://www.facebook.com/share/r/18rjC7sQAG/
+12/07/26, 18:03 - Sayantan Bharati: https://www.facebook.com/share/r/1F15oYbdfb/
+12/07/26, 18:04 - Sayantan Bharati: https://www.facebook.com/share/r/14jKd6E8Ge9/
+12/07/26, 18:14 - Sayantan Bharati: https://www.facebook.com/share/r/1BTzek8tEm/
+12/07/26, 18:22 - Sayantan Bharati: https://www.facebook.com/share/r/1EenwmNDG7/
+12/07/26, 18:27 - Sayantan Bharati: https://www.facebook.com/share/v/1HAnc5LFQN/
+14/07/26, 08:53 - Sayantan Bharati: https://www.facebook.com/share/r/1CwtdNiwBH/
+14/07/26, 21:37 - Sayantan Bharati: https://www.facebook.com/share/r/1CEZ3XzuBg/
+15/07/26, 00:02 - Sayantan Bharati: https://www.facebook.com/share/v/19E6pWpdcp/
+15/07/26, 00:43 - Sayantan Bharati: https://www.facebook.com/share/18uswHdCYP/
+15/07/26, 06:24 - Sayantan Bharati: https://www.facebook.com/share/r/1Dhw36ZdTX/
+15/07/26, 16:42 - You changed the group name from "LinksBerg" to "AllLinks"
+15/07/26, 16:43 - You changed the group name from "AllLinks" to "AllLinksMain"
+15/07/26, 20:58 - Sayantan Bharati: https://www.instagram.com/p/Da0C0Obkfeb/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==
+16/07/26, 06:47 - Sayantan Bharati: https://www.instagram.com/p/Daw7E_tjLNt/?img_index=1&igsh=bXBxM2dxNTZkb3Z0
+16/07/26, 06:48 - Sayantan Bharati: https://www.instagram.com/p/DavFiBNmoxG/?img_index=1&igsh=MXZudGJoeWJtY3lvMA==
+16/07/26, 06:48 - Sayantan Bharati: https://www.instagram.com/reel/DaDa7Q5NCel/?igsh=MThmMTE3emh6YWliaA==
+16/07/26, 06:51 - Sayantan Bharati: https://www.instagram.com/p/DZz6F4bGsBI/?img_index=2&igsh=Y2lkNDZ0cGN3bWQz
+16/07/26, 06:52 - Sayantan Bharati: https://www.instagram.com/p/DaBGXMuD4ZA/?img_index=1&igsh=dTJ3dzJ6bWJ3anE=
+16/07/26, 06:53 - Sayantan Bharati: https://www.instagram.com/p/Da0qNodjXTx/?img_index=2&igsh=aG5zeW45Z3B6MWdm
+16/07/26, 06:53 - Sayantan Bharati: https://www.instagram.com/p/DaVd9VVGult/?img_index=2&igsh=MTRuMDI0eW5wY3FrbQ==
+16/07/26, 06:53 - Sayantan Bharati: https://www.instagram.com/reel/DakbbYytg0O/?igsh=eWV1OWlrNnN0N25i
+16/07/26, 07:06 - Sayantan Bharati: https://www.instagram.com/reel/DanjWqWJKtN/?igsh=dWtqdThidm16Mnp3
+16/07/26, 07:12 - Sayantan Bharati: https://www.instagram.com/reel/DadQtJjT0qP/?igsh=MW92aXJoOHo4cXhueA==
+16/07/26, 11:20 - Sayantan Bharati: https://www.linkedin.com/posts/ankit-pangasa_systemdesign-caching-redis-share-7483353358066532352-jZNz?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAADRR_iUB8hHbl5T0eek1efJJu0SYJK5aovg&utm_campaign=whatsapp
+16/07/26, 15:18 - Sayantan Bharati: https://github.com/ripienaar/free-for-dev
+18/07/26, 10:51 - Sayantan Bharati: https://www.facebook.com/share/r/1EJCcb8xA2/
+18/07/26, 12:43 - Sayantan Bharati: https://www.facebook.com/share/r/17wPsVDyDP/
+18/07/26, 14:56 - Sayantan Bharati: https://www.instagram.com/p/DaMt59fmq7s
+18/07/26, 16:16 - Sayantan Bharati: https://www.threads.com/@tranmautritam/post/Da7cYdLCrgI?xmt=AQG0ebG2xxx5i4gZHE3IXpLiIcbSgUqJP6b4oiHr6QDoun62MDDiVjAhI30PpjkZPVQpF45K&source_surface=35&slof=1
+19/07/26, 11:36 - Sayantan Bharati: https://www.facebook.com/share/r/1RxrbE5b8w/
+19/07/26, 22:28 - Sayantan Bharati: https://www.facebook.com/share/v/1EYYjpzCNM/
+20/07/26, 10:20 - Sayantan Bharati: https://www.instagram.com/p/DaXnHymlBdC/?img_index=1&igsh=MTcxYnJxc2E2dzNzcA==
+21/07/26, 10:20 - Sayantan Bharati: https://www.instagram.com/reel/DZxj7n-MgFa/?igsh=eTVueG0wNGo3dm8z
+21/07/26, 13:59 - Sayantan Bharati: https://www.instagram.com/reel/Da2rI-6Sp9H
+21/07/26, 20:26 - Sayantan Bharati: https://www.instagram.com/reel/Da-jWYyPddm/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==
+21/07/26, 20:52 - Sayantan Bharati: https://www.instagram.com/reel/DZxMJ04ooHN/?igsh=aGhvdTAxdDFieW1j
+21/07/26, 20:53 - Sayantan Bharati: https://www.instagram.com/p/DaW1XGTDOIk
+21/07/26, 20:54 - Sayantan Bharati: https://www.instagram.com/reel/DaK7DjXuYeZ
+21/07/26, 20:55 - Sayantan Bharati: https://www.instagram.com/reel/DXt-dH_jCox
+21/07/26, 20:57 - Sayantan Bharati: https://www.instagram.com/p/Dax92I0CW7T
+21/07/26, 21:20 - Sayantan Bharati: https://threejsresources.com/blog/8-best-3d-asset-libraries-to-use-in-your-threejs-project
+22/07/26, 00:03 - Sayantan Bharati: https://www.instagram.com/reel/DbDsKOOo5yL/?igsh=MTVodzd5cHNnaXVnNg==
+22/07/26, 07:03 - Sayantan Bharati: https://www.facebook.com/share/r/1AoZb6G6rw/
+22/07/26, 08:57 - Sayantan Bharati: https://www.instagram.com/p/DaTf-gJDDd8
+22/07/26, 18:28 - Sayantan Bharati: https://www.instagram.com/p/DaGv7n9jMPB
+22/07/26, 19:46 - Sayantan Bharati: https://www.facebook.com/share/r/1b6bJWXcsT/
+23/07/26, 00:23 - Sayantan Bharati: https://www.facebook.com/share/r/187fYq6cwK/
+23/07/26, 07:21 - Sayantan Bharati: https://www.facebook.com/share/r/1EmAKDMAQy/
+23/07/26, 07:24 - Sayantan Bharati: https://www.facebook.com/share/v/19Ar7zPmbV/
+23/07/26, 07:27 - Sayantan Bharati: https://www.facebook.com/share/v/1D5SjSXwkU/
+23/07/26, 08:41 - Sayantan Bharati: https://www.instagram.com/reel/DbEWB69ys11
+24/07/26, 02:37 - Sayantan Bharati: https://www.instagram.com/reel/DZ5EAAPTiXl/?igsh=Y3R6cWkzeHFwZzNu
+24/07/26, 07:54 - Sayantan Bharati: https://www.instagram.com/p/DaxY7TFCWy-/?img_index=1&igsh=MWpzbzY5aXZhZDd0Zg==
+24/07/26, 09:21 - Sayantan Bharati: https://www.instagram.com/p/Da5OIN8kies/?img_index=1&igsh=ZzYxMGVlem9xNXMx
+24/07/26, 17:25 - Sayantan Bharati: https://www.instagram.com/reel/DbKzRi3ut1N/?igsh=NjhheWE4dzNycjRl
+24/07/26, 19:28 - Sayantan Bharati: https://www.instagram.com/p/DbK9hWPiNoO/?img_index=2&igsh=eGZmbHljZ3J0d3k4
+24/07/26, 20:31 - Sayantan Bharati: https://www.instagram.com/p/DbJIEzEAdm1/?img_index=2&igsh=MWt5dHg3OXE1Nm9ubQ==
+24/07/26, 21:27 - Sayantan Bharati: https://www.instagram.com/p/DaNePThiT8T/?img_index=3&igsh=aHYyZnpxN3EycHNn
+24/07/26, 21:50 - Sayantan Bharati: https://www.instagram.com/p/DaNYCILlDgO/?img_index=2&igsh=MXRjbGpnbXZrd294ZQ==
+25/07/26, 09:37 - Sayantan Bharati: https://www.facebook.com/share/r/1EhQJNPjB5/
+25/07/26, 12:00 - Sayantan Bharati: https://www.instagram.com/p/DapyEAakgTO/?img_index=2&igsh=MXJla3N6Z2pnNjg3Zw==
