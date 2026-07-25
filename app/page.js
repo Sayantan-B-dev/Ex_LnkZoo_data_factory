@@ -33,6 +33,7 @@ function Svg({ name, size = 14 }) {
     clock: '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
     next: '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
     upload: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>',
+    flag: '<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>',
   };
   return <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="2" style={{ verticalAlign: 'middle' }} dangerouslySetInnerHTML={{ __html: paths[name] || '' }} />;
 }
@@ -52,12 +53,14 @@ export default function Home() {
   const [confirm, setConfirm] = useState(null);
   const [importText, setImportText] = useState('');
   const [importResult, setImportResult] = useState(null);
+  const [deadLinks, setDeadLinks] = useState({});
   const toastTimer = useRef(null);
 
   useEffect(() => {
     fetch('/api/saved').then(r => r.json()).then(data => {
       if (data && !data.error) setSavedMeta(data);
     }).catch(() => {});
+    try { const d = JSON.parse(localStorage.getItem('deadLinks')); if (d) setDeadLinks(d); } catch {}
     if (CAT_ORDER.length) setCurrentCategory(CAT_ORDER[0]);
   }, []);
 
@@ -182,10 +185,23 @@ export default function Home() {
     }
   }, [pasteContent, currentUrl, showToast, saveToDb]);
 
+  const handleFlagDead = useCallback(() => {
+    if (!currentUrl) return;
+    setDeadLinks(prev => {
+      const next = { ...prev };
+      if (next[currentUrl]) delete next[currentUrl];
+      else next[currentUrl] = true;
+      return next;
+    });
+    showToast(deadLinks[currentUrl] ? 'Link unmarked' : 'Link flagged as dead', 'info');
+  }, [currentUrl, deadLinks, showToast]);
+
   const savedCount = Object.keys(savedMeta).length;
   const totalLinks = CAT_ORDER.reduce((s, c) => s + CAT_COUNTS[c], 0);
 
   const filteredCats = CAT_ORDER.filter(cat => !searchQuery || cat.includes(searchQuery.toLowerCase()));
+
+  useEffect(() => { localStorage.setItem('deadLinks', JSON.stringify(deadLinks)); }, [deadLinks]);
 
   const currentLinks = currentCategory ? ALL_LINKS.filter(l => l.category === currentCategory) : [];
 
@@ -367,10 +383,11 @@ export default function Home() {
                 )}
                 {currentLinks.map(link => {
                   const saved = savedMeta[link.url];
+                  const dead = deadLinks[link.url];
                   const domain = (() => { try { return new URL(link.url).hostname; } catch { return link.url; } })();
                   const label = link.url.length > 60 ? link.url.slice(0, 57) + '...' : link.url;
                   return (
-                    <div key={link.url} className={'card' + (saved ? ' saved' : '')}
+                    <div key={link.url} className={'card' + (saved ? ' saved' : '') + (dead ? ' dead' : '')}
                       onClick={() => { setCurrentUrl(link.url); setGenResult(saved || null); }}>
                       <div className="card-domain">
                         <img src={'https://www.google.com/s2/favicons?domain=' + domain + '&sz=16'} alt=""
@@ -379,9 +396,10 @@ export default function Home() {
                       </div>
                       <div className="card-url">{label}</div>
                       <div className="card-meta">
+                        {dead && <span className="card-dead"><Svg name="flag" size={10} /> dead</span>}
                         {saved
                           ? <span className="card-saved"><Svg name="check" size={10} /> saved {new Date(saved.savedAt).toLocaleDateString()}</span>
-                          : <span className="card-unsaved">not saved</span>
+                          : !dead && <span className="card-unsaved">not saved</span>
                         }
                       </div>
                     </div>
@@ -395,9 +413,15 @@ export default function Home() {
               <div className="detail-header">
                 <div className="detail-url">
                   <a href={currentUrl} target="_blank" rel="noopener">{currentUrl}</a>
+                  {deadLinks[currentUrl] && <span className="dead-badge"><Svg name="flag" size={10} /> dead</span>}
                 </div>
                 <div className="detail-actions">
                   <a className="open-link" href={currentUrl} target="_blank" rel="noopener"><Svg name="external" /> Open Original</a>
+                  <button className={'flag-btn' + (deadLinks[currentUrl] ? ' flagged' : '')}
+                    onClick={handleFlagDead}>
+                    <Svg name="flag" size={12} />
+                    {deadLinks[currentUrl] ? ' Unflag' : ' Flag Dead'}
+                  </button>
                   <button className={'save-btn' + (savedMeta[currentUrl] ? ' saved' : '')}
                     onClick={handleSave} disabled={genLoading}>
                     <Svg name={savedMeta[currentUrl] ? 'refresh' : 'save'} />
