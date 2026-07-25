@@ -189,22 +189,9 @@ export default function Home() {
       <main id="main">
         <div className="toolbar">
           {(currentUrl || showAnalyticsPage) && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-              <button className="back-btn" onClick={() => { setCurrentUrl(null); setShowAnalyticsPage(false); setGenResult(null); setPasteContent(''); }}>
-                <Svg name="back" size={14} />
-              </button>
-              {currentUrl && (() => {
-                const idx = currentLinks.findIndex(l => l.url === currentUrl);
-                const goTo = (url) => { setCurrentUrl(url); setGenResult(savedMeta[url] || null); setPasteContent(''); };
-                return (
-                  <>
-                    <button className="back-btn" disabled={idx <= 0} onClick={() => goTo(currentLinks[idx - 1].url)}><Svg name="back" size={12} /></button>
-                    <span style={{ fontSize: 10, color: 'var(--muted)', minWidth: 36, textAlign: 'center' }}>{idx + 1}/{currentLinks.length}</span>
-                    <button className="back-btn" disabled={idx < 0 || idx >= currentLinks.length - 1} onClick={() => goTo(currentLinks[idx + 1].url)}><Svg name="next" size={12} /></button>
-                  </>
-                );
-              })()}
-            </div>
+            <button className="back-btn" onClick={() => { setCurrentUrl(null); setShowAnalyticsPage(false); setGenResult(null); setPasteContent(''); }}>
+              <Svg name="back" size={14} /> back
+            </button>
           )}
           <div className="title">
             {showAnalyticsPage
@@ -386,6 +373,21 @@ export default function Home() {
               {genLoading && (
                 <div className="loader"><span className="spin"></span> generating...</div>
               )}
+              {(() => {
+                const idx = currentLinks.findIndex(l => l.url === currentUrl);
+                const goTo = (url) => { setCurrentUrl(url); setGenResult(savedMeta[url] || null); setPasteContent(''); };
+                return (
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 20, paddingTop: 16, borderTop: '1px solid var(--border)' }}>
+                    <button className="back-btn" disabled={idx <= 0} onClick={() => goTo(currentLinks[idx - 1].url)}>
+                      <Svg name="back" size={12} /> Prev
+                    </button>
+                    <span style={{ fontSize: 10, color: 'var(--muted)' }}>{idx + 1} / {currentLinks.length}</span>
+                    <button className="back-btn" disabled={idx < 0 || idx >= currentLinks.length - 1} onClick={() => goTo(currentLinks[idx + 1].url)}>
+                      Next <Svg name="next" size={12} />
+                    </button>
+                  </div>
+                );
+              })()}
             </div>
           )}
         </div>
