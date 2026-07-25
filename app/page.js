@@ -53,14 +53,12 @@ export default function Home() {
   const [confirm, setConfirm] = useState(null);
   const [importText, setImportText] = useState('');
   const [importResult, setImportResult] = useState(null);
-  const [deadLinks, setDeadLinks] = useState({});
   const toastTimer = useRef(null);
 
   useEffect(() => {
     fetch('/api/saved').then(r => r.json()).then(data => {
       if (data && !data.error) setSavedMeta(data);
     }).catch(() => {});
-    try { const d = JSON.parse(localStorage.getItem('deadLinks')); if (d) setDeadLinks(d); } catch {}
     if (CAT_ORDER.length) setCurrentCategory(CAT_ORDER[0]);
   }, []);
 
@@ -149,7 +147,8 @@ export default function Home() {
       setSavedMeta(prev => ({ ...prev, [url]: data }));
       showToast('Generated and saved!', 'success');
     } else if (existing) {
-      const data = { ...existing, savedAt: new Date().toISOString() };
+      const { dead: _, flaggedAt: __, ...clean } = existing;
+      const data = { ...clean, savedAt: new Date().toISOString() };
       saveToDb(url, data);
       setSavedMeta(prev => ({ ...prev, [url]: data }));
       showToast('Saved!', 'success');
@@ -185,23 +184,28 @@ export default function Home() {
     }
   }, [pasteContent, currentUrl, showToast, saveToDb]);
 
-  const handleFlagDead = useCallback(() => {
+  const handleFlagDead = useCallback(async () => {
     if (!currentUrl) return;
-    setDeadLinks(prev => {
-      const next = { ...prev };
-      if (next[currentUrl]) delete next[currentUrl];
-      else next[currentUrl] = true;
-      return next;
-    });
-    showToast(deadLinks[currentUrl] ? 'Link unmarked' : 'Link flagged as dead', 'info');
-  }, [currentUrl, deadLinks, showToast]);
+    const isDead = savedMeta[currentUrl]?.dead;
+    if (isDead) {
+      await fetch('/api/saved?url=' + encodeURIComponent(currentUrl), { method: 'DELETE' });
+      setSavedMeta(prev => { const n = { ...prev }; delete n[currentUrl]; return n; });
+      showToast('Link unmarked', 'info');
+    } else {
+      const body = { url: currentUrl, dead: true, flaggedAt: new Date().toISOString() };
+      if (savedMeta[currentUrl]) { body.topic = savedMeta[currentUrl].topic; body.description = savedMeta[currentUrl].description; body.tags = savedMeta[currentUrl].tags; body.savedAt = savedMeta[currentUrl].savedAt; }
+      await fetch('/api/saved', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      setSavedMeta(prev => ({ ...prev, [currentUrl]: { ...prev[currentUrl], dead: true, flaggedAt: body.flaggedAt } }));
+      showToast('Link flagged as dead', 'info');
+    }
+  }, [currentUrl, savedMeta, showToast]);
 
-  const savedCount = Object.keys(savedMeta).length;
+  const savedEntries = Object.entries(savedMeta).filter(([,d]) => !d.dead);
+  const savedCount = savedEntries.length;
   const totalLinks = CAT_ORDER.reduce((s, c) => s + CAT_COUNTS[c], 0);
+  const deadLinks = {}; for (const [u, d] of Object.entries(savedMeta)) { if (d.dead) deadLinks[u] = true; }
 
   const filteredCats = CAT_ORDER.filter(cat => !searchQuery || cat.includes(searchQuery.toLowerCase()));
-
-  useEffect(() => { localStorage.setItem('deadLinks', JSON.stringify(deadLinks)); }, [deadLinks]);
 
   const currentLinks = currentCategory ? ALL_LINKS.filter(l => l.category === currentCategory) : [];
 
@@ -219,7 +223,7 @@ export default function Home() {
         </div>
         <div className="cat-list">
           {filteredCats.map(cat => {
-            const savedInCat = ALL_LINKS.filter(l => l.category === cat && savedMeta[l.url]).length;
+            const savedInCat = ALL_LINKS.filter(l => l.category === cat && savedMeta[l.url] && !savedMeta[l.url].dead).length;
             const active = cat === currentCategory;
             return (
               <div key={cat} className={'cat-item' + (active ? ' active' : '')}
@@ -249,7 +253,7 @@ export default function Home() {
               ? <>Analytics <span className="sub">({savedCount} saved)</span></>
               : currentUrl
                 ? <>Link <span className="sub">{currentUrl.length > 50 ? currentUrl.slice(0, 47) + '...' : currentUrl}</span></>
-                : <>{currentCategory || 'LnkZoo Data Factory'} <span className="sub">({currentCategory ? (() => {const sc = ALL_LINKS.filter(l => l.category === currentCategory && savedMeta[l.url]).length; return sc + '/' + CAT_COUNTS[currentCategory];})() : ''})</span></>
+                : <>{currentCategory || 'LnkZoo Data Factory'} <span className="sub">({currentCategory ? (() => {const sc = ALL_LINKS.filter(l => l.category === currentCategory && savedMeta[l.url] && !savedMeta[l.url].dead).length; return sc + '/' + CAT_COUNTS[currentCategory];})() : ''})</span></>
             }
           </div>
           <div className="spacer"></div>
@@ -260,7 +264,7 @@ export default function Home() {
         </div>
         <div id="content">
           {showAnalyticsPage && (() => {
-            const entries = Object.entries(savedMeta);
+            const entries = savedEntries;
             const totalSize = new Blob([JSON.stringify(savedMeta)]).size;
             const dates = entries.map(([, d]) => new Date(d.savedAt).getTime()).filter(Boolean).sort();
             const firstDate = dates.length ? new Date(dates[0]) : null;
@@ -382,8 +386,8 @@ export default function Home() {
                   </div>
                 )}
                 {currentLinks.map(link => {
-                  const saved = savedMeta[link.url];
-                  const dead = deadLinks[link.url];
+                  const saved = savedMeta[link.url] && !savedMeta[link.url].dead && savedMeta[link.url].savedAt ? savedMeta[link.url] : null;
+                  const dead = savedMeta[link.url]?.dead;
                   const domain = (() => { try { return new URL(link.url).hostname; } catch { return link.url; } })();
                   const label = link.url.length > 60 ? link.url.slice(0, 57) + '...' : link.url;
                   return (
