@@ -210,7 +210,7 @@ export default function Home() {
                 onClick={() => { setCurrentCategory(cat); setCurrentUrl(null); setShowAnalyticsPage(false); setSidebarOpen(false); setGenResult(null); setPasteContent(''); }}>
                 <span className={'saved-dot' + (savedInCat > 0 ? '' : ' hidden')}></span>
                 {cat}
-                <span className="count">{CAT_COUNTS[cat]}</span>
+                <span className="count">{savedInCat}/{CAT_COUNTS[cat]}</span>
               </div>
             );
           })}
@@ -233,7 +233,7 @@ export default function Home() {
               ? <>Analytics <span className="sub">({savedCount} saved)</span></>
               : currentUrl
                 ? <>Link <span className="sub">{currentUrl.length > 50 ? currentUrl.slice(0, 47) + '...' : currentUrl}</span></>
-                : <>{currentCategory || 'LnkZoo Data Factory'} <span className="sub">({currentCategory ? CAT_COUNTS[currentCategory] : ''})</span></>
+                : <>{currentCategory || 'LnkZoo Data Factory'} <span className="sub">({currentCategory ? (() => {const sc = ALL_LINKS.filter(l => l.category === currentCategory && savedMeta[l.url]).length; return sc + '/' + CAT_COUNTS[currentCategory];})() : ''})</span></>
             }
           </div>
           <div className="spacer"></div>
@@ -253,16 +253,40 @@ export default function Home() {
             for (const [url] of entries) {
               const link = ALL_LINKS.find(l => l.url === url);
               const cat = link ? link.category : 'other';
-              catSaved[cat] = (catSaved[cat] || 0) + 1;
+              if (!catSaved[cat]) catSaved[cat] = { saved: 0, total: CAT_COUNTS[cat] || 0 };
+              catSaved[cat].saved++;
             }
-            const catEntries = Object.entries(catSaved).sort((a, b) => b[1] - a[1]);
-            const maxCatCount = catEntries.length ? catEntries[0][1] : 1;
+            const catEntries = Object.entries(catSaved).sort((a, b) => b[1].saved - a[1].saved);
+            const maxCatCount = catEntries.length ? catEntries[0][1].saved : 1;
             const tagCounts = {};
             for (const [, d] of entries) {
               if (d.tags) for (const t of d.tags) { const k = t.toLowerCase().trim(); if (k) tagCounts[k] = (tagCounts[k] || 0) + 1; }
             }
             const topTags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]).slice(0, 30);
             const recentEntries = entries.sort((a, b) => new Date(b[1].savedAt) - new Date(a[1].savedAt)).slice(0, 15);
+            const pieColors = ['#22c55e','#3b82f6','#a855f7','#f59e0b','#ef4444','#06b6d4','#f97316','#84cc16','#d946ef','#14b8a6','#ec4899','#8b5cf6'];
+            const pieTotal = catEntries.reduce((s, [,c]) => s + c.saved, 0);
+            const PieSvg = () => {
+              if (!pieTotal) return null;
+              const sz = 200, cx = sz/2, cy = sz/2, r = sz/2 - 4;
+              let ang = -Math.PI/2;
+              return (
+                <svg width={sz} height={sz} viewBox={`0 0 ${sz} ${sz}`} style={{ display:'block', margin:'0 auto' }}>
+                  {catEntries.map(([cat, c], i) => {
+                    if (!c.saved) return null;
+                    const a = (c.saved / pieTotal) * 2 * Math.PI;
+                    const la = a > Math.PI ? 1 : 0;
+                    const x1 = cx + r * Math.cos(ang), y1 = cy + r * Math.sin(ang);
+                    const x2 = cx + r * Math.cos(ang + a), y2 = cy + r * Math.sin(ang + a);
+                    ang += a;
+                    return <path key={cat} d={`M${cx} ${cy} L${x1} ${y1} A${r} ${r} 0 ${la} 1 ${x2} ${y2} Z`} fill={pieColors[i % pieColors.length]} stroke="var(--bg)" strokeWidth={2} />;
+                  })}
+                  <circle cx={cx} cy={cy} r={r*0.45} fill="var(--bg)" />
+                  <text x={cx} y={cy} textAnchor="middle" dominantBaseline="middle" fill="var(--text)" fontSize={14} fontFamily="var(--font)" fontWeight={600}>{entries.length}</text>
+                  <text x={cx} y={cy + 14} textAnchor="middle" dominantBaseline="middle" fill="var(--muted)" fontSize={9} fontFamily="var(--font)">saved</text>
+                </svg>
+              );
+            };
             return (
             <div style={{ maxWidth: 800, margin: '0 auto', width: '100%' }}>
               <div className="analytics-grid">
@@ -277,12 +301,27 @@ export default function Home() {
                 </div>
               )}
               <div className="analytics-section">
+                <h3><Svg name="analytics" size={12} /> Domain Distribution</h3>
+                <div style={{ display:'flex', gap:24, flexWrap:'wrap', alignItems:'center', justifyContent:'center' }}>
+                  <PieSvg />
+                  <div style={{ display:'flex', flexDirection:'column', gap:4, fontSize:10 }}>
+                    {catEntries.slice(0, 10).map(([cat, c], i) => (
+                      <div key={cat} style={{ display:'flex', alignItems:'center', gap:6 }}>
+                        <span style={{ width:10, height:10, borderRadius:2, background:pieColors[i % pieColors.length], display:'inline-block' }}></span>
+                        <span style={{ cursor:'pointer', color:'var(--text)' }} onClick={() => { setCurrentCategory(cat); setCurrentUrl(null); setShowAnalyticsPage(false); }}>{cat}</span>
+                        <span style={{ color:'var(--muted)' }}>{c.saved}/{c.total}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="analytics-section">
                 <h3><Svg name="analytics" size={12} /> Saved per Category</h3>
-                {catEntries.map(([cat, count]) => (
+                {catEntries.map(([cat, c]) => (
                   <div key={cat} className="analytics-bar-wrap">
                     <span className="cat-name" onClick={() => { setCurrentCategory(cat); setCurrentUrl(null); setShowAnalyticsPage(false); }}>{cat}</span>
-                    <div className="analytics-bar-bg"><div className="analytics-bar-fill green" style={{ width: (count / maxCatCount * 100) + '%' }}></div></div>
-                    <span className="analytics-bar-count">{count}</span>
+                    <div className="analytics-bar-bg"><div className="analytics-bar-fill green" style={{ width: ((c.total ? c.saved / c.total : 0) * 100) + '%' }}></div></div>
+                    <span className="analytics-bar-count">{c.saved}/{c.total}</span>
                   </div>
                 ))}
               </div>
