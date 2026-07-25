@@ -224,13 +224,17 @@ export default function Home() {
         <div className="cat-list">
           {filteredCats.map(cat => {
             const savedInCat = ALL_LINKS.filter(l => l.category === cat && savedMeta[l.url] && !savedMeta[l.url].dead).length;
+            const deadInCat = ALL_LINKS.filter(l => l.category === cat && savedMeta[l.url]?.dead).length;
+            const processed = savedInCat + deadInCat;
+            const total = CAT_COUNTS[cat];
+            const complete = processed >= total;
             const active = cat === currentCategory;
             return (
-              <div key={cat} className={'cat-item' + (active ? ' active' : '')}
+              <div key={cat} className={'cat-item' + (active ? ' active' : '') + (complete ? ' complete' : '')}
                 onClick={() => { setCurrentCategory(cat); setCurrentUrl(null); setShowAnalyticsPage(false); setSidebarOpen(false); setGenResult(null); setPasteContent(''); }}>
                 <span className={'saved-dot' + (savedInCat > 0 ? '' : ' hidden')}></span>
                 {cat}
-                <span className="count">{savedInCat}/{CAT_COUNTS[cat]}</span>
+                <span className="count">{processed}/{total}</span>
               </div>
             );
           })}
@@ -253,7 +257,7 @@ export default function Home() {
               ? <>Analytics <span className="sub">({savedCount} saved)</span></>
               : currentUrl
                 ? <>Link <span className="sub">{currentUrl.length > 50 ? currentUrl.slice(0, 47) + '...' : currentUrl}</span></>
-                : <>{currentCategory || 'LnkZoo Data Factory'} <span className="sub">({currentCategory ? (() => {const sc = ALL_LINKS.filter(l => l.category === currentCategory && savedMeta[l.url] && !savedMeta[l.url].dead).length; return sc + '/' + CAT_COUNTS[currentCategory];})() : ''})</span></>
+                : <>{currentCategory || 'LnkZoo Data Factory'} <span className="sub">({currentCategory ? (() => {const sc = ALL_LINKS.filter(l => l.category === currentCategory && savedMeta[l.url] && !savedMeta[l.url].dead).length; const dc = ALL_LINKS.filter(l => l.category === currentCategory && savedMeta[l.url]?.dead).length; return (sc+dc) + '/' + CAT_COUNTS[currentCategory];})() : ''})</span></>
             }
           </div>
           <div className="spacer"></div>
@@ -264,86 +268,146 @@ export default function Home() {
         </div>
         <div id="content">
           {showAnalyticsPage && (() => {
-            const entries = savedEntries;
+            const allEntries = Object.entries(savedMeta);
+            const liveEntries = allEntries.filter(([, d]) => !d.dead);
+            const deadEntries = allEntries.filter(([, d]) => d.dead);
             const totalSize = new Blob([JSON.stringify(savedMeta)]).size;
-            const dates = entries.map(([, d]) => new Date(d.savedAt).getTime()).filter(Boolean).sort();
-            const firstDate = dates.length ? new Date(dates[0]) : null;
-            const lastDate = dates.length ? new Date(dates[dates.length - 1]) : null;
-            const catSaved = {};
-            for (const [url] of entries) {
+            const catData = {};
+            for (const [catKey, catTotal] of Object.entries(CAT_COUNTS)) {
+              catData[catKey] = { total: catTotal, saved: 0, dead: 0 };
+            }
+            for (const [url] of allEntries) {
               const link = ALL_LINKS.find(l => l.url === url);
               const cat = link ? link.category : 'other';
-              if (!catSaved[cat]) catSaved[cat] = { saved: 0, total: CAT_COUNTS[cat] || 0 };
-              catSaved[cat].saved++;
+              if (!catData[cat]) catData[cat] = { total: CAT_COUNTS[cat] || 0, saved: 0, dead: 0 };
+              if (savedMeta[url]?.dead) catData[cat].dead++;
+              else if (savedMeta[url]?.savedAt) catData[cat].saved++;
             }
-            const catEntries = Object.entries(catSaved).sort((a, b) => b[1].saved - a[1].saved);
-            const maxCatCount = catEntries.length ? catEntries[0][1].saved : 1;
+            for (const [url] of deadEntries) {
+              const link = ALL_LINKS.find(l => l.url === url);
+              const cat = link ? link.category : 'other';
+              if (!catData[cat]) catData[cat] = { total: CAT_COUNTS[cat] || 0, saved: 0, dead: 0 };
+              catData[cat].dead++;
+            }
+            const catList = Object.entries(catData).filter(([,c]) => c.saved + c.dead > 0).sort((a, b) => (b[1].saved + b[1].dead) - (a[1].saved + a[1].dead));
+            const dates = liveEntries.map(([, d]) => new Date(d.savedAt).getTime()).filter(Boolean).sort();
+            const firstDate = dates.length ? new Date(dates[0]) : null;
+            const lastDate = dates.length ? new Date(dates[dates.length - 1]) : null;
             const tagCounts = {};
-            for (const [, d] of entries) {
+            for (const [, d] of liveEntries) {
               if (d.tags) for (const t of d.tags) { const k = t.toLowerCase().trim(); if (k) tagCounts[k] = (tagCounts[k] || 0) + 1; }
             }
             const topTags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]).slice(0, 30);
-            const recentEntries = entries.sort((a, b) => new Date(b[1].savedAt) - new Date(a[1].savedAt)).slice(0, 15);
+            const recentAll = allEntries.sort((a, b) => new Date(b[1]?.flaggedAt || b[1]?.savedAt) - new Date(a[1]?.flaggedAt || a[1]?.savedAt)).slice(0, 15);
             const pieColors = ['#22c55e','#3b82f6','#a855f7','#f59e0b','#ef4444','#06b6d4','#f97316','#84cc16','#d946ef','#14b8a6','#ec4899','#8b5cf6'];
-            const pieTotal = catEntries.reduce((s, [,c]) => s + c.saved, 0);
-            const PieSvg = () => {
-              if (!pieTotal) return null;
-              const sz = 200, cx = sz/2, cy = sz/2, r = sz/2 - 4;
+            const totalProcessed = liveEntries.length + deadEntries.length;
+            const totalAllLinks = Object.values(CAT_COUNTS).reduce((s, v) => s + v, 0);
+            function PieSvg({ slices, centerText, subText, size = 180 }) {
+              if (!slices.length || slices.reduce((s, s2) => s + s2.value, 0) === 0) return null;
+              const sz = size, cx = sz/2, cy = sz/2, r = sz/2 - 4;
               let ang = -Math.PI/2;
+              const total = slices.reduce((s, s2) => s + s2.value, 0);
               return (
                 <svg width={sz} height={sz} viewBox={`0 0 ${sz} ${sz}`} style={{ display:'block', margin:'0 auto' }}>
-                  {catEntries.map(([cat, c], i) => {
-                    if (!c.saved) return null;
-                    const a = (c.saved / pieTotal) * 2 * Math.PI;
+                  {slices.map((sl, i) => {
+                    const a = (sl.value / total) * 2 * Math.PI;
+                    if (a === 0) return null;
                     const la = a > Math.PI ? 1 : 0;
                     const x1 = cx + r * Math.cos(ang), y1 = cy + r * Math.sin(ang);
                     const x2 = cx + r * Math.cos(ang + a), y2 = cy + r * Math.sin(ang + a);
                     ang += a;
-                    return <path key={cat} d={`M${cx} ${cy} L${x1} ${y1} A${r} ${r} 0 ${la} 1 ${x2} ${y2} Z`} fill={pieColors[i % pieColors.length]} stroke="var(--bg)" strokeWidth={2} />;
+                    return <path key={i} d={`M${cx} ${cy} L${x1} ${y1} A${r} ${r} 0 ${la} 1 ${x2} ${y2} Z`} fill={sl.color} stroke="var(--bg)" strokeWidth={2} />;
                   })}
-                  <circle cx={cx} cy={cy} r={r*0.45} fill="var(--bg)" />
-                  <text x={cx} y={cy} textAnchor="middle" dominantBaseline="middle" fill="var(--text)" fontSize={14} fontFamily="var(--font)" fontWeight={600}>{entries.length}</text>
-                  <text x={cx} y={cy + 14} textAnchor="middle" dominantBaseline="middle" fill="var(--muted)" fontSize={9} fontFamily="var(--font)">saved</text>
+                  <circle cx={cx} cy={cy} r={r*0.4} fill="var(--bg)" />
+                  {centerText && <text x={cx} y={cy} textAnchor="middle" dominantBaseline="middle" fill="var(--text)" fontSize={14} fontFamily="var(--font)" fontWeight={600}>{centerText}</text>}
+                  {subText && <text x={cx} y={cy + 14} textAnchor="middle" dominantBaseline="middle" fill="var(--muted)" fontSize={9} fontFamily="var(--font)">{subText}</text>}
                 </svg>
               );
-            };
+            }
             return (
             <div style={{ maxWidth: 800, margin: '0 auto', width: '100%' }}>
-              <div className="analytics-grid">
-                <div className="analytics-card"><div className="label">Total Saved</div><div className="value">{entries.length}</div></div>
-                <div className="analytics-card"><div className="label">Storage Size</div><div className="value amber">{totalSize < 1024 ? totalSize + ' B' : (totalSize / 1024).toFixed(1) + ' KB'}</div></div>
-                <div className="analytics-card"><div className="label">Categories Used</div><div className="value blue">{catEntries.length}</div></div>
-                <div className="analytics-card"><div className="label">Unique Tags</div><div className="value purple">{topTags.length}</div></div>
+              <div className="analytics-grid" style={{ marginBottom: 20 }}>
+                <div className="analytics-card"><div className="label">Saved</div><div className="value">{liveEntries.length}</div></div>
+                <div className="analytics-card"><div className="label">Dead</div><div className="value red">{deadEntries.length}</div></div>
+                <div className="analytics-card"><div className="label">Completion</div><div className="value blue">{totalAllLinks ? Math.round(totalProcessed / totalAllLinks * 100) : 0}%</div></div>
+                <div className="analytics-card"><div className="label">Storage</div><div className="value amber">{totalSize < 1024 ? totalSize + ' B' : (totalSize / 1024).toFixed(1) + ' KB'}</div></div>
+                <div className="analytics-card"><div className="label">Categories</div><div className="value purple">{catList.length}/{CAT_ORDER.length}</div></div>
+                <div className="analytics-card"><div className="label">Unique Tags</div><div className="value pink">{topTags.length}</div></div>
               </div>
               {firstDate && lastDate && (
                 <div style={{ fontSize: 10, color: 'var(--muted)', marginBottom: 16, textAlign: 'center' }}>
                   first save: {firstDate.toLocaleDateString()} &middot; last save: {lastDate.toLocaleDateString()} &middot; span: {Math.ceil((lastDate - firstDate) / 86400000)} day(s)
                 </div>
               )}
+              {deadEntries.length > 0 && (
+                <div className="analytics-section">
+                  <h3><Svg name="warning" size={12} /> Saved vs Dead</h3>
+                  <div style={{ display:'flex', gap:24, flexWrap:'wrap', alignItems:'center', justifyContent:'center' }}>
+                    <PieSvg slices={[{value:liveEntries.length,color:'#22c55e'},{value:deadEntries.length,color:'#ef4444'}]} centerText={liveEntries.length} subText="live" size={160} />
+                    <div style={{ fontSize:10, display:'flex', flexDirection:'column', gap:4 }}>
+                      <div style={{ display:'flex', alignItems:'center', gap:6 }}><span style={{ width:10, height:10, borderRadius:2, background:'#22c55e', display:'inline-block' }}></span> Saved <span style={{ color:'var(--muted)' }}>{liveEntries.length}</span></div>
+                      <div style={{ display:'flex', alignItems:'center', gap:6 }}><span style={{ width:10, height:10, borderRadius:2, background:'#ef4444', display:'inline-block' }}></span> Dead <span style={{ color:'var(--muted)' }}>{deadEntries.length}</span></div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {deadEntries.length > 0 && (() => {
+                const deadCats = {};
+                for (const [url] of deadEntries) {
+                  const link = ALL_LINKS.find(l => l.url === url);
+                  const cat = link ? link.category : 'other';
+                  deadCats[cat] = (deadCats[cat] || 0) + 1;
+                }
+                const deadCatList = Object.entries(deadCats).sort((a, b) => b[1] - a[1]);
+                const deadTotal = deadCatList.reduce((s, [,v]) => s + v, 0);
+                return (
+                  <div className="analytics-section">
+                    <h3><Svg name="flag" size={12} /> Dead by Domain</h3>
+                    <div style={{ display:'flex', gap:24, flexWrap:'wrap', alignItems:'center', justifyContent:'center' }}>
+                      <PieSvg slices={deadCatList.slice(0, 10).map(([cat, v], i) => ({ value: v, color: pieColors[i % pieColors.length] }))} centerText={deadTotal} subText="dead" size={160} />
+                      <div style={{ fontSize:10, display:'flex', flexDirection:'column', gap:4 }}>
+                        {deadCatList.slice(0, 10).map(([cat, v], i) => (
+                          <div key={cat} style={{ display:'flex', alignItems:'center', gap:6 }}>
+                            <span style={{ width:10, height:10, borderRadius:2, background:pieColors[i % pieColors.length], display:'inline-block' }}></span>
+                            <span style={{ cursor:'pointer', color:'var(--text)' }} onClick={() => { setCurrentCategory(cat); setCurrentUrl(null); setShowAnalyticsPage(false); }}>{cat}</span>
+                            <span style={{ color:'var(--muted)' }}>{v}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
               <div className="analytics-section">
-                <h3><Svg name="analytics" size={12} /> Domain Distribution</h3>
+                <h3><Svg name="analytics" size={12} /> Domain Completion</h3>
                 <div style={{ display:'flex', gap:24, flexWrap:'wrap', alignItems:'center', justifyContent:'center' }}>
-                  <PieSvg />
-                  <div style={{ display:'flex', flexDirection:'column', gap:4, fontSize:10 }}>
-                    {catEntries.slice(0, 10).map(([cat, c], i) => (
+                  <PieSvg slices={catList.slice(0, 12).map(([cat, c], i) => ({ value: Math.max(c.saved + c.dead, 1), color: (c.saved + c.dead) >= c.total ? '#22c55e' : pieColors[i % pieColors.length] }))} centerText={catList.length} subText="active" size={160} />
+                  <div style={{ fontSize:10, display:'flex', flexDirection:'column', gap:4 }}>
+                    {catList.slice(0, 12).map(([cat, c], i) => (
                       <div key={cat} style={{ display:'flex', alignItems:'center', gap:6 }}>
-                        <span style={{ width:10, height:10, borderRadius:2, background:pieColors[i % pieColors.length], display:'inline-block' }}></span>
+                        <span style={{ width:10, height:10, borderRadius:2, background: (c.saved + c.dead) >= c.total ? '#22c55e' : pieColors[i % pieColors.length], display:'inline-block' }}></span>
                         <span style={{ cursor:'pointer', color:'var(--text)' }} onClick={() => { setCurrentCategory(cat); setCurrentUrl(null); setShowAnalyticsPage(false); }}>{cat}</span>
-                        <span style={{ color:'var(--muted)' }}>{c.saved}/{c.total}</span>
+                        <span style={{ color:'var(--muted)' }}>{c.saved + c.dead}/{c.total}</span>
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
               <div className="analytics-section">
-                <h3><Svg name="analytics" size={12} /> Saved per Category</h3>
-                {catEntries.map(([cat, c]) => (
+                <h3><Svg name="analytics" size={12} /> Processed per Category</h3>
+                {catList.map(([cat, c]) => {
+                  const pct = c.total ? ((c.saved + c.dead) / c.total * 100) : 0;
+                  return (
                   <div key={cat} className="analytics-bar-wrap">
                     <span className="cat-name" onClick={() => { setCurrentCategory(cat); setCurrentUrl(null); setShowAnalyticsPage(false); }}>{cat}</span>
-                    <div className="analytics-bar-bg"><div className="analytics-bar-fill green" style={{ width: ((c.total ? c.saved / c.total : 0) * 100) + '%' }}></div></div>
-                    <span className="analytics-bar-count">{c.saved}/{c.total}</span>
+                    <div className="analytics-bar-bg">
+                      <div className="analytics-bar-fill green" style={{ width: (c.total ? c.saved / c.total * 100 : 0) + '%' }}></div>
+                      {c.dead > 0 && <div className="analytics-bar-fill red" style={{ width: (c.dead / c.total * 100) + '%', marginLeft: (c.saved / c.total * 100) + '%' }}></div>}
+                    </div>
+                    <span className="analytics-bar-count">{c.saved + c.dead}/{c.total}</span>
                   </div>
-                ))}
+                  );
+                })}
               </div>
               {topTags.length > 0 && (
                 <div className="analytics-section">
@@ -351,26 +415,29 @@ export default function Home() {
                   <div className="tag-cloud">{topTags.map(([tag, count]) => <span key={tag}>{tag} ({count})</span>)}</div>
                 </div>
               )}
-              <div className="analytics-section">
-                <h3><Svg name="clock" size={12} /> Recent Saves</h3>
-                <div className="recent-list">{recentEntries.map(([url, d]) => {
-                  const domain = (() => { try { return new URL(url).hostname; } catch { return ''; } })();
-                  const label = url.length > 50 ? url.slice(0, 47) + '...' : url;
-                  return (
-                    <div key={url} className="recent-item" onClick={() => { setCurrentUrl(url); setGenResult(d); setShowAnalyticsPage(false); }}>
-                      <span className="recent-domain">{domain}</span>
-                      <span>{label}</span>
-                      <span className="recent-date">{new Date(d.savedAt).toLocaleString()}</span>
-                    </div>
-                  );
-                })}</div>
-              </div>
+              {recentAll.length > 0 && (
+                <div className="analytics-section">
+                  <h3><Svg name="clock" size={12} /> Recent Activity</h3>
+                  <div className="recent-list">{recentAll.map(([url, d]) => {
+                    const domain = (() => { try { return new URL(url).hostname; } catch { return ''; } })();
+                    const label = url.length > 50 ? url.slice(0, 47) + '...' : url;
+                    const isDead = d.dead;
+                    return (
+                      <div key={url} className={'recent-item' + (isDead ? ' dead' : '')} onClick={() => { setCurrentUrl(url); setGenResult(isDead ? null : d); setShowAnalyticsPage(false); }}>
+                        <span className="recent-domain">{domain}</span>
+                        <span>{isDead ? <><Svg name="flag" size={8} /> </> : ''}{label}</span>
+                        <span className="recent-date">{new Date(d.flaggedAt || d.savedAt).toLocaleString()}</span>
+                      </div>
+                    );
+                  })}</div>
+                </div>
+              )}
               <div className="analytics-section" style={{ display: 'flex', gap: 8, paddingTop: 12, borderTop: '1px solid var(--border)' }}>
                 <button className="primary" onClick={downloadAllSaved} style={{ padding: '8px 16px', background: 'var(--green)', border: '1px solid var(--green)', color: 'var(--bg)', fontFamily: 'var(--font)', fontSize: 11, borderRadius: 6, cursor: 'pointer' }}>
                   <Svg name="download" size={12} /> Download All Saved
                 </button>
                 <button onClick={clearAllSaved} style={{ padding: '8px 16px', background: 'rgba(255,45,85,.1)', border: '1px solid var(--red)', color: 'var(--red)', fontFamily: 'var(--font)', fontSize: 11, borderRadius: 6, cursor: 'pointer' }}>
-                  <Svg name="close" size={12} /> Clear All Saved
+                  <Svg name="close" size={12} /> Clear All
                 </button>
               </div>
             </div>
