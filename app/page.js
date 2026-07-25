@@ -51,18 +51,9 @@ export default function Home() {
   const toastTimer = useRef(null);
 
   useEffect(() => {
-    const all = {};
-    try {
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        if (key.startsWith('df_')) continue;
-        try {
-          const v = JSON.parse(localStorage.getItem(key));
-          if (v && typeof v === 'object' && v.savedAt) all[key] = v;
-        } catch (e) { }
-      }
-    } catch (e) { }
-    setSavedMeta(all);
+    fetch('/api/saved').then(r => r.json()).then(data => {
+      if (data && !data.error) setSavedMeta(data);
+    }).catch(() => {});
     if (CAT_ORDER.length) setCurrentCategory(CAT_ORDER[0]);
   }, []);
 
@@ -90,13 +81,23 @@ export default function Home() {
       title: 'Clear All Saved',
       msg: 'Permanently delete ' + Object.keys(savedMeta).length + ' saved entries?',
       onYes: () => {
-        for (const url of Object.keys(savedMeta)) localStorage.removeItem(url);
+        fetch('/api/saved', { method: 'DELETE' }).catch(() => {});
         setSavedMeta({});
         setGenResult(null);
         showToast('All cleared', 'info');
       },
     });
   }, [savedMeta, showToast]);
+
+  const saveToDb = useCallback(async (url, data) => {
+    try {
+      await fetch('/api/saved', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url, ...data, savedAt: data.savedAt }),
+      });
+    } catch (e) { /* background sync — user will retry if needed */ }
+  }, []);
 
   const handleSave = useCallback(() => {
     const url = currentUrl;
@@ -105,16 +106,16 @@ export default function Home() {
     if (!genResult && !existing) { showToast('Generate content first', 'error'); return; }
     if (genResult) {
       const data = { ...genResult, savedAt: new Date().toISOString() };
-      localStorage.setItem(url, JSON.stringify(data));
+      saveToDb(url, data);
       setSavedMeta(prev => ({ ...prev, [url]: data }));
       showToast('Generated and saved!', 'success');
     } else if (existing) {
       const data = { ...existing, savedAt: new Date().toISOString() };
-      localStorage.setItem(url, JSON.stringify(data));
+      saveToDb(url, data);
       setSavedMeta(prev => ({ ...prev, [url]: data }));
       showToast('Saved!', 'success');
     }
-  }, [currentUrl, savedMeta, genResult, showToast]);
+  }, [currentUrl, savedMeta, genResult, showToast, saveToDb]);
 
   const handleGenerate = useCallback(async () => {
     const content = pasteContent.trim();
@@ -134,7 +135,7 @@ export default function Home() {
       } else {
         setGenResult({ topic: data.topic, description: data.description, tags: data.tags });
         const saveData = { topic: data.topic, description: data.description, tags: data.tags, savedAt: new Date().toISOString() };
-        localStorage.setItem(currentUrl, JSON.stringify(saveData));
+        saveToDb(currentUrl, saveData);
         setSavedMeta(prev => ({ ...prev, [currentUrl]: saveData }));
         showToast('Generated and saved!', 'success');
       }
@@ -143,7 +144,7 @@ export default function Home() {
     } finally {
       setGenLoading(false);
     }
-  }, [pasteContent, currentUrl, showToast]);
+  }, [pasteContent, currentUrl, showToast, saveToDb]);
 
   const savedCount = Object.keys(savedMeta).length;
   const totalLinks = CAT_ORDER.reduce((s, c) => s + CAT_COUNTS[c], 0);
