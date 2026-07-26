@@ -8,9 +8,15 @@ Data preparation and AI enrichment pipeline for [LnkZoo](https://github.com/Saya
 - **AI enrichment** — paste content about a link, generate topic/description/tags via GPT-4o-mini
 - **3-key rotation** — rotates through OpenRouter API keys with 429 backoff
 - **Multi-device sync** — all data stored in Supabase, consistent across browsers and machines
-- **Analytics dashboard** — total saved, storage size, per-category bars, tag cloud, recent saves
+- **Dead link flagging** — mark broken/unavailable links, synced via Supabase, visible across devices
+- **Status filters** — filter cards by All / Done / Dead / Not Done per category
+- **Analytics dashboard** — stat cards, 3 pie charts (Saved vs Dead, Dead by Domain, Domain Completion), stacked progress bars, tag cloud, recent activity
+- **Category completion** — sidebar turns green when all links in a domain are processed
+- **Loading screen** — smooth loading bar + spinner while data fetches from Supabase
 - **Search & filter** — search categories in sidebar, green dots show categories with saved entries
-- **Export** — download all saved data as JSON
+- **Prev/Next navigation** — browse links sequentially in detail view
+- **Export** — download all saved data (including dead flags) as JSON
+- **WhatsApp import** — paste chat export in Settings to generate `links-categorized.json`
 - **Terminal-themed UI** — cyber/terminal aesthetic with responsive sidebar
 
 ## Prerequisites
@@ -54,6 +60,8 @@ create table saved_links (
   description text default '',
   tags jsonb default '[]',
   saved_at timestamptz not null,
+  dead boolean default false,
+  flagged_at text,
   created_at timestamptz default now()
 );
 ```
@@ -83,12 +91,13 @@ npm start
 
 1. Open the app — sidebar lists all 28 categories sorted by link count
 2. Click a category to see its links in the card grid
-3. Click a card to open the detail view
-4. Paste content about the link in the textarea
-5. Click **Generate** — AI returns topic, description, and tags
-6. Result auto-saves to Supabase and syncs across all devices instantly
-7. Click **Analytics** in sidebar or the saved count badge for stats
-8. Use **Settings** (gear icon) — export saved data, import WhatsApp chat to generate links JSON
+3. Use the filter bar (All / Done / Dead / Not Done) to narrow cards by status
+4. Click a card to open the detail view
+5. Paste content about the link in the textarea
+6. Click **Generate** — AI returns topic, description, and tags, auto-saves to Supabase
+7. If a link is broken, click **Flag Dead** — dead links sync across devices
+8. Click **Analytics** in sidebar or the saved count badge for stats with pie charts
+9. Use **Settings** (gear icon) — export saved data, import WhatsApp chat to generate links JSON
 
 ### WhatsApp Import
 
@@ -103,9 +112,9 @@ Both methods extract all URLs, group by domain, and output the same JSON structu
 ### Saved data
 
 - Each entry stores `{ topic, description, tags[], savedAt }` keyed by URL
-- Stored in Supabase `saved_links` table
-- Exported as JSON via Settings or Analytics page
-- Available from any device with the same Supabase project
+- Dead flags add `{ dead: true, flaggedAt }` to the same entry
+- Stored in Supabase `saved_links` table, synced across all devices
+- Exported as JSON via Settings or Analytics page (includes dead flags)
 
 ## Project Structure
 
@@ -113,7 +122,7 @@ Both methods extract all URLs, group by domain, and output the same JSON structu
 _data/
 ├── app/
 │   ├── api/generate/route.js     — OpenRouter proxy (server-side keys)
-│   ├── api/saved/route.js        — Supabase CRUD proxy
+│   ├── api/saved/route.js        — Supabase CRUD (incl. dead flag support)
 │   ├── layout.js                 — Root layout & metadata
 │   ├── page.js                   — Main UI (React client component)
 │   ├── globals.css               — Cyber/terminal theme

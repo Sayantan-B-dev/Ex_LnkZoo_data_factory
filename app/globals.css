@@ -7,6 +7,14 @@ body{display:flex}
 ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
 ::-webkit-scrollbar-thumb:hover{background:var(--muted)}
 ::selection{background:var(--green);color:var(--bg)}
+#load-bar{position:fixed;top:0;left:0;width:100%;height:2px;z-index:9999;background:var(--bg3);transition:opacity .5s}
+#load-bar::after{content:'';display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--blue),var(--purple));transition:width .3s;border-radius:0 2px 2px 0}
+#load-bar.loading::after{width:60%;animation:loadPulse 1.5s ease-in-out infinite}
+#load-bar.done::after{width:100%;opacity:0;transition:width .2s,opacity .4s .2s}
+@keyframes loadPulse{0%{width:10%;margin-left:0}50%{width:60%;margin-left:30%}100%{width:10%;margin-left:90%}}
+#load-screen{position:fixed;inset:0;z-index:9998;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-size:13px;color:var(--muted);font-family:var(--font)}
+#load-screen .spin{width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--green);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 #sidebar{width:240px;min-width:240px;background:var(--sidebar);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;z-index:100}
 #sidebar .brand{padding:16px 18px;font-size:18px;font-weight:700;color:var(--green);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;letter-spacing:1px;cursor:pointer}
 #sidebar .brand span{color:var(--text);font-weight:400}

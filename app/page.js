@@ -54,12 +54,13 @@ export default function Home() {
   const [importText, setImportText] = useState('');
   const [importResult, setImportResult] = useState(null);
   const [statusFilter, setStatusFilter] = useState('all');
+  const [loading, setLoading] = useState(true);
   const toastTimer = useRef(null);
 
   useEffect(() => {
     fetch('/api/saved').then(r => r.json()).then(data => {
       if (data && !data.error) setSavedMeta(data);
-    }).catch(() => {});
+    }).catch(() => {}).finally(() => setLoading(false));
     if (CAT_ORDER.length) setCurrentCategory(CAT_ORDER[0]);
   }, []);
 
@@ -212,6 +213,8 @@ export default function Home() {
 
   return (
     <>
+      <div id="load-bar" className={loading ? 'loading' : 'done'}></div>
+      {loading && <div id="load-screen"><span className="spin" style={{width:24,height:24,borderWidth:3}}></span><div>loading data...</div></div>}
       <button id="hamburger" onClick={() => setSidebarOpen(true)}><Svg name="menu" size={18} /></button>
       <div id="sidebar-overlay" className={sidebarOpen ? 'visible' : ''} onClick={() => setSidebarOpen(false)}></div>
       <aside id="sidebar" className={sidebarOpen ? 'open' : ''}>
