@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'LnkZoo Data Factory',
+  title: 'ex-lnkzoo',
   description: 'Link data preparation & AI enrichment pipeline for LnkZoo',
 };
 
