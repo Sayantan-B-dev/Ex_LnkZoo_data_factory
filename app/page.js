@@ -53,6 +53,7 @@ export default function Home() {
   const [confirm, setConfirm] = useState(null);
   const [importText, setImportText] = useState('');
   const [importResult, setImportResult] = useState(null);
+  const [statusFilter, setStatusFilter] = useState('all');
   const toastTimer = useRef(null);
 
   useEffect(() => {
@@ -445,38 +446,69 @@ export default function Home() {
           })()}
           {!currentUrl && !showAnalyticsPage && (
             <div id="grid-view">
-              <div className="card-grid">
-                {currentLinks.length === 0 && currentCategory && (
-                  <div className="empty" style={{ gridColumn: '1 / -1' }}>
-                    <div className="icon"><Svg name="info" size={32} /></div>
-                    <div>no links in this category</div>
-                  </div>
-                )}
-                {currentLinks.map(link => {
-                  const saved = savedMeta[link.url] && !savedMeta[link.url].dead && savedMeta[link.url].savedAt ? savedMeta[link.url] : null;
-                  const dead = savedMeta[link.url]?.dead;
-                  const domain = (() => { try { return new URL(link.url).hostname; } catch { return link.url; } })();
-                  const label = link.url.length > 60 ? link.url.slice(0, 57) + '...' : link.url;
-                  return (
-                    <div key={link.url} className={'card' + (saved ? ' saved' : '') + (dead ? ' dead' : '')}
-                      onClick={() => { setCurrentUrl(link.url); setGenResult(saved || null); }}>
-                      <div className="card-domain">
-                        <img src={'https://www.google.com/s2/favicons?domain=' + domain + '&sz=16'} alt=""
-                          onError={e => e.target.style.display = 'none'} />
-                        {domain}
-                      </div>
-                      <div className="card-url">{label}</div>
-                      <div className="card-meta">
-                        {dead && <span className="card-dead"><Svg name="flag" size={10} /> dead</span>}
-                        {saved
-                          ? <span className="card-saved"><Svg name="check" size={10} /> saved {new Date(saved.savedAt).toLocaleDateString()}</span>
-                          : !dead && <span className="card-unsaved">not saved</span>
-                        }
-                      </div>
+              {currentCategory && (() => {
+                const counts = { all: currentLinks.length, done: 0, dead: 0, notdone: 0 };
+                for (const l of currentLinks) {
+                  if (savedMeta[l.url] && !savedMeta[l.url].dead && savedMeta[l.url].savedAt) counts.done++;
+                  else if (savedMeta[l.url]?.dead) counts.dead++;
+                  else counts.notdone++;
+                }
+                const filteredLinks = currentLinks.filter(l => {
+                  if (statusFilter === 'done') return savedMeta[l.url] && !savedMeta[l.url].dead && savedMeta[l.url].savedAt;
+                  if (statusFilter === 'dead') return savedMeta[l.url]?.dead;
+                  if (statusFilter === 'notdone') return !savedMeta[l.url] || (!savedMeta[l.url].savedAt && !savedMeta[l.url].dead);
+                  return true;
+                });
+                return (
+                <><div className="filter-bar">
+                  {['all','done','dead','notdone'].map(f => (
+                    <button key={f} className={'filter-btn' + (statusFilter === f ? ' active' : '')}
+                      onClick={() => setStatusFilter(f)}>
+                      {f === 'all' ? 'All' : f === 'done' ? 'Done' : f === 'dead' ? 'Dead' : 'Not Done'}
+                      <span className="filter-count">{counts[f]}</span>
+                    </button>
+                  ))}
+                </div>
+                <div className="card-grid">
+                  {currentLinks.length === 0 && (
+                    <div className="empty" style={{ gridColumn: '1 / -1' }}>
+                      <div className="icon"><Svg name="info" size={32} /></div>
+                      <div>no links in this category</div>
                     </div>
-                  );
-                })}
-              </div>
+                  )}
+                  {filteredLinks.length === 0 && currentLinks.length > 0 && (
+                    <div className="empty" style={{ gridColumn: '1 / -1' }}>
+                      <div className="icon"><Svg name="info" size={32} /></div>
+                      <div>no {statusFilter === 'done' ? 'saved' : statusFilter === 'dead' ? 'dead' : 'unsaved'} links</div>
+                    </div>
+                  )}
+                  {filteredLinks.map(link => {
+                    const saved = savedMeta[link.url] && !savedMeta[link.url].dead && savedMeta[link.url].savedAt ? savedMeta[link.url] : null;
+                    const dead = savedMeta[link.url]?.dead;
+                    const domain = (() => { try { return new URL(link.url).hostname; } catch { return link.url; } })();
+                    const label = link.url.length > 60 ? link.url.slice(0, 57) + '...' : link.url;
+                    return (
+                      <div key={link.url} className={'card' + (saved ? ' saved' : '') + (dead ? ' dead' : '')}
+                        onClick={() => { setCurrentUrl(link.url); setGenResult(saved || null); }}>
+                        <div className="card-domain">
+                          <img src={'https://www.google.com/s2/favicons?domain=' + domain + '&sz=16'} alt=""
+                            onError={e => e.target.style.display = 'none'} />
+                          {domain}
+                        </div>
+                        <div className="card-url">{label}</div>
+                        <div className="card-meta">
+                          {dead && <span className="card-dead"><Svg name="flag" size={10} /> dead</span>}
+                          {saved
+                            ? <span className="card-saved"><Svg name="check" size={10} /> saved {new Date(saved.savedAt).toLocaleDateString()}</span>
+                            : !dead && <span className="card-unsaved">not saved</span>
+                          }
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div></>
+                );
+              })()}
             </div>
           )}
           {currentUrl && !showAnalyticsPage && (
