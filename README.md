@@ -133,12 +133,40 @@ _data/
 │   └── supabase.js               — Supabase server client
 ├── scripts/
 │   └── parse-chat.mjs            — CLI tool to parse WhatsApp export → links JSON
+├── custom-scripts/
+│   └── migrate-to-neon.mjs       — Migrate AI-enriched data from Supabase to Neon
 ├── links-categorized.json        — 1107 links, 73 domains, 28 categories
 ├── .env                          — API keys & secrets (gitignored)
 ├── .env.example                  — Environment variable template
 ├── next.config.mjs               — Next.js config
 └── package.json
 ```
+
+## Migration: Supabase → Neon
+
+The `custom-scripts/` folder contains tools separate from the main app.
+`migrate-to-neon.mjs` pushes AI-enriched data (topic, description, tags) from Supabase `saved_links` into the LnkZoo app's Neon database `links` table.
+
+**Setup** — ensure `_data/.env` has these vars:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVICE_KEY=sb_secret_...
+NEON_DATABASE_URL=postgresql://user:pass@host/neondb?sslmode=require
+```
+
+**Run:**
+```bash
+cd _data/custom-scripts
+npm install
+node migrate-to-neon.mjs
+```
+
+**Cleanup migrated links with empty content:**
+```sql
+DELETE FROM links WHERE (title IS NULL OR title = '') AND (description IS NULL OR description = '');
+```
+Run this in the Neon database SQL editor if the migration imported empty rows.
 
 ## Tech Stack
 
