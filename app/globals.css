@@ -141,6 +141,7 @@ body{display:flex;overflow:hidden}
 .detail-actions .flag-btn.flagged{background:var(--red);border-color:var(--red);color:#fff}
 .detail-actions .flag-btn:hover{opacity:.9}
 .dead-badge{display:inline-flex;align-items:center;gap:4px;font-size:10px;color:var(--red);margin-left:8px;padding:2px 6px;background:rgba(255,45,85,.1);border-radius:4px;vertical-align:middle}
+.migrated-badge{display:inline-flex;align-items:center;gap:4px;font-size:9px;color:var(--bg);background:var(--blue);padding:1px 5px;border-radius:3px;vertical-align:middle;letter-spacing:.3px;text-transform:uppercase}
 .nav-btn{padding:8px 18px;background:var(--bg3);border:1px solid var(--border);color:var(--text);font-family:var(--font);font-size:12px;border-radius:var(--radius);cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all .12s;box-shadow:0 3px 0 rgba(0,0,0,.5);transform:translateY(0)}
 .nav-btn:hover{background:var(--border);border-color:var(--green);color:var(--green);transform:translateY(-1px);box-shadow:0 4px 0 rgba(0,0,0,.5)}
 .nav-btn:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(0,0,0,.5);transition:all .05s}

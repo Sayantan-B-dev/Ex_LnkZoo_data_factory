@@ -1,0 +1,9 @@
+{
+  "name": "migrate-to-neon",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
+    "@supabase/supabase-js": "^2.110.8"
+  }
+}

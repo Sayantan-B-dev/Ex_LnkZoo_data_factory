@@ -9,6 +9,7 @@ export async function GET() {
     const entry = { topic: row.topic, description: row.description, tags: row.tags, savedAt: row.saved_at };
     if (row.dead) entry.dead = true;
     if (row.flagged_at) entry.flaggedAt = row.flagged_at;
+    if (row.is_migrated) entry.isMigrated = true;
     map[row.url] = entry;
   }
   return Response.json(map);

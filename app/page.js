@@ -459,6 +459,7 @@ export default function Home() {
                           <img src={'https://www.google.com/s2/favicons?domain=' + domain + '&sz=16'} alt=""
                             onError={e => e.target.style.display = 'none'} />
                           {domain}
+                          {savedMeta[link.url]?.isMigrated && <span className="migrated-badge">migrated</span>}
                         </div>
                         <div className="card-url">{label}</div>
                         <div className="card-meta">
@@ -500,6 +501,7 @@ export default function Home() {
                   {savedMeta[currentUrl]
                     ? <><Svg name="check" /> saved on {new Date(savedMeta[currentUrl].savedAt).toLocaleString()}</>
                     : 'not saved yet'}
+                  {savedMeta[currentUrl]?.isMigrated && <span className="migrated-badge" style={{marginLeft:8}}>migrated</span>}
                 </div>
               </div>
               <div className="detail-input">
